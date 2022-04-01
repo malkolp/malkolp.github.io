@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
+    <g transform="matrix(9.375,0,0,9.375,150,150)">
+        <g id="Oracle_Corporation_logo.svg" transform="matrix(1,0,0,1,-16,-10)">
+            <clipPath id="_clip1">
+                <rect x="0" y="0" width="32" height="20"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <path d="M10,2C5.611,2 2,5.611 2,10C2,14.389 5.611,18 10,18L22,18C26.389,18 30,14.389 30,10C30,5.611 26.389,2 22,2L10,2Z" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:4px;"/>
+            </g>
+        </g>
+        <g id="Oracle_Corporation_logo.svg1" serif:id="Oracle_Corporation_logo.svg">
+        </g>
+    </g>
+</svg>
