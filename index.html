@@ -34,6 +34,57 @@
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="favicon.ico"/>
+        <style>
+            .masonry-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background-color:rgba(0,0,0,0);
+                height: 100%;
+                transition: background-color 300ms;
+            }
+            .masonry-overlay:hover {
+                background-color: rgba(0,0,0,0.4);
+                transition: background-color 300ms;
+            }
+            .masonry-title {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                letter-spacing: 1.5pt;
+                font-weight: 600;
+                width: 100%;
+                height: 100%;
+                transition: all 500ms;
+            }
+            .masonry-title-default {
+                color: #566573;
+                font-size: 12pt;
+            }
+            .masonry-title-focus {
+                color: #FBFCFC;
+                font-size: 16pt;
+            }
+            .masonry-subtitle {
+                position: relative;
+                transition: all 500ms;
+                font-size: 10pt;
+            }
+            .masonry-subtitle-default {
+                height: 0;
+                opacity: 0;
+                top: -3rem;
+            }
+            .masonry-subtitle-focus {
+                height: auto;
+                display: block;
+                opacity: 1;
+                top: 0;
+            }
+        </style>
     </head>
     <!-- END HEAD -->
 
@@ -121,8 +172,8 @@
                                 increasing system performance, developing various kinds of software and contributing in countless projects with global teams.
                             </p>
                             <p>
-                                Beside of that, actively doing researches in domain of electronic business, information systems and
-                                currently inventing new technology which can be applied in process to digital transformation of education business.
+                                Beside that, actively doing researches in domain of electronic business, information systems and
+                                currently inventing new technology which can be applied into the process of digital transformation on education business.
                             </p>
                         </div>
 
@@ -184,7 +235,7 @@
                                             <i class="service-icon icon-screen-desktop"></i>
                                         </div>
                                         <div class="service-info">
-                                            <h3>Full Stack Web & Desktop App</h3>
+                                            <h3>Full Stack Web & Desktop App Development</h3>
                                             <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
                                         </div>
                                         <a href="https://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes" class="content-wrapper-link"></a>    
@@ -241,8 +292,17 @@
                             <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-8 margin-b-4">
                                 <!-- Work -->
                                 <div class="work work-popup-trigger">
-                                    <div class="work-overlay">
+                                    <div class="work-overlay" style="position: relative">
                                         <img class="full-width img-responsive" src="img/800x400/01.jpg" alt="Portfolio Image">
+                                        <div style="position: absolute;top: 0;left: 0;width: 100%;background-color:#9ADCFF;height: 100%;"></div>
+                                        <div class="masonry-overlay">
+                                            <div class="masonry-title masonry-title-default">
+                                                <div>Skripdown</div>
+                                                <div class="masonry-subtitle masonry-subtitle-default">
+                                                    mar 2020 - present
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="work-popup-overlay">
                                         <div class="work-popup-content">
@@ -280,8 +340,17 @@
                             <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 margin-b-4">
                                 <!-- Work -->
                                 <div class="work work-popup-trigger">
-                                    <div class="work-overlay">
+                                    <div class="work-overlay" style="position: relative">
                                         <img class="full-width img-responsive" src="img/397x400/01.jpg" alt="Portfolio Image">
+                                        <div style="position: absolute;top: 0;left: 0;width: 100%;background-color:#FFF89A;height: 100%;"></div>
+                                        <div class="masonry-overlay">
+                                            <div class="masonry-title masonry-title-default">
+                                                <div>Rajawali</div>
+                                                <div class="masonry-subtitle masonry-subtitle-default">
+                                                    nov 2021 - feb 2022
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="work-popup-overlay">
                                         <div class="work-popup-content">
@@ -319,8 +388,17 @@
                             <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 md-margin-b-4">
                                 <!-- Work -->
                                 <div class="work work-popup-trigger">
-                                    <div class="work-overlay">
+                                    <div class="work-overlay" style="position: relative">
                                         <img class="full-width img-responsive" src="img/397x300/01.jpg" alt="Portfolio Image">
+                                        <div style="position: absolute;top: 0;left: 0;width: 100%;background-color:#F29191;height: 100%;"></div>
+                                        <div class="masonry-overlay">
+                                            <div class="masonry-title masonry-title-default">
+                                                <div>Oracle APEX</div>
+                                                <div class="masonry-subtitle masonry-subtitle-default">
+                                                    feb 2022 - present
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="work-popup-overlay">
                                         <div class="work-popup-content">
@@ -450,14 +528,14 @@
                         <div class="col-sm-3 sm-margin-b-30">
                             <div class="text-right sm-text-left">
                                 <h2 class="margin-b-0">Contacts</h2>
-                                <p>Hire me.</p>
+                                <p>Wanna stay in touch.</p>
                             </div>
                         </div>
                         <div class="col-sm-8 col-sm-offset-1">
                             <div class="row">
                                 <div class="col-md-3 col-xs-6 md-margin-b-30">
                                     <h5>Location</h5>
-                                    <a href="https://www.google.com/maps/place/Jl.+Plamongan+Indah,+Gembyong,+Batursari,+Kec.+Mranggen,+Kabupaten+Demak,+Jawa+Tengah/@-7.0285662,110.4961146,17z/data=!3m1!4b1!4m5!3m4!1s0x2e708dbfdc68d585:0x40150a083917eaad!8m2!3d-7.0285715!4d110.4983086">Semarang, Central Java, Indonesia</a>
+                                    <a href="https://www.google.com/maps/place/Jl.+Plamongan+Indah,+Gembyong,+Batursari,+Kec.+Mranggen,+Kabupaten+Demak,+Jawa+Tengah/@-7.0285662,110.4961146,17z/data=!3m1!4b1!4m5!3m4!1s0x2e708dbfdc68d585:0x40150a083917eaad!8m2!3d-7.0285715!4d110.4983086">Plamongan Indah Residence, Semarang, Central Java, Indonesia</a>
                                 </div>
                                 <div class="col-md-3 col-xs-6 md-margin-b-30">
                                     <h5>Phone</h5>
@@ -521,6 +599,32 @@
         <script src="js/components/progress-bar.min.js" type="text/javascript"></script>
         <script src="js/components/masonry.min.js" type="text/javascript"></script>
         <script src="js/components/wow.min.js" type="text/javascript"></script>
+        <script>
+            (()=>{
+                const overlayObj_   = {
+                    init            : (selector='.masonry-overlay', add=overlayObj_.add)=>{
+                        ($(selector).toArray()).forEach(e=>{
+                            add(e);
+                        });
+                    },
+                    add             : (e, cf='masonry-title-focus', cu='masonry-title-default', sf='masonry-subtitle-focus', su='masonry-subtitle-default')=>{
+                        const tar   = $(e.firstElementChild);
+                        const sub   = $(e.firstElementChild.lastElementChild);
+
+                        $(e).
+                        mouseenter(()=>{
+                            tar.removeClass(cu).addClass(cf);
+                            sub.removeClass(su).addClass(sf);
+                        }).
+                        mouseleave(()=>{
+                            tar.removeClass(cf).addClass(cu);
+                            sub.removeClass(sf).addClass(su);
+                        });
+                    },
+                };
+                overlayObj_.init();
+            })();
+        </script>
 
     </body>
     <!-- END BODY -->
