@@ -47,6 +47,6 @@
     };
 
     app.init();
-    app.setLang('id', '#toggle-lang-id', window.lang_id);
     app.setLang('en', '#toggle-lang-en', window.lang_en);
+    app.setLang('id', '#toggle-lang-id', window.lang_id);
 })();
