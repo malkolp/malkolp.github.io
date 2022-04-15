@@ -103,6 +103,10 @@ window.lang_en      = [
         target      : 'contacts-web',
         value       : 'Web',
     },
+    {
+        target      : 'nav-top',
+        value       : 'Top',
+    }
 ];
 
 window.lang_id      = [
@@ -210,6 +214,10 @@ window.lang_id      = [
         target      : 'contacts-web',
         value       : 'Web',
     },
+    {
+        target      : 'nav-top',
+        value       : 'Atas',
+    }
 ];
 
 window.lang_cn      = [
@@ -317,4 +325,8 @@ window.lang_cn      = [
         target      : 'contacts-web',
         value       : '网站',
     },
+    {
+        target      : 'nav-top',
+        value       : '最佳',
+    }
 ];
