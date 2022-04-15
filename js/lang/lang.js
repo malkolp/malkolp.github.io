@@ -45,7 +45,7 @@
                 removeClass('hide-toggle');
 
                 obj_lang.lang.forEach(item=>{
-                    item.element[0].innerText  = item.value;
+                    item.element.text(item.value);
                 });
                 app.current     = obj_lang;
             });
