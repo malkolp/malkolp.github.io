@@ -46,7 +46,63 @@ window.lang_en      = [
     {
         target      : 'experience-subtitle',
         value       : 'What i\'m good at.',
-    }
+    },
+    {
+        target      : 'experience-item-1-title',
+        value       : 'Full Stack Web & Desktop App Development',
+    },
+    {
+        target      : 'experience-item-1-subtitle',
+        value       : 'Design complete web application and websites. Work on front-end, back-end and database and debugging of web applications or websites',
+    },
+    {
+        target      : 'experience-item-2-title',
+        value       : 'API Design',
+    },
+    {
+        target      : 'experience-item-2-subtitle',
+        value       : 'Design data and application functionality for use by developers and users',
+    },
+    {
+        target      : 'experience-item-3-title',
+        value       : 'Software Performance & Scalability Optimization',
+    },
+    {
+        target      : 'experience-item-3-subtitle',
+        value       : 'Optimizing software performance for end use as well as keep the software vendor version up to date',
+    },
+    {
+        target      : 'works-title',
+        value       : 'Works',
+    },
+    {
+        target      : 'works-subtitle',
+        value       : 'What i\'m doing & have done',
+    },
+    {
+        target      : 'contacts-title',
+        value       : 'Contacts',
+    },
+    {
+        target      : 'contacts-subtitle',
+        value       : 'Wanna stay in touch',
+    },
+    {
+        target      : 'contacts-location',
+        value       : 'Location',
+    },
+    {
+        target      : 'contacts-phone',
+        value       : 'Phone',
+    },
+    {
+        target      : 'contacts-email',
+        value       : 'Email',
+    },
+    {
+        target      : 'contacts-web',
+        value       : 'Web',
+    },
 ];
 
 window.lang_id      = [
@@ -97,7 +153,63 @@ window.lang_id      = [
     {
         target      : 'experience-subtitle',
         value       : 'Apa yang saya kuasai.',
-    }
+    },
+    {
+        target      : 'experience-item-1-title',
+        value       : 'Full Stack Pengembangan Web & Aplikasi Desktop',
+    },
+    {
+        target      : 'experience-item-1-subtitle',
+        value       : 'Merancang aplikasi web dan desktop. Mengembangkan sisi front-end, back-end dan basis data serta debugging aplikasi web atau desktop',
+    },
+    {
+        target      : 'experience-item-2-title',
+        value       : 'Desain API',
+    },
+    {
+        target      : 'experience-item-2-subtitle',
+        value       : 'Merancang data dan fungsionalitas aplikasi untuk digunakan oleh pengguna atau pengembang lain',
+    },
+    {
+        target      : 'experience-item-3-title',
+        value       : 'Optimisasi Kinerja dan Skalabilitas Perangkat Lunak',
+    },
+    {
+        target      : 'experience-item-3-subtitle',
+        value       : 'Mengoptimalkan kinerja perangkat lunak untuk penggunaan akhir serta memperbahrui versi vendor perangkat lunak',
+    },
+    {
+        target      : 'works-title',
+        value       : 'Pekerjaan',
+    },
+    {
+        target      : 'works-subtitle',
+        value       : 'Yang Sedang dan pernah ku kerjakan',
+    },
+    {
+        target      : 'contacts-title',
+        value       : 'Kontak',
+    },
+    {
+        target      : 'contacts-subtitle',
+        value       : 'Ingin tetap berhubungan',
+    },
+    {
+        target      : 'contacts-location',
+        value       : 'Lokasi',
+    },
+    {
+        target      : 'contacts-phone',
+        value       : 'Ponsel',
+    },
+    {
+        target      : 'contacts-email',
+        value       : 'Email',
+    },
+    {
+        target      : 'contacts-web',
+        value       : 'Web',
+    },
 ];
 
 window.lang_cn      = [
@@ -148,5 +260,61 @@ window.lang_cn      = [
     {
         target      : 'experience-subtitle',
         value       : '我擅长什么。',
-    }
+    },
+    {
+        target      : 'experience-item-1-title',
+        value       : '全栈 Web 和桌面应用程序开发',
+    },
+    {
+        target      : 'experience-item-1-subtitle',
+        value       : '设计完整的 Web 应用程序和网站。从事Web应用程序或网站的前端，后端和数据库以及调试',
+    },
+    {
+        target      : 'experience-item-2-title',
+        value       : 'API 设计',
+    },
+    {
+        target      : 'experience-item-2-subtitle',
+        value       : '设计供开发人员和用户使用的数据和应用程序功能',
+    },
+    {
+        target      : 'experience-item-3-title',
+        value       : '软件性能和可扩展性优化',
+    },
+    {
+        target      : 'experience-item-3-subtitle',
+        value       : '优化最终用途的软件性能并保持软件供应商版本为最新',
+    },
+    {
+        target      : 'works-title',
+        value       : '作品',
+    },
+    {
+        target      : 'works-subtitle',
+        value       : '我在做什么和已经做什么',
+    },
+    {
+        target      : 'contacts-title',
+        value       : '联系人',
+    },
+    {
+        target      : 'contacts-subtitle',
+        value       : '想保持联系',
+    },
+    {
+        target      : 'contacts-location',
+        value       : '地点',
+    },
+    {
+        target      : 'contacts-phone',
+        value       : '电话',
+    },
+    {
+        target      : 'contacts-email',
+        value       : '电子邮件',
+    },
+    {
+        target      : 'contacts-web',
+        value       : '网站',
+    },
 ];
