@@ -39,6 +39,14 @@ window.lang_en      = [
         target      : 'about-intro-p2',
         value       : 'Beside that, actively doing researches in domain of electronic business, information systems and currently inventing new technology which can be applied into the process of digital transformation on education business.',
     },
+    {
+        target      : 'experience-title',
+        value       : 'Experience',
+    },
+    {
+        target      : 'experience-subtitle',
+        value       : 'What i\'m best at.',
+    }
 ];
 
 window.lang_id      = [
