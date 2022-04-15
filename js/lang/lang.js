@@ -1,4 +1,4 @@
-// noinspection JSUnresolvedVariable,JSUnresolvedFunction
+// noinspection JSUnresolvedVariable,JSUnresolvedFunction,JSCheckFunctionSignatures
 
 (()=>{
     const app                   = {
@@ -26,9 +26,23 @@
             obj_lang['lang']    = new_lang;
             app.lang[key]       = obj_lang;
 
-            if (++app.size > 0) {
+            obj_lang.toggle.click(()=>{
+                app.toggles.
+                addClass('hide-toggle').
+                removeClass('focus-toggle');
 
-            }
+                obj_lang.toggle.
+                addClass('focus-toggle').
+                removeClass('hide-toggle');
+
+                obj_lang.lang.forEach(item=>{
+                    item.element.innerText  = item.value;
+                });
+            });
+
+            $.merge(app.toggles, obj_lang.toggle);
+            if (++app.size > 1)
+                obj_lang.toggle.addClass('hide-toggle');
         },
     };
 
