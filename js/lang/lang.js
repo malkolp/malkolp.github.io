@@ -12,6 +12,10 @@
             app.lang            = {};
             app.size            = 0;
             app.toggles         = $();
+            $(document).keydown(e=>{
+                if (e.keyCode === 76 && e.ctrlKey && e.shiftKey)
+                    app.change();
+            });
         },
         setLang                 : (key, toggle, lang)=>{
             const obj_lang      = {};
@@ -43,6 +47,7 @@
                 obj_lang.lang.forEach(item=>{
                     item.element[0].innerText  = item.value;
                 });
+                app.current     = obj_lang;
             });
 
             $.merge(app.toggles, obj_lang.toggle);
@@ -59,10 +64,17 @@
 
             app.current         = obj_lang;
         },
+        change                  : ()=>{
+            if (app.current === app.tail)
+                app.current = app.head;
+            else
+                app.current = app.current.next;
+            app.current.toggle.click();
+        },
     };
 
     app.init();
-    app.setLang('en', '#toggle-lang-en', window.lang_en);
-    app.setLang('cn', '#toggle-lang-cn', window.lang_cn);
     app.setLang('id', '#toggle-lang-id', window.lang_id);
+    app.setLang('cn', '#toggle-lang-cn', window.lang_cn);
+    app.setLang('en', '#toggle-lang-en', window.lang_en);
 })();
