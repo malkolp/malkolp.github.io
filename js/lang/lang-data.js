@@ -45,7 +45,7 @@ window.lang_en      = [
     },
     {
         target      : 'experience-subtitle',
-        value       : 'What i\'m best at.',
+        value       : 'What i\'m good at.',
     }
 ];
 
@@ -74,4 +74,28 @@ window.lang_id      = [
         target      : 'subtitle-detail',
         value       : 'Teknisi & Pengembang Perangkat Lunak',
     },
+    {
+        target      : 'about-intro-title',
+        value       : 'Intro',
+    },
+    {
+        target      : 'about-intro-subtitle',
+        value       : 'Tentang saya',
+    },
+    {
+        target      : 'about-intro-p1',
+        value       : 'Saya Malik Pajar Lapele, seorang teknisi sekaligus pengembang perangkat lunak dengan pengalaman 5+ tahun di perusahaaan bank terbaik di Asia dan beberapa instansi pemerintah. Tersertifikasi Oracle Certified Master (OCM) dan memiliki pengetahuan inti dalam rekayasa perangkat lunak, peningkatan kinerja sistem, pengembangan berbagai jenis perangkat lunak dan berkontribusi dalam banyak proyek dengan tim global',
+    },
+    {
+        target      : 'about-intro-p2',
+        value       : 'Selain itu, aktif melakukan penelitian di ranah e-bisnis, sistem informasi dan saat ini sedang mengembangkan teknologi baru yang dapat diterapkan ke dalam proses transformasi digital pada bisnis pendidikan',
+    },
+    {
+        target      : 'experience-title',
+        value       : 'Pengalaman',
+    },
+    {
+        target      : 'experience-subtitle',
+        value       : 'Apa yang saya kuasai.',
+    }
 ];
