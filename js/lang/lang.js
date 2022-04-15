@@ -16,7 +16,7 @@
 
             lang.forEach(item=>{
                 new_lang.push({
-                    element     : document.getElementById(item.target),
+                    element     : $('[data-app-lang='+item.target+']'),
                     value       : item.value,
                 });
             });
@@ -36,7 +36,7 @@
                 removeClass('hide-toggle');
 
                 obj_lang.lang.forEach(item=>{
-                    item.element.innerText  = item.value;
+                    item.element[0].innerText  = item.value;
                 });
             });
 
