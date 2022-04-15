@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-    <!-- BEGIN HEAD -->
     <head>
         <meta charset="utf-8"/>
         <title>Malik's Resume</title>
@@ -94,17 +93,10 @@
             }
         </style>
     </head>
-    <!-- END HEAD -->
-
-    <!-- BODY -->
     <body id="body" data-spy="scroll" data-target=".header">
-
-        <!--========== HEADER ==========-->
         <header class="header navbar-fixed-top">
-            <!-- Navbar -->
             <nav class="navbar" role="navigation">
                 <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="menu-container js_nav-item">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
                             <span class="sr-only">Toggle navigation</span>
@@ -120,27 +112,22 @@
                         </div>
                         <!-- End Logo -->
                     </div>
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse nav-collapse">
                         <div class="menu-container">
                             <ul class="nav navbar-nav navbar-nav-right">
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">Home</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about">About</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#experience">Experience</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work">Work</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contact</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body" data-app-lang="nav-item-home">Home</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about" data-app-lang="nav-item-about">About</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#experience" data-app-lang="nav-item-experience">Experience</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work" data-app-lang="nav-item-work">Work</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact" data-app-lang="nav-item-contact">Contact</a></li>
+                                <li id="toggle-lang-id" class="nav-item"><a href="nav-item-child" href="javascript:void(0);">ID</a></li>
+                                <li id="toggle-lang-en" class="nav-item"><a href="nav-item-child" href="javascript:void(0);">EN</a></li>
                             </ul>
                         </div>
                     </div>
-                    <!-- End Navbar Collapse -->
                 </div>
             </nav>
-            <!-- Navbar -->
         </header>
-        <!--========== END HEADER ==========-->
-
-        <!--========== SLIDER ==========-->
         <div class="promo-block parallax-window" data-parallax="scroll" data-image-src="img/1920x1080/01.jpg">
             <div class="container">
                 <div class="row">
@@ -150,7 +137,7 @@
                     <div class="col-sm-6" style="">
                         <div class="promo-block-divider">
                             <h1 class="promo-block-title sm-text-center">Malik <br/> Lapele</h1>
-                            <p class="promo-block-text sm-text-center">Software Engineer &amp; Software Developer</p>
+                            <p class="promo-block-text sm-text-center" data-app-lang="subtitle-detail">Software Engineer &amp; Software Developer</p>
                         </div>
                         <ul class="list-inline sm-text-center">
                             <li><a href="https://facebook.com/dede.chickon" class="social-icons"><i class="icon-social-facebook"></i></a></li>
@@ -159,36 +146,29 @@
                         </ul>
                     </div>
                 </div>
-                <!--// end row -->
             </div>
         </div>
-        <!--========== SLIDER ==========-->
-
-        <!--========== PAGE LAYOUT ==========-->
-        <!-- About -->
         <div id="about">
             <div class="container content-lg">
                 <div class="row">
                     <div class="col-sm-3 sm-margin-b-30">
                         <div class="text-right sm-text-left">
-                            <h2 class="margin-b-0">Intro</h2>
-                            <p>What I am all about.</p>
+                            <h2 class="margin-b-0" data-app-lang="about-intro-title">Intro</h2>
+                            <p data-app-lang="about-intro-subtitle">What i am all about.</p>
                         </div>
                     </div>
                     <div class="col-sm-8 col-sm-offset-1">
                         <div class="margin-b-60">
-                            <p>
+                            <p data-app-lang="about-intro-p1">
                                 I'm Malik Pajar Lapele, Senior Software Engineer with 5+ years experience at the best bank company in Asia and some
                                 of government instances. Certified in Oracle Certified Master (OCM) and possess core knowledge in software engineering,
                                 increasing system performance, developing various kinds of software and contributing in countless projects with global teams.
                             </p>
-                            <p>
+                            <p data-app-lang="about-intro-p2">
                                 Beside that, actively doing researches in domain of electronic business, information systems and
                                 currently inventing new technology which can be applied into the process of digital transformation on education business.
                             </p>
                         </div>
-
-                        <!-- Progress Box -->
                         <div class="progress-box">
                             <h5>PHP <span class="color-heading pull-right">87%</span></h5>
                             <div class="progress">
@@ -219,15 +199,10 @@
                                 <div class="progress-bar bg-color-base" role="progressbar" data-width="98"></div>
                             </div>
                         </div>
-                        <!-- End Progress Box -->
                     </div>
                 </div>
-                <!--// end row -->
             </div>
         </div>
-        <!-- End About -->
-
-        <!-- Experience -->
         <div id="experience">
             <div class="bg-color-sky-light" data-auto-height="true">
                 <div class="container content-lg">
