@@ -48,5 +48,6 @@
 
     app.init();
     app.setLang('en', '#toggle-lang-en', window.lang_en);
+    app.setLang('cn', '#toggle-lang-cn', window.lang_cn);
     app.setLang('id', '#toggle-lang-id', window.lang_id);
 })();
