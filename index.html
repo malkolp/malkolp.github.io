@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--suppress JSUnresolvedFunction -->
+<!--suppress JSUnresolvedFunction, HtmlUnknownTarget -->
 <html lang="en" class="no-js">
     <head>
         <meta charset="utf-8"/>
@@ -15,80 +15,9 @@
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 
         <link href="css/animate.css" rel="stylesheet">
-
         <link href="css/layout.min.css" rel="stylesheet" type="text/css"/>
-
+        <link href="css/index-masonry.css" rel="stylesheet" type="text/css">
         <link rel="shortcut icon" href="favicon.ico"/>
-        <style>
-            .masonry-overlay {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                background-color:rgba(0,0,0,0);
-                height: 100%;
-                transition: background-color 300ms;
-            }
-            .masonry-overlay:hover {
-                background-color: rgba(0,0,0,0.4);
-                transition: background-color 300ms;
-            }
-            .masonry-title {
-                position: absolute;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                letter-spacing: 1.5pt;
-                font-weight: 600;
-                width: 100%;
-                height: 100%;
-                transition: all 500ms;
-            }
-            .masonry-title-default {
-                color: #566573;
-                font-size: 12pt;
-            }
-            .masonry-title-focus {
-                color: #FBFCFC;
-                font-size: 16pt;
-            }
-            .masonry-subtitle {
-                position: relative;
-                transition: all 400ms;
-                font-size: 8pt;
-            }
-            .masonry-subtitle-default {
-                height: 0;
-                opacity: 0;
-                top: -3rem;
-            }
-            .masonry-subtitle-focus {
-                height: auto;
-                display: block;
-                opacity: 1;
-                top: 0;
-            }
-            .masonry-logo {
-                text-align: center;
-                position: relative;
-                transition: all 400ms;
-            }
-            .masonry-logo img {
-                height: 60px;
-                display: block;
-            }
-            .masonry-logo-default {
-                opacity: 0;
-                height: 0;
-                top: 2rem;
-            }
-            .masonry-logo-focus {
-                opacity: 1;
-                height: auto;
-                top: 0;
-            }
-        </style>
     </head>
     <body id="body" data-spy="scroll" data-target=".header">
         <header class="header navbar-fixed-top">
@@ -115,8 +44,8 @@
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#experience" data-app-lang="nav-item-experience">Experience</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work" data-app-lang="nav-item-work">Work</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact" data-app-lang="nav-item-contact">Contact</a></li>
-                                <li id="toggle-lang-id" class="nav-item"><a href="nav-item-child" href="javascript:void(0);">ID</a></li>
-                                <li id="toggle-lang-en" class="nav-item"><a href="nav-item-child" href="javascript:void(0);">EN</a></li>
+                                <li id="toggle-lang-id" class="nav-item"><a class="nav-item-child" href="javascript:void(0);">ID</a></li>
+                                <li id="toggle-lang-en" class="nav-item"><a class="nav-item-child" href="javascript:void(0);">EN</a></li>
                             </ul>
                         </div>
                     </div>

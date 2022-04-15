@@ -1,0 +1,68 @@
+.masonry-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:rgba(0,0,0,0);
+    height: 100%;
+    transition: background-color 300ms;
+}
+.masonry-overlay:hover {
+    background-color: rgba(0,0,0,0.4);
+    transition: background-color 300ms;
+}
+.masonry-title {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1.5pt;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms;
+}
+.masonry-title-default {
+    color: #566573;
+    font-size: 12pt;
+}
+.masonry-title-focus {
+    color: #FBFCFC;
+    font-size: 16pt;
+}
+.masonry-subtitle {
+    position: relative;
+    transition: all 400ms;
+    font-size: 8pt;
+}
+.masonry-subtitle-default {
+    height: 0;
+    opacity: 0;
+    top: -3rem;
+}
+.masonry-subtitle-focus {
+    height: auto;
+    display: block;
+    opacity: 1;
+    top: 0;
+}
+.masonry-logo {
+    text-align: center;
+    position: relative;
+    transition: all 400ms;
+}
+.masonry-logo img {
+    height: 60px;
+    display: block;
+}
+.masonry-logo-default {
+    opacity: 0;
+    height: 0;
+    top: 2rem;
+}
+.masonry-logo-focus {
+    opacity: 1;
+    height: auto;
+    top: 0;
+}
