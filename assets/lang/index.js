@@ -120,6 +120,18 @@ window.lang_en      = [
         value       : 'hide',
     },
     {
+        target      : 'biography-p1',
+        value       : 'People knew him as Malik, a name on which written in many researches and software development project documents that have been contributed. Malik Pajar Lapele is the third child of husband and wide Aladdin and Saebi who was born in Banda Neira on March 18, 1999.',
+    },
+    {
+        target      : 'biography-p2',
+        value       : 'Since childhood, Malik has been fond of using and fiddling with computers. As time goes by, technology is getting more sophisticated. When he was in high school, at the age of 15, Malik began to hone his skills by studying computer languages such as Pascal and HTML to participating in the National Science Olympiad in the computer field.',
+    },
+    {
+        target      : 'biography-p3',
+        value       : 'Malik then began to take his passion seriously by studying at the Department of Informatics, University of Muhammadiyah Malang. During his studies, Malik\'s expertise in the field of computers increased very rapidly. During this time, Malik began to be asked to develop various types of computer programs, ranging from digital learning applications for elementary school students to document processing programs at Malang Customs.',
+    },
+    {
         target      : 'nav-top',
         value       : 'Top',
     }
@@ -247,6 +259,18 @@ window.lang_id      = [
         value       : 'sembunyikan',
     },
     {
+        target      : 'biography-p1',
+        value       : 'Orang-orang mengenalnya sebagai Malik, nama yang dicantumkan di banyak lembar persembahan penelitian dan dokumen proyek pengembangan perangkat lunak yang telah diberikan kontribusi. Malik Pajar Lapele merupakan anak ketiga dari pasangan suami istri Aladdin dan Saebi yang lahir di Banda Neira pada tanggal 18 Maret 1999.',
+    },
+    {
+        target      : 'biography-p2',
+        value       : 'Sejak kecil Malik memang gemar menggunakan hingga mengotak-atik komputer. Seiring berjalannya waktu, teknologi semakin canggih. Ketika SMA, tepatnya saat berumur 15 tahun, Malik mulai mengasah kemampuannya dengan mempelajari bahasa komputer seperti Pascal dan HTML hingga mengikuti ajang Olimpiade Sains Nasional di bidang komputer.',
+    },
+    {
+        target      : 'biography-p3',
+        value       : 'Malik kemudian mulai menyeriusi kegemarannya dengan berkuliah di jurusan Informatika Universitas Muhammadiyah Malang. Di masa perkuliahan, keahlian Malik di bidang komputer meningkat sangat pesat. Di masa inilah, Malik mulai dimintai mengembangkan berbagai jenis program komputer mulai dari aplikasi pembelajaran digital untuk siswa sekolah dasar hingga program pengolah dokumen di Bea Cukai Malang.',
+    },
+    {
         target      : 'nav-top',
         value       : 'Atas',
     }
@@ -372,6 +396,18 @@ window.lang_cn      = [
     {
         target      : 'read-more-miss',
         value       : '隐藏',
+    },
+    {
+        target      : 'biography-p1',
+        value       : '人们知道他是 Malik，这个名字写在许多研究和软件开发项目文档中。 Malik Pajar Lapele 是丈夫和广泛的阿拉丁和 Saebi 的第三个孩子，他于 1999 年 3 月 18 日出生在班达内拉。',
+    },
+    {
+        target      : 'biography-p2',
+        value       : '从小，马利克就喜欢使用和摆弄电脑。随着时间的推移，技术变得越来越复杂。上高中时，15 岁时，Malik 开始通过学习 Pascal 和 HTML 等计算机语言来磨练自己的技能，以参加计算机领域的全国科学奥林匹克竞赛。',
+    },
+    {
+        target      : 'biography-p3',
+        value       : 'Malik 随后开始认真对待他的热情，在 Muhammadiyah Malang 大学信息学系学习。在学习期间，马利克在计算机领域的专业知识增长得非常快。在此期间，Malik 开始被要求开发各种类型的计算机程序，从小学生的数字学习应用程序到玛琅海关的文件处理程序。',
     },
     {
         target      : 'nav-top',
