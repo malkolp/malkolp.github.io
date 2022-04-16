@@ -104,6 +104,22 @@ window.lang_en      = [
         value       : 'Web',
     },
     {
+        target      : 'biography',
+        value       : 'biography',
+    },
+    {
+        target      : 'biography-subtitle',
+        value       : 'Draw my life',
+    },
+    {
+        target      : 'read-more',
+        value       : 'read more',
+    },
+    {
+        target      : 'read-more-miss',
+        value       : 'hide',
+    },
+    {
         target      : 'nav-top',
         value       : 'Top',
     }
@@ -215,6 +231,22 @@ window.lang_id      = [
         value       : 'Web',
     },
     {
+        target      : 'biography',
+        value       : 'Biografi',
+    },
+    {
+        target      : 'biography-subtitle',
+        value       : 'Gambaran hidupku',
+    },
+    {
+        target      : 'read-more',
+        value       : 'baca selengkapnya',
+    },
+    {
+        target      : 'read-more-miss',
+        value       : 'sembunyikan',
+    },
+    {
         target      : 'nav-top',
         value       : 'Atas',
     }
@@ -324,6 +356,22 @@ window.lang_cn      = [
     {
         target      : 'contacts-web',
         value       : '网站',
+    },
+    {
+        target      : 'biography',
+        value       : '传',
+    },
+    {
+        target      : 'biography-subtitle',
+        value       : '画出我的人生',
+    },
+    {
+        target      : 'read-more',
+        value       : '阅读更多',
+    },
+    {
+        target      : 'read-more-miss',
+        value       : '隐藏',
     },
     {
         target      : 'nav-top',
