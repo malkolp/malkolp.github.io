@@ -140,6 +140,22 @@ window.lang_en      = [
         value       : 'Some of my crafts',
     },
     {
+        target      : 'app-1-title',
+        value       : 'JALC (Job Application Letter Creator)',
+    },
+    {
+        target      : 'app-1-subtitle',
+        value       : 'Create a job application letter quickly without the need to start from scratch. You only need to fill in the required data and the letter is ready to be downloaded or printed.',
+    },
+    {
+        target      : 'open',
+        value       : 'Open',
+    },
+    {
+        target      : 'sample',
+        value       : 'Sample',
+    },
+    {
         target      : 'nav-top',
         value       : 'Top',
     }
@@ -287,6 +303,22 @@ window.lang_id      = [
         value       : 'Beberapa buatanku',
     },
     {
+        target      : 'app-1-title',
+        value       : 'JALC (Pembuat Surat Lamaran Kerja)',
+    },
+    {
+        target      : 'open',
+        value       : 'Buka',
+    },
+    {
+        target      : 'sample',
+        value       : 'Contoh',
+    },
+    {
+        target      : 'app-1-subtitle',
+        value       : 'Buat surat lamaran kerja dengan cepat tanpa perlu memulai dari awal. Hanya perlu mengisi data-data yang diperlukan dan surat siap diunduh atau dicetak.',
+    },
+    {
         target      : 'nav-top',
         value       : 'Atas',
     }
@@ -432,6 +464,22 @@ window.lang_cn      = [
     {
         target      : 'apps-subtitle',
         value       : '我的一些手工艺品',
+    },
+    {
+        target      : 'app-1-title',
+        value       : 'JALC (求职信创建者)',
+    },
+    {
+        target      : 'app-1-subtitle',
+        value       : '快速创建求职信，无需从头开始。您只需要填写所需的数据，即可下载或打印信件。',
+    },
+    {
+        target      : 'open',
+        value       : '打开',
+    },
+    {
+        target      : 'sample',
+        value       : '样本',
     },
     {
         target      : 'nav-top',

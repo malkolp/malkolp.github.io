@@ -1,0 +1,73 @@
+.app {
+    padding: 10px;
+}
+
+.app-more {
+    position: relative;
+}
+
+.app-btn {
+    padding: 2px 0;
+    text-align: center;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.app-btn:hover {
+    transition: all 300ms;
+}
+
+.app-btn a {
+    font-weight: 500;
+}
+
+.app-btn-cyan {
+    background-color: #2aabd2;
+    border: solid 2px #2aabd2;
+}
+.app-btn-cyan:hover {
+    background-color: #2489A7;
+    border: solid 2px #2489A7;
+}
+.app-btn-cyan a {
+    color: #fff;
+}
+
+.app-btn-white {
+    background-color: #fff;
+    border: solid 2px #fff;
+}
+.app-btn-white:hover {
+    background-color: #DCD;
+    border: solid 2px #dcd;
+}
+.app-btn-white a {
+    color: #2489A7;
+}
+
+.app-btn-outline-cyan {
+    border: solid 2px #2aabd2;
+}
+.app-btn-outline-cyan:hover {
+    border: solid 2px #2489A7;
+}
+.app-btn-outline-cyan a {
+    color: #2aabd2;
+}
+
+.app-btn-outline-white {
+    border: solid 2px #fff;
+}
+.app-btn-outline-white:hover {
+    border: solid 2px #dcd;
+}
+.app-btn-outline-white a {
+    color: #fff;
+}
+
+.hide-overflow {
+    overflow: hidden;
+}
+.pos-relative {
+    position: relative;
+}
