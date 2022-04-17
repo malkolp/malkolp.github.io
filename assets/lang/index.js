@@ -132,6 +132,14 @@ window.lang_en      = [
         value       : 'Malik then began to take his passion seriously by studying at the Department of Informatics, University of Muhammadiyah Malang. During his studies, Malik\'s expertise in the field of computers increased very rapidly. During this time, Malik began to be asked to develop various types of computer programs, ranging from digital learning applications for elementary school students to document processing programs at Malang Customs.',
     },
     {
+        target      : 'apps',
+        value       : 'Apps',
+    },
+    {
+        target      : 'apps-subtitle',
+        value       : 'Some of my crafts',
+    },
+    {
         target      : 'nav-top',
         value       : 'Top',
     }
@@ -271,6 +279,14 @@ window.lang_id      = [
         value       : 'Malik kemudian mulai menyeriusi kegemarannya dengan berkuliah di jurusan Informatika Universitas Muhammadiyah Malang. Di masa perkuliahan, keahlian Malik di bidang komputer meningkat sangat pesat. Di masa inilah, Malik mulai dimintai mengembangkan berbagai jenis program komputer mulai dari aplikasi pembelajaran digital untuk siswa sekolah dasar hingga program pengolah dokumen di Bea Cukai Malang.',
     },
     {
+        target      : 'apps',
+        value       : 'Aplikasi',
+    },
+    {
+        target      : 'apps-subtitle',
+        value       : 'Beberapa buatanku',
+    },
+    {
         target      : 'nav-top',
         value       : 'Atas',
     }
@@ -408,6 +424,14 @@ window.lang_cn      = [
     {
         target      : 'biography-p3',
         value       : 'Malik 随后开始认真对待他的热情，在 Muhammadiyah Malang 大学信息学系学习。在学习期间，马利克在计算机领域的专业知识增长得非常快。在此期间，Malik 开始被要求开发各种类型的计算机程序，从小学生的数字学习应用程序到玛琅海关的文件处理程序。',
+    },
+    {
+        target      : 'apps',
+        value       : '应用',
+    },
+    {
+        target      : 'apps-subtitle',
+        value       : '我的一些手工艺品',
     },
     {
         target      : 'nav-top',
