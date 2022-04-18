@@ -1,6 +1,15 @@
-// noinspection JSUnresolvedFunction
+// noinspection JSUnresolvedFunction,JSCheckFunctionSignatures
 
 window.preloader    = {
+    init            : ()=>{
+        $('[data-redirect]').each((i, e)=>{
+            $(e).click(()=>{
+                console.log('clicked');
+                preloader.redirect(e.getAttribute('data-redirect'));
+            });
+        });
+        return preloader;
+    },
     fadeIn          : ()=>{
         $('#loader-wrapper').fadeIn();
     },
@@ -16,4 +25,7 @@ window.preloader    = {
         }, 2000);
     },
 };
-preloader.fadeOut();
+
+preloader.
+init().
+fadeOut();

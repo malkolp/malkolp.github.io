@@ -1,14 +1,14 @@
 // noinspection JSUnresolvedFunction,JSCheckFunctionSignatures
 
-((first='firstElementChild', last='lastElementChild', add='addClass')=>{
+((first='firstElementChild', last='lastElementChild', add='addClass', sat='setAttribute')=>{
     $('.app').each((i, e)=>{
         const title         = $(e[first][first]);
         const btn_open      = $(e[last][first]);
         const btn_sample    = $(e[last][last]);
 
         title[add]('hide-overflow');
-        btn_open[add]('hide-overflow')[add]('pos-relative');
-        btn_sample[add]('hide-overflow')[add]('pos-relative');
+        btn_open[add]('hide-overflow')[add]('pos-relative')[0][sat]('style', 'opacity:0;');
+        btn_sample[add]('hide-overflow')[add]('pos-relative')[0][sat]('style', 'opacity:0;');
 
         $(e).
         mouseenter(()=>{

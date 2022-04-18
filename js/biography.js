@@ -10,6 +10,7 @@
 
     (()=>{
         elements.forEach(e=>{
+            e.dataHeight    = e.offsetHeight;
             e.setAttribute('style', 'top:-300px;height:0px;opacity:0;');
         });
     })();
@@ -17,7 +18,7 @@
     btnMore.click(()=>{
         let delay   = 0;
         for (let i = 0; i < elements.length; i++) {
-            $(elements[i]).delay(delay).animate({top:'0px', height:'100%', opacity:'1'}, 'slow');
+            $(elements[i]).delay(delay).animate({top:'0px', height:elements[i].dataHeight+'px', opacity:'1'});
             delay += 50;
         }
         btnLess.removeClass('hide-btn');
@@ -26,7 +27,7 @@
     btnLess.click(()=>{
         let delay   = 0;
         for (let i = elements.length - 1; i >= 0; i--) {
-            $(elements[i]).delay(delay).animate({top:'-300px',height:'0px', opacity:'0'}, 'slow');
+            $(elements[i]).delay(delay).animate({top:'-300px',height:'0px', opacity:'0'});
             delay += 50;
         }
         btnLess.addClass('hide-btn');
