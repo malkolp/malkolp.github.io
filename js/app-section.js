@@ -12,12 +12,13 @@
 
         $(e).
         mouseenter(()=>{
+            title[0].dataHeight         = title[0].offsetHeight;
             title.animate({height:'0px', opacity:'0'},);
             btn_open.animate({height:'100%', bottom:'0px', opacity:'1'},);
             btn_sample.animate({height:'100%', bottom:'0px', opacity:'1'},);
         }).
         mouseleave(()=>{
-            title.animate({height:'100%', opacity:'1'},);
+            title.animate({height:title[0].dataHeight+'px', opacity:'1'},);
             btn_open.animate({height:'0px', bottom:'-25px', opacity:'0'},);
             btn_sample.animate({height:'0px', bottom:'-25px', opacity:'0'},);
         });
