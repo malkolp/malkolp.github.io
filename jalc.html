@@ -1,10 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <title>JALC</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <link href="assets/apps/jalc/img/favicon.png" rel="icon">
+    <link href="assets/apps/jalc/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="assets/apps/jalc/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="assets/apps/jalc/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/apps/jalc/lib/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/apps/jalc/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/apps/jalc/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="assets/apps/jalc/lib/modal-video/css/modal-video.min.css" rel="stylesheet">
+
+    <link href="assets/apps/jalc/css/style.css" rel="stylesheet">
+    <link href="assets/apps/jalc/css/addition.css" rel="stylesheet">
 </head>
 <body>
+<header id="header" class="header header-hide" data-page="main">
+    <div class="container">
+        <div id="logo" class="pull-left">
+            <h1><a href="#body" class="scrollto"><span>J</span>ALC</a></h1>
+        </div>
+
+        <nav id="nav-menu-container">
+            <ul class="nav-menu">
+                <li class="menu-active"><a href="#hero">Home</a></li>
+                <li><a href="#get-started">Create new</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section id="hero" class="wow fadeIn" data-page="main">
+    <div class="hero-container">
+        <h1 style="">Welcome to JALC</h1>
+        <h2>Simple Job Application Letter Creator</h2>
+        <img src="assets/apps/jalc/img/hero-img.png" alt="Hero Imgs" class="hero-pic">
+        <a href="#get-started" class="btn-get-started scrollto">Create One</a>
+    </div>
+</section>
+<section id="get-started" class="padd-section text-center wow fadeInUp" data-page="main">
+    <div class="container">
+        <div class="section-title text-center">
+
+            <h2>Letter Templates</h2>
+            <p class="separator">Choose a job letter application template to start.</p>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-block">
+                    <img src="assets/apps/jalc/img/svg/cloud.svg" alt="img" class="img-fluid">
+                    <h4>Default</h4>
+                    <p>Simple but compact template. Very basic & no given style at all.</p>
+                    <a id="use-default" href="javascript:void(0)">use this</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-block">
+                    <img src="assets/apps/jalc/img/svg/planet.svg" alt="img" class="img-fluid">
+                    <h4>Stylish</h4>
+                    <p>beautify your job application letter. Make it looks more stylish.</p>
+                    <a id="use-stylish" href="javascript:void(0)">use this</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-block">
+                    <img src="assets/apps/jalc/img/svg/asteroid.svg" alt="img" class="img-fluid">
+                    <h4>Timeline Experience</h4>
+                    <p>Possessing lot of experiences. Tell them by built it into paragraphs.</p>
+                    <a id="use-timeline" href="javascript:void(0)">use this</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section data-page="launch-default">
+    <div class="app-section">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title border-bottom text-capitalize text-center pb-1">Your Profile</h4>
+                <div>
+                    <div class="mt-3">
+                        <label for="f-d-name" class="d-block small text-muted">Name</label>
+                        <input id="f-d-name" type="text" class="form-control form-control-sm" placeholder="name">
+                    </div>
+                    <div class="mt-3">
+                        <label for="f-d-placeOfBirth" class="d-block small text-muted">Place / date of birth</label>
+                        <div class="d-flex flex-row">
+                            <div class="flex-grow-0 mr-3" style="width: 40%">
+                                <input id="f-d-placeOfBirth" type="text" class="form-control form-control-sm" placeholder="place">
+                            </div>
+                            <div class="flex-grow-1">
+                                <label for="f-d-dateOfBirth" class="d-none"></label>
+                                <input id="f-d-dateOfBirth" type="date" class="form-control form-control-sm">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <label for="f-d-gender" class="d-block small text-muted">Gender</label>
+                        <select id="f-d-gender" class="form-control form-control-sm">
+                            <option value="laki-laki" selected>Male</option>
+                            <option value="perempuan">Female</option>
+                        </select>
+                    </div>
+                    <div class="mt-3">
+                        <label for="f-d-education" class="d-block small text-muted">Education background</label>
+                        <select id="f-d-education" class="form-control form-control-sm">
+                            <option value="1">Elementary School</option>
+                            <option value="2">Junior High School</option>
+                            <option value="3" selected>Senior High School</option>
+                            <option value="4">Diploma</option>
+                            <option value="5">Bachelor</option>
+                            <option value="6">Master</option>
+                            <option value="7">Doctoral</option>
+                        </select>
+                    </div>
+                    <div class="mt-3">
+                        <label for="f-d-majoring" class="d-block small text-muted">Majoring</label>
+                        <input id="f-d-majoring" type="text" class="form-control form-control-sm" placeholder="majoring">
+                    </div>
+                    <div class="mt-3">
+                        <label for="f-d-address" class="d-block small text-muted">Address</label>
+                        <input id="f-d-address" type="text" class="form-control form-control-sm" placeholder="address">
+                    </div>
+                    <div class="mt-3">
+                        <label for="f-d-phone" class="d-block small text-muted">Phone</label>
+                        <input id="f-d-phone" type="text" class="form-control form-control-sm" placeholder="phone number">
+                    </div>
+                    <div id="f-d-profile-anchor" class="mt-4">
+                        <div id="f-d-profile-add-form" class="app-btn-text">
+                            <i class="fa fa-plus"></i>
+                            <span>add form</span>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row mt-3 pt-5 border-top">
+                        <div class="flex-grow-0">
+                            <button id="f-d-act-cancel" class="app-btn app-btn-secondary small">Cancel</button>
+                        </div>
+                        <div class="flex-grow-1"></div>
+                        <div class="flex-grow-0">
+                            <button id="f-d-act-next-1" class="app-btn app-btn-info small">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section data-page="page-default-2">
+    <div class="app-section">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title border-bottom text-capitalize text-center pb-1">Your Attachments</h4>
+                <div>
+                    <div id="f-d-attachment-anchor" class="mt-4">
+                        <div id="f-d-attachment-add-form" class="app-btn-text">
+                            <i class="fa fa-plus"></i>
+                            <span>add form</span>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row mt-3 pt-5 border-top">
+                        <div class="flex-grow-0">
+                            <button id="f-d-act-prev-1" class="app-btn app-btn-secondary small">Previous</button>
+                        </div>
+                        <div class="flex-grow-1"></div>
+                        <div class="flex-grow-0">
+                            <button id="f-d-act-next-2" class="app-btn app-btn-info small">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section data-page="page-default-3">
+    <div class="app-section">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title border-bottom text-capitalize text-center pb-1">Target Company</h4>
+                <div>
+                    <div class="mt-3">
+                        <label for="f-d-companyName" class="d-block small text-muted">Company name</label>
+                        <input id="f-d-companyName" type="text" class="form-control form-control-sm" placeholder="company name">
+                    </div>
+                    <div class="mt-3">
+                        <label for="f-d-applyPosition" class="d-block small text-muted">Apply for position</label>
+                        <input id="f-d-applyPosition" type="text" class="form-control form-control-sm" placeholder="position">
+                    </div>
+                    <div class="mt-3">
+                        <label for="f-d-placeOfApply" class="d-block small text-muted">Place / date of apply</label>
+                        <div class="d-flex flex-row">
+                            <div class="flex-grow-0 mr-3" style="width: 40%">
+                                <input id="f-d-placeOfApply" type="text" class="form-control form-control-sm" placeholder="place">
+                            </div>
+                            <div class="flex-grow-1">
+                                <label for="f-d-dateOfApply" class="d-none"></label>
+                                <input id="f-d-dateOfApply" type="date" class="form-control form-control-sm">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <label for="f-d-signature" class="d-block small text-muted">Signature</label>
+                        <div id="f-d-signature-prev-ctr" class="img-previewer">
+                            <div class="position-absolute">
+                                <button id="f-d-signature-del" class="app-btn app-btn-danger small">Delete</button>
+                            </div>
+                            <div>
+                                <img id="f-d-signature-prev" src="" alt="">
+                            </div>
+                        </div>
+                        <div id="f-d-signature-ui-ctr" class="custom-file small">
+                            <label for="f-d-signature" class="custom-file-label">browse file</label>
+                            <input id="f-d-signature" type="file" accept="image/*" class="custom-file-input">
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row mt-3 pt-5 border-top">
+                        <div class="flex-grow-0">
+                            <button id="f-d-act-prev-2" class="app-btn app-btn-secondary small">Previous</button>
+                        </div>
+                        <div class="flex-grow-1"></div>
+                        <div class="flex-grow-0">
+                            <button id="f-d-act-generate" class="app-btn app-btn-info small">Generate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section data-page="page-default-4">
+    <div class="d-flex flex-column align-content-center justify-content-center">
+        <h4 class="text-center text-capitalize mt-4 mb-2">choose layout</h4>
+        <div class="choose-template padd-section text-center wow fadeInUp">
+            <div class="container">
+                <div class="feature-block d-inline-block mr-2" data-gen-template="f_d_simple" data-form="default">
+                    <img src="assets/apps/jalc/img/template/template-def-1.svg" alt="img">
+                    <h5>simple</h5>
+                </div>
+                <div class="feature-block d-inline-block ml-2" data-gen-template="f_d_sidebar" data-form="default">
+                    <img src="assets/apps/jalc/img/template/template-def-2.svg" alt="img">
+                    <h5>sidebar</h5>
+                </div>
+            </div>
+        </div>
+        <div class="flex-grow-0 text-center">
+            <div>
+                <div id="f-d-act-prev-3" class="app-btn-text">
+                    <span>Back</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section data-page="launch-stylish">
+    <div class="app-section">
+
+    </div>
+</section>
+<section data-page="launch-timeline">
+    <div class="app-section">
+
+    </div>
+</section>
+<footer class="footer">
+    <div class="copyrights">
+        <div class="container">
+            <p>&copy; Copyrights JALC. All rights reserved.</p>
+            <div class="credits">
+                Developed by <a href="index.html">Malko</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+<iframe id="print" src="printed/print-source.html" frameborder="0" class="d-none"></iframe>
+
+<script src="assets/apps/jalc/lib/jquery/jquery.min.js"></script>
+<script src="assets/apps/jalc/lib/jquery/jquery-migrate.min.js"></script>
+<script src="assets/apps/jalc/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/apps/jalc/lib/superfish/hoverIntent.js"></script>
+<script src="assets/apps/jalc/lib/superfish/superfish.min.js"></script>
+<script src="assets/apps/jalc/lib/easing/easing.min.js"></script>
+<script src="assets/apps/jalc/lib/modal-video/js/modal-video.js"></script>
+<script src="assets/apps/jalc/lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="assets/apps/jalc/lib/wow/wow.min.js"></script>
+<script src="js/notice.min.js"></script>
+
+<script src="js/page-switcher.js"></script>
+<script src="js/notify.js"></script>
+<script src="assets/apps/jalc/js/form_.js"></script>
+<script src="assets/apps/jalc/js/generator_.js"></script>
+
+<script src="assets/apps/jalc/js/main.js"></script>
+<script src="assets/apps/jalc/js/app.js"></script>
 
 </body>
 </html>
