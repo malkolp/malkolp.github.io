@@ -90,7 +90,11 @@
 
     //main page
     $('#use-default').click(()=>{
-        page_switcher.focus('launch-default');
+        preloader.fadeIn();
+        setTimeout(()=>{
+            page_switcher.focus('launch-default');
+            preloader.fadeOut();
+        }, 300);
     });
     $('#use-stylish').click(()=>{
         page_switcher.focus('launch-stylish');
@@ -101,8 +105,12 @@
 
     //default template
     $('#f-d-act-cancel').click(()=>{
-        page_switcher.focus('main');
-        form.forms['f-d'].clear();
+        preloader.fadeIn();
+        setTimeout(()=>{
+            page_switcher.focus('main');
+            form.forms['f-d'].clear();
+            preloader.fadeOut();
+        }, 100);
     });
     $('#f-d-act-prev-1').click(()=>{
         page_switcher.focus('launch-default');
@@ -139,7 +147,9 @@
 
             frm.checkError(f=>{
                 tmp.generate(f.getData());
+                preloader.fadeIn();
                 setTimeout(()=>{
+                    preloader.fadeOut();
                    tmp.print();
                 }, 1000);
             }, ()=>{
