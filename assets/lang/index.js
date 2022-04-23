@@ -156,6 +156,14 @@ window.lang_en      = [
         value       : 'Modified mark-up language designed for fast-end thesis writing. Using raw text as input makes the system so abstract that it can be applied into any kind of programs or platforms.',
     },
     {
+        target      : 'app-3-title',
+        value       : 'QCG (QR-Code Generator)',
+    },
+    {
+        target      : 'app-3-subtitle',
+        value       : 'QR-code has been widely used in domain of digital business for fast identification or authentication process. Here is small app for generate QR-code instantly.',
+    },
+    {
         target      : 'open',
         value       : 'Open',
     },
@@ -327,6 +335,14 @@ window.lang_id      = [
         value       : 'Bahasa mark-up yang dimodifikasi dan dirancang untuk menulis tesis secara cepat. Penggunaan teks mentah sebagai input membuat sistem menjadi sangat abstrak sehingga dapat diterapkan ke berbagai jenis program maupun perangkat.',
     },
     {
+        target      : 'app-3-title',
+        value       : 'QCG (Pembuat Kode QR)',
+    },
+    {
+        target      : 'app-3-subtitle',
+        value       : 'Kode QR telah banyak digunakan dalam domain bisnis digital untuk proses identifikasi atau otentikasi secara cepat. Ini adalah aplikasi kecil untuk menghasilkan kode QR secara instan.',
+    },
+    {
         target      : 'open',
         value       : 'Buka',
     },
@@ -496,6 +512,14 @@ window.lang_cn      = [
     {
         target      : 'app-2-subtitle',
         value       : '修改后的标记语言，专为快速论文写作而设计。使用原始文本作为输入使系统如此抽象，以至于它可以应用于任何类型的程序或平台。.',
+    },
+    {
+        target      : 'app-3-title',
+        value       : 'QCG (QR 发电机)',
+    },
+    {
+        target      : 'app-3-subtitle',
+        value       : '二维码已广泛用于数字业务领域，用于快速识别或认证过程。这是立即生成二维码的小应用程序。',
     },
     {
         target      : 'open',

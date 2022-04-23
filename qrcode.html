@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>QR Code Generator</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <link href="assets/apps/qrcode/img/favicon.png" rel="icon">
+    <link href="assets/apps/qrcode/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="assets/apps/qrcode/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="assets/apps/qrcode/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/apps/qrcode/lib/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/apps/qrcode/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/apps/qrcode/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="assets/apps/qrcode/lib/modal-video/css/modal-video.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/apps/qrcode/lib/color-picker/coloris.min.css">
+
+    <link href="assets/apps/qrcode/css/style.css" rel="stylesheet">
+    <link href="assets/apps/qrcode/css/addition.css" rel="stylesheet">
+    <style>
+        input {
+            width: 100%;
+            height: 32px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: inherit;
+            font-weight: inherit;
+            box-sizing: border-box;
+        }
+
+        .pickers {
+        }
+
+        .picker {
+            flex-shrink: 0;
+        }
+
+        .square .clr-field button,
+        .circle .clr-field button {
+            width: 22px;
+            height: 22px;
+            left: 5px;
+            right: auto;
+            border-radius: 5px;
+        }
+
+        .square .clr-field input,
+        .circle .clr-field input {
+            padding-left: 36px;
+        }
+
+        .circle .clr-field button {
+            border-radius: 50%;
+        }
+
+        .full .clr-field button {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<div id="loader-wrapper">
+    <div id="loader"></div>
+</div>
+<section data-page="launch-default">
+    <div class="app-section">
+        <div class="card mr-3">
+            <div class="card-body">
+                <h4 class="card-title border-bottom text-capitalize text-center pb-1">QR Generator</h4>
+                <div>
+                    <div class="mt-3">
+                        <label for="qr-text" class="d-block small text-muted">Text</label>
+                        <div class="d-flex flex-row">
+                            <div class="flex-grow-1">
+                                <input id="qr-text" type="text" class="form-control form-control-sm" placeholder="text">
+                            </div>
+                            <div class="flex-grow-0 ml-2">
+                                <button id="rand-text" class="app-btn app-btn-pad-small app-btn-info small" title="random"><i class="fa fa-gear"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <div class="d-flex flex-row">
+                            <div class="flex-grow-1 mr-1">
+                                <label for="background-pick" class="d-block small text-muted">Background</label>
+                                <div class="pickers">
+                                    <div class="picker square">
+                                        <input id="background-pick" type="text" class="coloris" value="#ffffff">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-grow-1 ml-1">
+                                <label for="foreground-pick" class="d-block small text-muted">Foreground</label>
+                                <div class="pickers">
+                                    <div class="picker square">
+                                        <input id="foreground-pick" type="text" class="coloris" value="#000000">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row mt-3 pt-5 border-top">
+                        <div class="flex-grow-1"></div>
+                        <div class="flex-grow-0">
+                            <button id="download" class="app-btn app-btn-pad app-btn-info small">Download</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="qr-preview" class="ml-3">
+            <div id="qr-code"></div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="copyrights">
+        <div class="container">
+            <p>&copy; Copyrights QRGenerator. All rights reserved.</p>
+            <div class="credits">
+                Developed by <a href="https://bootstrapmade.com/">Malko</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<script src="assets/apps/qrcode/lib/jquery/jquery.min.js"></script>
+<script src="assets/apps/qrcode/lib/jquery/jquery-migrate.min.js"></script>
+<script src="assets/apps/qrcode/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/apps/qrcode/lib/superfish/hoverIntent.js"></script>
+<script src="assets/apps/qrcode/lib/superfish/superfish.min.js"></script>
+<script src="assets/apps/qrcode/lib/easing/easing.min.js"></script>
+<script src="assets/apps/qrcode/lib/modal-video/js/modal-video.js"></script>
+<script src="assets/apps/qrcode/lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="assets/apps/qrcode/lib/wow/wow.min.js"></script>
+<script src="js/preloader.js"></script>
+
+<script type="text/javascript" src="assets/apps/qrcode/lib/color-picker/coloris.min.js"></script>
+<script type="text/javascript" src="assets/apps/qrcode/lib/qr-code/qrcode.min.js"></script>
+
+<script src="assets/apps/qrcode/js/main.js"></script>
+<script src="assets/apps/qrcode/js/app.js"></script>
+
+<script>
+</script>
+
+</body>
+</html>
