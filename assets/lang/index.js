@@ -148,6 +148,14 @@ window.lang_en      = [
         value       : 'Create a job application letter quickly without the need to start from scratch. You only need to fill in the required data and the letter is ready to be downloaded or printed.',
     },
     {
+        target      : 'app-2-title',
+        value       : 'FASEN-TW (Fast-end Thesis Writing)',
+    },
+    {
+        target      : 'app-2-subtitle',
+        value       : 'Modified mark-up language designed for fast-end thesis writing. Using raw text as input makes the system so abstract that it can be applied into any kind of programs or platforms.',
+    },
+    {
         target      : 'open',
         value       : 'Open',
     },
@@ -307,16 +315,24 @@ window.lang_id      = [
         value       : 'JALC (Pembuat Surat Lamaran Kerja)',
     },
     {
+        target      : 'app-1-subtitle',
+        value       : 'Buat surat lamaran kerja dengan cepat tanpa perlu memulai dari awal. Hanya perlu mengisi data-data yang diperlukan dan surat siap diunduh atau dicetak.',
+    },
+    {
+        target      : 'app-2-title',
+        value       : 'FASEN-TW (Penulisan Tesis Secara Cepat)',
+    },
+    {
+        target      : 'app-2-subtitle',
+        value       : 'Bahasa mark-up yang dimodifikasi dan dirancang untuk menulis tesis secara cepat. Penggunaan teks mentah sebagai input membuat sistem menjadi sangat abstrak sehingga dapat diterapkan ke berbagai jenis program maupun perangkat.',
+    },
+    {
         target      : 'open',
         value       : 'Buka',
     },
     {
         target      : 'sample',
         value       : 'Contoh',
-    },
-    {
-        target      : 'app-1-subtitle',
-        value       : 'Buat surat lamaran kerja dengan cepat tanpa perlu memulai dari awal. Hanya perlu mengisi data-data yang diperlukan dan surat siap diunduh atau dicetak.',
     },
     {
         target      : 'nav-top',
@@ -472,6 +488,14 @@ window.lang_cn      = [
     {
         target      : 'app-1-subtitle',
         value       : '快速创建求职信，无需从头开始。您只需要填写所需的数据，即可下载或打印信件。',
+    },
+    {
+        target      : 'app-2-title',
+        value       : 'FASEN-TW (快速结束论文写作)',
+    },
+    {
+        target      : 'app-2-subtitle',
+        value       : '修改后的标记语言，专为快速论文写作而设计。使用原始文本作为输入使系统如此抽象，以至于它可以应用于任何类型的程序或平台。.',
     },
     {
         target      : 'open',
