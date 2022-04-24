@@ -1,3 +1,5 @@
+// noinspection JSCheckFunctionSignatures
+
 jQuery(document).ready(function( $ ) {
 
     $(window).scroll(function () {
@@ -141,4 +143,8 @@ jQuery(document).ready(function( $ ) {
     page_switcher.set('page-default-3');
     page_switcher.set('page-default-4');
     page_switcher.focus('main');
+
+    $('[data-redirect]').click(e=>{
+        preloader.redirect(e.target.getAttribute('data-redirect'));
+    });
 });

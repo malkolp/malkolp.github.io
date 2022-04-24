@@ -1,3 +1,5 @@
+// noinspection JSCheckFunctionSignatures
+
 jQuery(document).ready(function( $ ) {
 
     $(window).scroll(function () {
@@ -132,4 +134,7 @@ jQuery(document).ready(function( $ ) {
     });
 
     // custom code
+    $('[data-redirect]').click(e=>{
+        preloader.redirect(e.target.getAttribute('data-redirect'));
+    });
 });
