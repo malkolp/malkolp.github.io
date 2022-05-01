@@ -2401,7 +2401,7 @@
             size        : 0,
             used        : undefined,
             root        : (()=>{
-                return window.location.href.replace(/fasen-tw\.html#*/, '');
+                return window.location.href.replace('fasen-tw.html', '');
             })(),
             ui          : $('#template-chooser-body-in'),
             stylesheet  : $('#template-stylesheet'),
