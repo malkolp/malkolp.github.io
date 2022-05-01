@@ -33,7 +33,7 @@ window.lang_en      = [
     },
     {
         target      : 'about-intro-p1',
-        value       : 'I\'m Malik Pajar Lapele, Senior Software Engineer with 5+ years experience at the best bank company in Asia and some of government instances. Certified in Oracle Certified Master (OCM) and possess core knowledge in software engineering, increasing system performance, developing various kinds of software and contributing in countless projects with global teams.',
+        value       : 'I\'m Malik Pajar Lapele, Senior Software Engineer with 5+ years experience at some of government instances. Certified in Oracle Certified Master (OCM) and possess core knowledge in software engineering, increasing system performance, developing various kinds of software and contributing in countless projects with global teams.',
     },
     {
         target      : 'about-intro-p2',
@@ -121,7 +121,7 @@ window.lang_en      = [
     },
     {
         target      : 'biography-p1',
-        value       : 'People knew him as Malik, a name on which written in many researches and software development project documents that have been contributed. Malik Pajar Lapele is the third child of husband and wide Aladdin and Saebi who was born in Banda Neira on March 18, 1999.',
+        value       : 'People knew him as Malik, a name on which written in many researches and software development project documents that have been contributed. Malik Pajar Lapele is the fourth child of husband and wide Aladdin and Saebi who was born in Banda Neira on March 18, 1999.',
     },
     {
         target      : 'biography-p2',
@@ -212,7 +212,7 @@ window.lang_id      = [
     },
     {
         target      : 'about-intro-p1',
-        value       : 'Saya Malik Pajar Lapele, seorang teknisi sekaligus pengembang perangkat lunak dengan pengalaman 5+ tahun di perusahaaan bank terbaik di Asia dan beberapa instansi pemerintah. Tersertifikasi Oracle Certified Master (OCM) dan memiliki pengetahuan inti dalam rekayasa perangkat lunak, peningkatan kinerja sistem, pengembangan berbagai jenis perangkat lunak dan berkontribusi dalam banyak proyek dengan tim global.',
+        value       : 'Saya Malik Pajar Lapele, seorang teknisi sekaligus pengembang perangkat lunak dengan pengalaman 5+ tahun di beberapa instansi pemerintah. Tersertifikasi Oracle Certified Master (OCM) dan memiliki pengetahuan inti dalam rekayasa perangkat lunak, peningkatan kinerja sistem, pengembangan berbagai jenis perangkat lunak dan berkontribusi dalam banyak proyek dengan tim global.',
     },
     {
         target      : 'about-intro-p2',
@@ -300,7 +300,7 @@ window.lang_id      = [
     },
     {
         target      : 'biography-p1',
-        value       : 'Orang-orang mengenalnya sebagai Malik, nama yang dicantumkan di banyak lembar persembahan penelitian dan dokumen proyek pengembangan perangkat lunak yang telah diberikan kontribusi. Malik Pajar Lapele merupakan anak ketiga dari pasangan suami istri Aladdin dan Saebi yang lahir di Banda Neira pada tanggal 18 Maret 1999.',
+        value       : 'Orang-orang mengenalnya sebagai Malik, nama yang dicantumkan di banyak lembar persembahan penelitian dan dokumen proyek pengembangan perangkat lunak yang telah diberikan kontribusi. Malik Pajar Lapele merupakan anak keempat dari pasangan suami istri Aladdin dan Saebi yang lahir di Banda Neira pada tanggal 18 Maret 1999.',
     },
     {
         target      : 'biography-p2',
