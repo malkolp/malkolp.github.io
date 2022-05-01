@@ -1,0 +1,33 @@
+.active,.spinner-active,.nav-link:hover {
+    color: #5ed6b3!important;
+}
+
+.form-search-ctr {
+    display: table;
+    width: 100%;
+    height: 70vh;
+}
+
+.form-search-body {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10vh 0 30vh;
+}
+
+.form-search {
+    background-color: white;
+    border: solid #9d9d9d 1px;
+    padding: 1.5rem;
+    transition: all 300ms;
+}
+
+.form-search:focus {
+    background-color: white;
+    border: solid rgba(94, 214, 179, 0.5) 2px;
+    transition: all 300ms;
+}
+
+#package-section, #features-section, #digital-marketing-section, #lp-navbar-item-3 {
+    opacity: 1;
+    transition: opacity 300ms;
+}

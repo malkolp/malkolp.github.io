@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FASEN-TW</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/apps/fasen-tw/assets/images/logo-icon.png">
+    <link rel="stylesheet" href="assets/apps/fasen-tw/assets/landing/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/apps/fasen-tw/assets/landing/owl-carousel/css/owl.theme.default.css">
+    <link rel="stylesheet" href="assets/apps/fasen-tw/assets/landing/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/apps/fasen-tw/assets/landing/aos/css/aos.css">
+    <link rel="stylesheet" href="assets/apps/fasen-tw/dist/css/landing/landing/style.min.css">
+    <link href="assets/apps/fasen-tw/dist/css/style.min.css" rel="stylesheet">
+    <meta name="pkg" content="noPkg">
+    <meta name="path_umm" content="assets/apps/fasen-tw/assets/template/umm/">
+    <meta name="path_unpad" content="assets/apps/fasen-tw/assets/template/unpad/">
+    <meta name="path_ub" content="assets/apps/fasen-tw/assets/template/ub/">
+    <meta name="path_its" content="assets/apps/fasen-tw/assets/template/its/">
+    <meta name="path_itb" content="assets/apps/fasen-tw/assets/template/itb/">
+    <link href="assets/apps/fasen-tw/dist/css/added.css" rel="stylesheet">
+    <link href="assets/apps/fasen-tw/dist/css/highlighter.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/apps/fasen-tw/dist/css/landing/added.css">
+    <link rel="stylesheet" href="assets/apps/fasen-tw/dist/css/complete-landing.css">
+    <link rel="stylesheet" href="assets/apps/fasen-tw/dist/css/image-handler.css">
+    <link rel="stylesheet" href="assets/apps/fasen-tw/assets/extra-libs/prism/prism.css">
+    <link id="template-stylesheet" rel="stylesheet" href="">
+    <script src="assets/apps/fasen-tw/assets/extra-libs/prism/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.js" integrity="sha384-483A6DwYfKeDa0Q52fJmxFXkcPCFfnXMoXblOkJ4JcA8zATN6Tm78UNL72AKk+0O" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="loader-wrapper" class="preloader">
+    <div id="loader" class="d-flex align-items-center justify-content-center" style="height: 100%">
+        <div style="text-transform: uppercase; display: inline-block; font-weight: bold; font-size: 20pt; background-color: #D5D8DC; color: #FFF; opacity: 0.95; padding: 0.35rem 2rem 0.35rem 0.75rem;border-radius: 5px">
+            sd_
+        </div>
+    </div>
+</div>
+<div class="header" data-page="launcher">
+    <div class="context">
+        <img src="assets/apps/fasen-tw/assets/images/logo-lg.png" class="mb-4" alt="" style="width: 100px;">
+        <h1 class="text-dark font-weight-semibold">FASEN-TW.</h1>
+        <h6 class="text-render font-weight-normal text-muted pb-3">Fast-end Thesis Writing Technology Development.</h6>
+        <h6 id="launcher-load" class="text-muted font-weight-normal">
+            initiating app
+        </h6>
+        <button id="launch-btn" class="d-none btn btn-sm btn-outline-dark mt-4" style="position: relative;z-index: 999;">launch prototype</button>
+    </div>
+    <div class="area" >
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div >
+</div>
+<div class="main-app" data-page="editor">
+    <div id="parser-diagram" class="mermaid">
+        graph LR
+        a-->b
+        c-->d
+    </div>
+    <div class="editor">
+        <div class="card-group">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title border-bottom">
+                        <div class="btn-list text-center mb-2">
+                            <div class="btn-group btn-group-sm">
+                                <button id="btn-control-header" type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <strong class="font-weight-medium">Header</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a id="btn-control-chapter" class="dropdown-item" href="#"><strong class="font-12">BAB</strong></a>
+                                    <div class="dropdown-divider"></div>
+                                    <a id="btn-control-h1" class="dropdown-item" href="#"><strong class="font-12 font-weight-medium"><span class="text-muted"># </span>sub 1</strong></a>
+                                    <a id="btn-control-h2" class="dropdown-item" href="#"><strong class="font-12 font-weight-medium"><span class="text-muted">#2 </span>sub 2</strong></a>
+                                    <a id="btn-control-h3" class="dropdown-item" href="#"><strong class="font-12 font-weight-medium"><span class="text-muted">#3 </span>sub 3</strong></a>
+                                    <a id="btn-control-h4" class="dropdown-item" href="#"><strong class="font-12 font-weight-medium"><span class="text-muted">#4 </span>sub 4</strong></a>
+                                    <a id="btn-control-h5" class="dropdown-item" href="#"><strong class="font-12 font-weight-medium"><span class="text-muted">#5 </span>sub 5</strong></a>
+                                    <a id="btn-control-h6" class="dropdown-item" href="#"><strong class="font-12 font-weight-medium"><span class="text-muted">#6 </span>sub 6</strong></a>
+                                    <div class="dropdown-divider"></div>
+                                    <a id="btn-control-h-attachment" class="dropdown-item" href="#"><strong class="font-12 font-weight-medium">Attachment</strong></a>
+                                    <a id="btn-control-h-abstract" class="dropdown-item" href="#"><strong class="font-12 font-weight-medium">Abstract</strong></a>
+                                </div>
+                            </div>
+                            <div class="btn-group btn-group-sm" role="group">
+                                <button id="btn-control-bold" type="button" class="btn btn-outline-secondary font-14 border-0">
+                                    <i class="fa fa-bold"></i>
+                                </button>
+                                <button id="btn-control-emphasis" type="button" class="btn btn-outline-secondary font-14 border-0">
+                                    <i class="fa fa-italic"></i>
+                                </button>
+                                <button id="btn-control-underline" type="button" class="btn btn-outline-secondary font-14 border-0">
+                                    <i class="fa fa-underline"></i>
+                                </button>
+                            </div>
+                            <div class="btn-group btn-group-sm" role="group">
+                                <button id="btn-control-img" type="button" class="btn btn-outline-secondary font-14 border-0">
+                                    <i class="fa fa-image"></i>
+                                </button>
+                                <button id="btn-control-tbl" type="button" class="btn btn-outline-secondary font-14 border-0">
+                                    <i class="fa fa-table"></i>
+                                </button>
+                                <button id="btn-control-ls" type="button" class="btn btn-outline-secondary dropdown font-14 border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-list"></i>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="btn-control-ls">
+                                    <a id="btn-control-ls-num" class="dropdown-item" href="#"><strong class="font-14"><span class="text-muted">1. </span>num</strong></a>
+                                    <a id="btn-control-ls-alpha" class="dropdown-item" href="#"><strong class="font-14"><span class="text-muted">a) </span>alpha</strong></a>
+                                    <a id="btn-control-ls-dash" class="dropdown-item" href="#"><strong class="font-14"><span class="text-muted">- </span>dash</strong></a>
+                                </div>
+                            </div>
+                            <div class="btn-group btn-group-sm" role="group">
+                                <button id="btn-control-cite" type="button" class="btn btn-outline-secondary font-14 border-0">
+                                    <i class="fa fa-quote-left"></i>
+                                </button>
+                                <button id="btn-control-var" type="button" class="btn btn-outline-secondary font-14 border-0">
+                                    <i class="fa fa-terminal"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="editor-input">
+                        <div id="editor-input-raw" contenteditable="true" spellcheck="false">
+
+                        </div>
+                        <div id="editor-input-preview">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card border-left">
+                <div class="card-body position-relative">
+                    <div class="card-title border-bottom">
+                        <div class="d-flex flex-row" style="height: 100%">
+                            <div class="flex-grow-1 btn-list text-left mb-2">
+                                <div class="btn-group btn-group-sm" role="group">
+                                    <button id="btn-control-template" type="button" class="btn btn-outline-secondary font-14 border-0">
+                                        <i data-feather="grid" class="svg-icon"></i>
+                                    </button>
+                                    <button id="btn-control-print" type="button" class="btn btn-outline-secondary font-14 border-0">
+                                        <i data-feather="printer" class="svg-icon"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="flex-grow-1 btn-list text-right mb-2">
+                                <div class="btn-group btn-group-sm" role="group">
+                                    <button id="btn-no-error" type="button" class="btn btn-outline-info font-14 border-0" disabled>
+                                        <i data-feather="check" class="svg-icon"></i>
+                                    </button>
+                                    <button id="btn-on-error" type="button" class="btn btn-outline-danger font-14 border-0">
+                                        <i data-feather="alert-triangle" class="svg-icon"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="editor-output">
+                        <div id="editor-output-doc" class="preview-sd">
+
+                        </div>
+                    </div>
+                    <div id="err-msg-output" class="d-inline-block">
+                        <div id="err-msg-body" class="d-flex flex-column">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer text-center font-weight-medium border-top small pt-4 pb-4">
+        Skripdown FASEN-TW Project Copyright © 2022.<br>
+        Invented & developed by <a href="index.html" class="font-weight-bold">Malk</a>
+        All rights reserved.
+    </div>
+</div>
+<div class="section" data-page="image-handler">
+    <div class="section-panel">
+        <div class="card-group">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title border-bottom">
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="font-14 font-weight-semibold text-capitalize">
+                                media
+                            </div>
+                            <div class="ml-auto">
+                                <button class="btn btn-sm btn-link text-muted" type="button" id="image-handler-close">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="img-handler-body" class="row">
+                        <div class="img-loader col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                            <div>
+                                <div>
+                                    <div class="spinner-border mb-1" style="width: 3rem; height: 3rem;" role="status">
+                                        <span class="sr-only">Loading...</span>
+                                    </div>
+                                    <div class="font-weight-medium mt-1">
+                                        image
+                                    </div>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div>
+
+                            </div>
+                        </div>
+                        <div class="img-inserter col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                            <div>
+                                <div>
+                                    <i data-feather="plus" class="svg-icon img-inserter-icon"></i>
+                                </div>
+                            </div>
+                            <div></div>
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer text-center font-weight-medium border-top small pt-4 pb-4">
+        Skripdown FASEN-TW Project Copyright © 2022.<br>
+        Invented & developed by <a href="index.html" class="font-weight-bold">Malk</a>
+        All rights reserved.
+    </div>
+</div>
+<div class="section" data-page="source-handler">
+    <div class="section-panel">
+        <div class="card-group">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title border-bottom">
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="font-14 font-weight-semibold text-capitalize">
+                                source
+                            </div>
+                            <div class="ml-auto">
+                                <button class="btn btn-sm btn-link text-muted" type="button" id="source-handler-close">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="source-handler-body" class="d-flex align-items-center justify-content-center" style="height: 100%">
+                        <div class="small text-muted w-25 text-center">
+                            source handler feature was disabled here due to system security reason.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer text-center font-weight-medium border-top small pt-4 pb-4">
+        Skripdown FASEN-TW Project Copyright © 2022.<br>
+        Invented & developed by <a href="index.html" class="font-weight-bold">Malk</a>
+        All rights reserved.
+    </div>
+</div>
+<div class="section" data-page="variable-handler">
+    <div class="section-panel">
+        <div class="card-group">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title border-bottom">
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="font-14 font-weight-semibold text-capitalize">
+                                variable
+                            </div>
+                            <div class="ml-auto">
+                                <button class="btn btn-sm btn-link text-muted" type="button" id="variable-handler-close">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="variable-handler-body" class="">
+
+                    </div>
+                    <div class="border-top pt-3 mt-3 text-right">
+                        <div id="variable-handler-add" class="btn btn-sm btn-dark text-center" type="button">
+                            add variable
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer text-center font-weight-medium border-top small pt-4 pb-4">
+        Skripdown FASEN-TW Project Copyright © 2022.<br>
+        Invented & developed by <a href="index.html" class="font-weight-bold">Malk</a>
+        All rights reserved.
+    </div>
+</div>
+<div class="section" data-page="template-chooser">
+    <div class="section-panel">
+        <div class="card-group">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title border-bottom">
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="font-14 font-weight-semibold text-capitalize">
+                                templates
+                            </div>
+                            <div class="ml-auto">
+                                <button class="btn btn-sm btn-link text-muted" type="button" id="template-chooser-close">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="template-chooser-body" class="">
+                        <div id="template-chooser-body-in" class="temp-icon-grid"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer text-center font-weight-medium border-top small pt-4 pb-4">
+        Skripdown FASEN-TW Project Copyright © 2022.<br>
+        Invented & developed by <a href="index.html" class="font-weight-bold">Malk</a>
+        All rights reserved.
+    </div>
+</div>
+<div class="section" data-page="print">
+</div>
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script src="assets/apps/fasen-tw/assets/libs/jquery/dist/jquery.min.js"></script>
+<script src="assets/apps/fasen-tw/dist/js/feather.min.js"></script>
+<script src="assets/apps/fasen-tw/assets/libs/popper.js/dist/umd/popper.min.js"></script>
+<script src="assets/apps/fasen-tw/assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="assets/apps/fasen-tw/assets/landing/owl-carousel/js/owl.carousel.min.js"></script>
+<script src="assets/apps/fasen-tw/assets/landing/aos/js/aos.js"></script>
+<script src="assets/apps/fasen-tw/dist/js/skrip/skrip.js"></script>
+
+<script src="js/page-switcher.js"></script>
+<script src="js/preloader.js"></script>
+
+<script src="assets/apps/fasen-tw/dist/js/scramble.js"></script>
+<script src="assets/apps/fasen-tw/dist/js/highlighter.js"></script>
+<script src="assets/apps/fasen-tw/dist/js/controller.js"></script>
+</body>
+</html>

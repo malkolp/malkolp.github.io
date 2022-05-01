@@ -1,0 +1,85 @@
+#code, #editor {
+    font-family: 'Lato', sans-serif!important;
+    font-size: 12pt;
+    color: #7c8798;
+}
+
+#code div {
+    word-wrap: break-word;
+}
+
+#code {
+    background-color: rgba(0,0,0,0)!important;
+}
+
+.sd5-diagram-block {
+    background-color: #F8F9F9;
+}
+
+.sd5-comment {
+    color: #D5D8DC!important;
+    text-transform: none!important;
+    text-decoration: none!important;
+    font-weight: normal!important;
+    font-style: normal!important;
+    background-color: rgba(0,0,0,0)!important;
+}
+
+.sd5-chapter {
+    -webkit-text-stroke: 0.5pt #17202A;
+    color: #17202A;
+    border-bottom: solid #D5D8DC 1px;
+    padding-bottom: -1px;
+    margin-bottom: -1px;
+}
+
+.sd5-sub {
+    -webkit-text-stroke: 0.5pt #17202A;
+    color: #2C3E50;
+}
+
+.sd5-sub .sd5-syntax {
+    -webkit-text-stroke: 0.5pt #48CC3F;
+}
+
+.sd5-syntax {
+    color: #48CC3F;
+}
+
+.sd5-bold {
+    -webkit-text-stroke: 0.35pt #7c8798;
+}
+
+.sd5-bold .sd5-syntax {
+    -webkit-text-stroke: 0.25pt #48CC3F;
+}
+
+.sd5-emphasis {
+    font-style: italic;
+}
+
+.sd5-underline {
+    text-decoration: underline;
+}
+
+.sd5-inline-fun-param {
+    color: #1F618D;
+}
+
+.sd5-mark {
+    background-color: #F7DC6F;
+}
+
+.sd5-inline-var {
+    color: #8E44AD;
+    background-color: rgba(0,0,0,0);
+}
+
+.sd5-url {
+    color: #3498DB;
+    text-decoration: underline;
+}
+
+.sd5-constant {
+    color: #F1C40F;
+}

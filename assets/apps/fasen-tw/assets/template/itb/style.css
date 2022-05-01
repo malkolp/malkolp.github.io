@@ -1,0 +1,729 @@
+.preview-sd {
+    font-size : 12.25pt;
+    line-height : 1.8em;
+    letter-spacing: 0.05em;
+    color: black;
+    font-family: "Times New Roman", serif;
+}
+.preview-sd #pg-lembar_persetujuan {
+    counter-reset : page 1;
+}
+.preview-sd #bab-i {
+    counter-reset : page 1;
+}
+.preview-sd #set-bab-i {
+    counter-reset : bab 1;
+}
+.preview-sd #set-bab-ii {
+    counter-reset : bab 2;
+}
+.preview-sd #set-bab-iii {
+    counter-reset : bab 3;
+}
+.preview-sd #set-bab-iv {
+    counter-reset : bab 4;
+}
+.preview-sd #set-bab-v {
+    counter-reset : bab 5;
+}
+.preview-sd .reset-sub {
+    counter-reset : sub-1;
+}
+.preview-sd .sub-1 {
+    counter-increment : sub-1;
+    counter-reset : sub-2;
+}
+.preview-sd .sub-2 {
+    counter-increment : sub-2;
+    counter-reset : sub-3;
+}
+.preview-sd .sub-3 {
+    counter-increment : sub-3;
+    counter-reset : sub-4;
+}
+.preview-sd .sub-4 {
+    counter-increment : sub-4;
+    counter-reset : sub-5;
+}
+.preview-sd .sub-5 {
+    counter-increment : sub-5;
+    counter-reset : sub-6;
+}
+.preview-sd .sub-6 {
+    counter-increment : sub-6;
+}
+.preview-sd .sub-1::before {
+    content : counter(bab) "." counter(sub-1) " ";
+}
+.preview-sd .sub-2::before {
+    content : counter(bab) "." counter(sub-1) "." counter(sub-2) " ";
+}
+.preview-sd .sub-3::before {
+    content : counter(bab) "." counter(sub-1) "." counter(sub-2) "." counter(sub-3) " ";
+}
+.preview-sd .sub-4::before {
+    content : counter(bab) "." counter(sub-1) "." counter(sub-2) "." counter(sub-3) "." counter(sub-4) " ";
+}
+.preview-sd .sub-5::before {
+    content : counter(bab) "." counter(sub-1) "." counter(sub-2) "." counter(sub-3) "." counter(sub-4) "." counter(sub-5) " ";
+}
+.preview-sd .sub-6::before {
+    content : counter(bab) "." counter(sub-1) "." counter(sub-2) "." counter(sub-3) "." counter(sub-4) "." counter(sub-5) "." counter(sub-6) " ";
+}
+.preview-sd #lampiran {
+    counter-reset : lampiran-idx;
+}
+.preview-sd .ls-lampiran {
+    counter-increment : lampiran-idx;
+}
+.preview-sd .ls-lampiran-title > div::before {
+    content : "Lampiran " counter(lampiran-idx) " ";
+}
+.preview-sd .visual-dsc {
+    counter-increment : image-idx;
+}
+.preview-sd .reset-img {
+    counter-reset : image-idx;
+}
+.preview-sd .visual-dsc {
+    counter-increment : image-idx;
+}
+.preview-sd .visual-dsc::before {
+    font-weight : bold;
+    content : "Gambar " counter(bab) "." counter(image-idx) ". ";
+}
+.preview-sd .image-dsc {
+    counter-increment : image-idx;
+}
+.preview-sd .image-dsc::before {
+    font-weight : bold;
+    content : "Gambar " counter(bab) "." counter(image-idx) ". ";
+}
+.preview-sd .lampiran-img > .image-dsc {
+    font-weight : bold;
+    content : "Gambar " counter(image-idx) ". ";
+}
+.preview-sd .lampiran-img-hidden > .image-dsc {
+    content : "";
+}
+.preview-sd .reset-tbl {
+    counter-reset : table-idx;
+}
+.preview-sd .table-dsc {
+    counter-increment : table-idx;
+}
+.preview-sd .table-dsc::before {
+    font-weight : bold;
+    content : "Tabel " counter(bab) "." counter(table-idx) ". ";
+}
+.preview-sd .lampiran-tbl > .table-dsc::before {
+    font-weight : bold;
+    content : "Tabel " counter(table-idx) ". ";
+}
+.preview-sd .lampiran-tbl-hidden > .table-dsc::before {
+    content : "";
+}
+.preview-sd .reset-alpha-ls {
+    counter-reset : alpha-ls;
+}
+.preview-sd .ls-alpha {
+    counter-increment : alpha-ls;
+}
+.preview-sd .ls-alpha::before {
+    content : counter(alpha-ls,lower-alpha) ") ";
+}
+.preview-sd .reset-num-ls {
+    counter-reset : num-ls 0;
+}
+.preview-sd .ls-num {
+    counter-increment : num-ls;
+}
+.preview-sd .ls-num::before {
+    content : counter(num-ls) ". ";
+}
+.preview-sd .ls-dot::before {
+    content : "\2022";
+}
+.preview-sd .ls-arrow::before {
+    content : "\27A4";
+}
+.preview-sd .ls-dash::before {
+    content : "\2015";
+}
+.preview-sd .reset-ref-ls {
+    counter-reset : ref-ls;
+}
+.preview-sd .ls-ref {
+    text-align: justify;
+    counter-increment : ref-ls;
+}
+.preview-sd .ls-ref::before {
+    content : "[" counter(ref-ls) "] ";
+}
+.preview-sd .set-dfi-bab-i {
+    counter-reset : dfi-bab-idx 1;
+}
+.preview-sd .set-dfi-bab-ii {
+    counter-reset : dfi-bab-idx 2;
+}
+.preview-sd .set-dfi-bab-iii {
+    counter-reset : dfi-bab-idx 3;
+}
+.preview-sd .set-dfi-bab-iv {
+    counter-reset : dfi-bab-idx 4;
+}
+.preview-sd .set-dfi-bab-v {
+    counter-reset : dfi-bab-idx 5;
+}
+.preview-sd .reset-dfi-sub {
+    counter-reset : dfi-sub-1;
+}
+.preview-sd .dfi-sub-i {
+    counter-increment : dfi-sub-1;
+    counter-reset : dfi-sub-2;
+}
+.preview-sd .dfi-sub-ii {
+    counter-increment : dfi-sub-2;
+    counter-reset : dfi-sub-3;
+}
+.preview-sd .dfi-sub-iii {
+    counter-increment : dfi-sub-3;
+    counter-reset : dfi-sub-4;
+}
+.preview-sd .dfi-sub-iv {
+    counter-increment : dfi-sub-4;
+    counter-reset : dfi-sub-5;
+}
+.preview-sd .dfi-sub-v {
+    counter-increment : dfi-sub-5;
+    counter-reset : dfi-sub-6;
+}
+.preview-sd .dfi-sub-vi {
+    counter-increment : dfi-sub-6;
+}
+.preview-sd .dfi-sub-i::before {
+    background-color : white;
+    font-weight : bold;
+    content : counter(dfi-bab-idx) "." counter(dfi-sub-1) " ";
+}
+.preview-sd .dfi-sub-ii::before {
+    background-color : white;
+    font-weight : bold;
+    content : counter(dfi-bab-idx) "." counter(dfi-sub-1) "." counter(dfi-sub-2) " ";
+}
+.preview-sd .dfi-sub-iii::before {
+    background-color : white;
+    font-weight : bold;
+    content : counter(dfi-bab-idx) "." counter(dfi-sub-1) "." counter(dfi-sub-2) "." counter(dfi-sub-3) " ";
+}
+.preview-sd .dfi-sub-iv::before {
+    background-color : white;
+    font-weight : bold;
+    content : counter(dfi-bab-idx) "." counter(dfi-sub-1) "." counter(dfi-sub-2) "." counter(dfi-sub-3) "." counter(dfi-sub-4) " ";
+}
+.preview-sd .dfi-sub-v::before {
+    background-color : white;
+    font-weight : bold;
+    content : counter(dfi-bab-idx) "." counter(dfi-sub-1) "." counter(dfi-sub-2) "." counter(dfi-sub-3) "." counter(dfi-sub-4) "." counter(dfi-sub-5) " ";
+}
+.preview-sd .dfi-sub-vi::before {
+    background-color : white;
+    font-weight : bold;
+    content : counter(dfi-bab-idx) "." counter(dfi-sub-1) "." counter(dfi-sub-2) "." counter(dfi-sub-3) "." counter(dfi-sub-4) "." counter(dfi-sub-5) "." counter(dfi-sub-6) ". ";
+}
+.preview-sd .reset-df-gambar {
+    counter-reset : df-gambar-idx;
+}
+.preview-sd .df-gambar {
+    counter-increment : df-gambar-idx ;
+}
+.preview-sd .df-gambar::before {
+    background-color : white;
+    font-weight : bold;
+    content : " Gambar " counter(dfi-bab-idx) "." counter(df-gambar-idx) ". ";
+}
+.preview-sd .reset-df-tabel {
+    counter-reset : df-tabel-idx;
+}
+.preview-sd .df-tabel {
+    counter-increment : df-tabel-idx ;
+}
+.preview-sd .df-tabel::before {
+    background-color : white;
+    font-weight : bold;
+    content : "Tabel " counter(dfi-bab-idx) "." counter(df-tabel-idx) ". ";
+}
+.preview-sd .reset-df-lampiran {
+    counter-reset : df-lampiran-idx;
+}
+.preview-sd .df-lampiran {
+    counter-increment : df-lampiran-idx ;
+}
+.preview-sd .df-lampiran::before {
+    background-color : white;
+    font-weight : bold;
+    content : "Lampiran " counter(df-lampiran-idx) ". ";
+}
+.preview-sd .pendahuluan-sub-title {
+    font-weight : bold;
+    font-size : 14pt;
+    text-transform : uppercase;
+    line-height : 1.7em;
+    text-align : center;
+    margin-bottom : 0.5em;
+}
+.preview-sd .pendahuluan-sub-title > img {
+    display : block;
+    width : 220pt;
+    margin : 0.5em auto 0;
+}
+.preview-sd #cover {
+    page : cover;
+    page-break-after : always;
+    display : flex;
+    flex-direction : column;
+    width : 100%;
+    height : 232mm;
+}
+.preview-sd #cov-head {
+    width: 60%;
+    margin : 0 auto;
+    font-size : 14pt;
+    font-weight : bold;
+    text-transform : uppercase;
+    line-height : 1.5em;
+    text-align : center;
+    flex : 1;
+}
+.preview-sd #cov-head + div {
+    line-height : 1.5em;
+    text-transform : capitalize;
+    text-align : center;
+    flex : auto;
+}
+.preview-sd #cov-head + div + div {
+    text-align : center;
+    flex : auto;
+}
+.preview-sd #cov-head + div + div > img {
+    width : 12em;
+}
+.preview-sd #cov-head + div + div + div {
+    text-align : center;
+    text-transform : capitalize;
+    line-height : 1.7em;
+    flex : auto;
+}
+.preview-sd #cov-head + div + div + div > span {
+    font-weight : bold;
+}
+.preview-sd #cov-footer {
+    font-weight : bold;
+    font-size : 14pt;
+    line-height : 1.7em;
+    text-align : center;
+    text-transform : uppercase;
+    flex : 1;
+}
+.preview-sd #cov-footer .no-format {
+    font-weight: normal;
+    text-transform: none;
+}
+.preview-sd #pg-lembar_persetujuan , #pg-lembar_pengesahan , #pg-lembar_pernyataan {
+    page : pendahuluan;
+    text-align : center;
+    width : 100%;
+    height : 232mm;
+    page-break-after : always;
+}
+.preview-sd #pg-lembar_persetujuan > img , #pg-lembar_pengesahan > img , #pg-lembar_pernyataan > img {
+    width : 90%;
+    position : relative;
+    top : 13%;
+}
+.preview-sd #pg-lembar_abstrak , #pg-lembar_abstract {
+    page : pendahuluan;
+    width : 100%;
+    height : 232mm;
+    page-break-after : always;
+}
+.preview-sd #pg-lembar_persembahan , #pg-kata_pengantar {
+    page : pendahuluan;
+    width : 100%;
+    height : 232mm;
+    page-break-after : always;
+}
+.preview-sd #pg-lembar_persembahan > p , #pg-kata_pengantar-content > p {
+    text-align : justify;
+    line-height : 1.7em;
+    font-size : 12pt;
+}
+.preview-sd #pg-lembar_persembahan > P + p , #pg-kata_pengantar-content > P + p{
+    margin-top : -1em;
+}
+.preview-sd #pg-kata_pengantar-judul {
+    text-align : center!important;
+    text-transform : uppercase;
+    font-size : 14pt;
+    line-height : 1.7em;
+    font-weight : bold;
+    padding-top : 5px;
+}
+.preview-sd #pg-kata_pengantar {
+    display : flex;
+    flex-direction : column;
+}
+.preview-sd #pg-kata_pengantar-content , #pg-kata_pengantar-info{
+    flex : 1;
+}
+.preview-sd #pg-kata_pengantar > div {
+    flex : auto;
+}
+.preview-sd #pg-kata_pengantar-info {
+    text-align : right;
+}
+.preview-sd #pg-kata_pengantar-info > br + span {
+    font-weight : bold;
+}
+.preview-sd #pg-daftar_isi {
+    page : pendahuluan;
+    width : 100%;
+}
+.preview-sd #pg-daftar_isi > ul {
+    padding-left : 0;
+    margin : 1.5em 0 0;
+    list-style-type : none;
+}
+.preview-sd #pg-daftar_isi > ul > li {
+    color : inherit;
+    text-transform : capitalize;
+    font-weight : bold;
+    overflow-x : hidden;
+    line-height : 1.5em;
+}
+.preview-sd #pg-daftar_isi > ul > li > span {
+    background-color : white;
+}
+.preview-sd #pg-daftar_isi > ul > li::after {
+    font-weight : normal;
+    float : left;
+    width : 0;
+    white-space : nowrap;
+    letter-spacing : -0.5pt;
+    content : "..................................................................................................................................................................................................................";
+}
+.preview-sd .di-b {
+    text-transform : uppercase;
+}
+.preview-sd .di-s1 {
+    margin-left : 1em;
+}
+.preview-sd .di-s2 {
+    margin-left : 2em;
+}
+.preview-sd .di-s3 {
+    margin-left : 3em;
+}
+.preview-sd .di-s4 {
+    margin-left : 4em;
+}
+.preview-sd .di-s5 {
+    margin-left : 5em;
+}
+.preview-sd .di-s6 {
+    margin-left : 6em;
+}
+.preview-sd #pg-daftar_isi > ul > li > a {
+    float : right;
+    text-transform : lowercase;
+    color : inherit;
+    text-decoration : none;
+}
+.preview-sd #pg-daftar_isi > ul > li > .pen-idx::after {
+    position : relative;
+    z-index : 2;
+    background-color : white;
+    content : " " target-counter(attr(href),page, lower-roman);
+}
+.preview-sd #pg-daftar_isi > ul > li > .con-idx::after {
+    position : relative;
+    z-index : 2;
+    background-color : white;
+    content : " " target-counter(attr(href),page, "");
+}
+.preview-sd #pg-daftar_gambar_tabel_lampiran {
+    page-break-before: always;
+    page : pendahuluan;
+    width : 100%;
+}
+.preview-sd #daftar_gambar , #daftar_tabel , #daftar_lampiran {
+    padding-left : 0;
+    margin : 1.5em 0 0;
+    list-style-type : none;
+}
+.preview-sd #daftar_gambar > li , #daftar_tabel > li , #daftar_lampiran > li {
+    color : inherit;
+    text-transform : capitalize;
+    font-weight : bold;
+    overflow-x : hidden;
+    line-height : 1.5em;
+}
+.preview-sd #daftar_gambar > li > span , #daftar_tabel > li > span , #daftar_lampiran > li > span {
+    background-color : white;
+}
+.preview-sd #daftar_gambar > li::after , #daftar_tabel > li::after , #daftar_lampiran > li::after {
+    font-weight : normal;
+    float : left;
+    width : 0;
+    white-space : nowrap;
+    letter-spacing : -0.5pt;
+    content : "..................................................................................................................................................................................................................";
+}
+.preview-sd #daftar_gambar > li > a::after , #daftar_tabel > li > a::after , #daftar_lampiran > li > a::after {
+    float : right;
+    text-transform : lowercase;
+    color : black;
+    text-decoration : none;
+    position : relative;
+    z-index : 2;
+    background-color : white;
+    content : " " target-counter(attr(href),page, "");
+}
+.preview-sd #daftar-pustaka , #lampiran{
+    page-break-before : always;
+    font-size: 14pt;
+    font-weight : bold;
+    text-align : center;
+    line-height : 1.5em;
+}
+.preview-sd #daftar-pustaka::after {
+    white-space : pre;
+    content : "DAFTAR PUSTAKA \A\A";
+}
+.preview-sd #lampiran::after {
+    white-space : pre;
+    content : "LAMPIRAN \A\A";
+}
+.preview-sd .ls-lampiran {
+    page-break-before : always;
+    width : 100%;
+    display : flex;
+    flex-direction : row;
+}
+.preview-sd #lampiran + .ls-lampiran {
+    page-break-before : avoid;
+}
+.preview-sd .ls-lampiran > div:first-child {
+    border : 1px black solid;
+    border-right : 0;
+}
+.preview-sd .ls-lampiran > div:last-child {
+    border : 1px black solid;
+    flex : auto;
+    text-align : center;
+}
+.preview-sd .ls-lampiran-logo > img {
+    width : 5em;
+}
+.preview-sd .ls-lampiran > div:last-child > div {
+    font-weight : bold;
+    position : relative;
+    top : 45%;
+}
+.preview-sd .bab {
+    font-size: 14pt;
+    font-weight : bold;
+    text-transform : uppercase;
+    line-height : 1em;
+    text-align : center;
+    margin-bottom : 0.25em;
+}
+.preview-sd #bab-ii , #bab-iii , #bab-iv , #bab-v {
+    page-break-before : always;
+}
+.preview-sd #bab-i::after {
+    white-space : pre;
+    content : "BAB I \A\A PENDAHULUAN \A\A";
+}
+.preview-sd #bab-ii::after {
+    white-space : pre;
+    content : "BAB II \A\A KAJIAN TEORI \A\A";
+}
+.preview-sd #bab-iii::after {
+    white-space : pre;
+    content : "BAB III \A\A METODOLOGI PENELITIAN \A\A";
+}
+.preview-sd #bab-iv::after {
+    white-space : pre;
+    content : "BAB IV \A\A IMPLEMENTASI DAN PENGUJIAN \A\A";
+}
+.preview-sd #bab-v::after {
+    white-space : pre;
+    content : "BAB V \A\A KESIMPULAN \A\A";
+}
+.preview-sd .sub {
+    font-weight : bold;
+    text-transform : capitalize;
+}
+.preview-sd p {
+    text-align : justify;
+    text-indent : 22pt;
+    margin-left : 22pt;
+}
+.preview-sd .sub + p {
+    margin-top : -0.25pt;
+}
+.preview-sd .reset-num-ls + .sub, .reset-alpha-ls + .sub{
+    margin-top: 12pt;
+}
+.preview-sd p + p {
+    margin-top : -10pt;
+}
+.preview-sd span + p {
+    margin-top : -2pt;
+}
+.preview-sd p + .ls-alpha , p + .ls-num, p + .ls-dot, p + .ls-arrow, p + .ls-dash {
+    margin-top : -1em;
+}
+.preview-sd .visual {
+    margin-top : 0.5em;
+    margin-left : 22pt;
+    margin-bottom : 1em;
+    text-align : center;
+}
+.preview-sd .visual svg div {
+    font-size: 80%;
+}
+.preview-sd .visual-dsc {
+    margin-top : 0.25em;
+}
+.preview-sd .image {
+    margin-top : 0.5em;
+    margin-left : 22pt;
+    margin-bottom : 1em;
+    text-align : center;
+}
+.preview-sd .image-dsc {
+    margin-top : 0.25em;
+}
+.preview-sd .img-xs {
+    width : 15%;
+}
+.preview-sd .img-sm {
+    width : 25%;
+}
+.preview-sd .img-md {
+    width : 50%;
+}
+.preview-sd .img-lg {
+    width : 75%;
+}
+.preview-sd .img-xl {
+    width : 100%;
+}
+.preview-sd .table {
+    page-break-inside: avoid;
+    margin-top : 0.2em;
+    margin-left : 22pt;
+    margin-bottom : 0.6em;
+    text-align : center;
+}
+.preview-sd table {
+    margin : 0 auto;
+    border-collapse : collapse;
+}
+.preview-sd tbody,.preview-sd  tr,.preview-sd  td {
+    page-break-inside: avoid;
+}
+.preview-sd td,.preview-sd th {
+    border : 1px solid #273746!important;
+    text-align : justify;
+    padding : 2pt 4pt;
+}
+.preview-sd th {
+    padding : 2pt 4pt;
+    text-align : center;
+}
+.preview-sd table thead tr {
+    background-color : darkgray;
+    font-weight : bold;
+}
+.preview-sd .table-dsc {
+    display : table;
+    margin : 0.6em auto 0.2em;
+}
+.preview-sd .tbl-xs {
+    max-width : 20%;
+}
+.preview-sd .tbl-sm {
+    max-width : 45%;
+}
+.preview-sd .tbl-md {
+    max-width : 60%;
+}
+.preview-sd .tbl-lg {
+    max-width : 75%;
+}
+.preview-sd .tbl-xl {
+    max-width : 100%;
+}
+.preview-sd .ls-alpha , .ls-num, .ls-dot, .ls-arrow, .ls-dash {
+    text-align : justify;
+    text-indent: -0.8rem;
+    margin-left: 3.5rem;
+}
+.preview-sd .ls-alpha::before , .ls-num::before , .ls-dot::before, .ls-arrow::before, .ls-dash::before {
+    min-width: 0.75rem;
+    display: inline-block;
+}
+.preview-sd .ls-ref {
+    text-indent : -2.1em;
+    margin-left : 1.8em;
+}
+.preview-sd .ls-ref::before {
+    display: inline-block;
+    min-width : 0.75rem;
+}
+
+.preview-sd strong {
+    font-weight: bold;
+}
+
+
+@page {
+    size : A4;
+    margin : 3cm 3cm 3cm 4cm;
+    background-image : url("watermark.jpg");
+    background-repeat : no-repeat;
+    background-position : 42.5mm 67mm;
+    @bottom-center {
+        content : counter(page);
+    }
+}
+@page cover {
+    @bottom-center {
+        content : none;
+    }
+}
+@page pendahuluan {
+    @bottom-center {
+        content : counter(page, lower-roman);
+    }
+}
+
+@media screen {
+    .preview-sd #cover{display: none;}
+    .preview-sd #pg-daftar_isi{display: none;}
+    .preview-sd #pg-daftar_gambar_tabel_lampiran {display: none;}
+    .preview-sd #pg-kata_pengantar {display: none;}
+    .preview-sd #pg-lembar_persetujuan {display: none;}
+    .preview-sd #pg-lembar_pernyataan {display: none;}
+    .preview-sd #pg-lembar_pengesahan {display: none;}
+    .preview-sd #daftar-pustaka {display: none;}
+    .preview-sd .bab {margin-top: 3rem;}
+    .preview-sd #bab-i {margin-top: 0;}
+    .preview-sd .table {margin-left : 0;color: black}
+    .preview-sd .ls-ref {text-indent : -15px;margin-left : 30px;}
+    .preview-sd .ls-ref::before {display: inline-block;width: 15px;}
+    .preview-sd #pg-lembar_abstrak, .preview-sd #pg-lembar_abstract {height: auto;}
+}
