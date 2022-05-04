@@ -9,10 +9,12 @@
         title[add]('hide-overflow');
         btn_open[add]('hide-overflow')[add]('pos-relative')[0][sat]('style', 'opacity:0;');
         btn_sample[add]('hide-overflow')[add]('pos-relative')[0][sat]('style', 'opacity:0;');
+        title[0].dataHeight  = title[0].offsetHeight;
 
         $(e).
         mouseenter(()=>{
-            title[0].dataHeight         = title[0].offsetHeight;
+            if (title[0].offsetHeight > title[0].dataHeight)
+                title[0].dataHeight         = title[0].offsetHeight;
             title.animate({height:'0px', opacity:'0'},);
             btn_open.animate({height:'100%', bottom:'0px', opacity:'1'},);
             btn_sample.animate({height:'100%', bottom:'0px', opacity:'1'},);

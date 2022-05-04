@@ -45,7 +45,7 @@
                 removeClass('hide-toggle');
 
                 obj_lang.lang.forEach(item=>{
-                    item.element.text(item.value);
+                    item.element.html(item.value);
                 });
                 app.current     = obj_lang;
             });
@@ -77,4 +77,5 @@
     app.setLang('id', '#toggle-lang-id', window.lang_id);
     app.setLang('cn', '#toggle-lang-cn', window.lang_cn);
     app.setLang('en', '#toggle-lang-en', window.lang_en);
+    app.change();
 })();

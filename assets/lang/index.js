@@ -72,6 +72,134 @@ window.lang_en      = [
         value       : 'Optimizing software performance for end use as well as keep the software vendor version up to date',
     },
     {
+        target      : 'exp-1-title',
+        value       : 'Desktop-Based Vowel & Consonant Learning Media Application',
+    },
+    {
+        target      : 'exp-1-p1',
+        value       : 'Develop learning media applications used by students of the University of Muhammadiyah Malang English study program as a means of introducing vowels and consonants to elementary school students.',
+    },
+    {
+        target      : 'exp-1-p2',
+        value       : 'Applications are developed using <b>Java</b> and <b>FXML</b> languages. Applications are developed using <b>Java</b> and <b>FXML</b> languages.',
+    },
+    {
+        target      : 'exp-2-title',
+        value       : 'SIMPEG DINKES Pasuruan',
+    },
+    {
+        target      : 'exp-2-p1',
+        value       : 'Designing and developing a personnel information system for the purposes of personnel data administration at the Pasuruan District Health Office, East Java.',
+    },
+    {
+        target      : 'exp-2-p2',
+        value       : 'The system was developed using <b>Laravel</b>, <b>MySQL</b>,<b>HTML</b>, <b>Javascript</b>, <b>CSS</b>, <b>CSS</b> frameworks. b>HTML</b> and <b>Bash</b>.The system is closed and can only be accessed using the local office network.',
+    },
+    {
+        target      : 'exp-3-title',
+        value       : 'SISGEN-BC',
+    },
+    {
+        target      : 'exp-3-p1',
+        value       : 'Design and develop an information system for document generators for investigation files at Customs and Excise for the Madya Malang II area. The system is used as a document generator and automatic recording for every case investigation carried out.',
+    },
+    {
+        target      : 'exp-3-p2',
+        value       : 'The system was developed using <b>Java</b>, <b>FXML</b>, database<b>MySQL</b> and <b>LAMPP</b> languages. The system is closed and can only be accessed using the local office network.',
+    },
+    {
+        target      : 'exp-4-title',
+        value       : 'FASEN-TW',
+    },
+    {
+        target      : 'exp-4-p1',
+        value       : 'Develop a revolutionary system that can be used to support the digital transformation process in education.',
+    },
+    {
+        target      : 'exp-4-p2',
+        value       : 'The program is developed using <b>Node.js</b> and is <b>API</b>.',
+    },
+    {
+        target      : 'exp-5-title',
+        value       : 'PD-Kopertis 6',
+    },
+    {
+        target      : 'exp-5-p1',
+        value       : 'Develop a school data classification automation program at Kopertis VI Central Java.',
+    },
+    {
+        target      : 'exp-5-p2',
+        value       : 'The program is developed using <b>Python</b> language with <em>command-line</em> interface.',
+    },
+    {
+        target      : 'exp-6-title',
+        value       : 'SIAKAD Al-Furqon Magetan Foundation',
+    },
+    {
+        target      : 'exp-6-p1',
+        value       : 'Designing and developing an academic information system at the Al-Furqon foundation, Magetan district. The system is designed as a means of registering new students online, managing students and paying tuition fees.',
+    },
+    {
+        target      : 'exp-6-p2',
+        value       : 'The system was developed using the <b>Laravel</b> framework, based on <b>webapp</b> and is open.',
+    },
+    {
+        target      : 'exp-7-title',
+        value       : 'QR code based Meeting Attendance Information System',
+    },
+    {
+        target      : 'exp-7-p1',
+        value       : 'Designing and developing a meeting attendance information system using a QR code in the Informatics study program, University of Muhammadiyah Malang. The system was developed to minimize physical contact during the COVID-19 pandemic using a QR base as remote attendance.',
+    },
+    {
+        target      : 'exp-7-p2',
+        value       : 'The system is developed using the <b>Laravel</b> framework, is based on a <b>webapp</b> and is closed. The system is developed using the <b>Laravel</b> framework, is based on a <b>webapp</b> and is closed.',
+    },
+    {
+        target      : 'exp-8-title',
+        value       : 'E-Government System, Karanggeneng District, Lamongan Regency, East Java',
+    },
+    {
+        target      : 'exp-8-p1',
+        value       : 'Designing and Developing an E-Government Information System by utilizing the integrated <i>smart city</i> concept in Karanggeneng sub-district, Lamongan, East Java. The system consists of 5 small systems, namely the village staffing system, population, main system and village archives management system.',
+    },
+    {
+        target      : 'exp-8-p2',
+        value       : 'The system was developed using <b>Laravel</b>, <b>Python</b>, <b>MySQL</b>, <b>Javascript</b> frameworks. Built into the <b>End-Use</b> and <b>API</b> models.',
+    },
+    {
+        target      : 'exp-9-title',
+        value       : 'SIAKAD Ummul Qurro\' Foundation Batam City',
+    },
+    {
+        target      : 'exp-9-p1',
+        value       : 'Designing and developing an academic information system at the Ummul Qurro\' foundation. The system is designed as a means of registering new students online, managing students and paying tuition fees.',
+    },
+    {
+        target      : 'exp-9-p2',
+        value       : 'The system was developed using the <b>Laravel</b> framework, based on <b>webapp</b> and is open.',
+    },
+    {
+        target      : 'exp-10-title',
+        value       : 'SIMPEG TVRI Makassar City',
+    },
+    {
+        target      : 'exp-10-p1',
+        value       : 'Designing and developing a personnel information system for the purposes of personnel data administration at the Makassar city TVRI station office.',
+    },
+    {
+        target      : 'exp-10-p2',
+        value       : 'The system was developed using <b>Laravel</b>, <b>MySQL</b>,<b>HTML</b>, <b>Javascript</b>, <b>CSS</b>, <b>CSS</b> frameworks. b>HTML</b> and <b>Bash</b>.The system is closed and can only be accessed using the local office network.',
+    },
+    {
+        target      : 'load-more',
+        value       : 'load more',
+    },
+    {
+        target      : 'load-less',
+        value       : 'load less',
+    },
+    {
         target      : 'works-title',
         value       : 'Works',
     },
@@ -251,6 +379,134 @@ window.lang_id      = [
         value       : 'Mengoptimalkan kinerja perangkat lunak untuk penggunaan akhir serta memperbahrui versi vendor perangkat lunak',
     },
     {
+        target      : 'exp-1-title',
+        value       : 'Aplikasi Media Pembelajaran Vowel & Consonant Berbasis Desktop',
+    },
+    {
+        target      : 'exp-1-p1',
+        value       : 'Mengembangkan aplikasi media pembelajaran yang digunakan oleh mahasiswa program studi Bahasa Inggris Universitas Muhammadiyah Malang sebagai alat pengenalan vowels dan consonant kepada siswa sekolah dasar.',
+    },
+    {
+        target      : 'exp-1-p2',
+        value       : 'Aplikasi dikembangkan menggunakan bahasa <b>Java</b> dan <b>FXML</b>.',
+    },
+    {
+        target      : 'exp-2-title',
+        value       : 'SIMPEG DINKES Pasuruan',
+    },
+    {
+        target      : 'exp-2-p1',
+        value       : 'Merancang dan mengembangkan sistem informasi kepegawaian untuk keperluan administrasi data kepegawaian pada Dinas Kesehatan kabupaten Pasuruan Jawa Timur.',
+    },
+    {
+        target      : 'exp-2-p2',
+        value       : 'Sistem dikembangkan menggunakan framework <b>Laravel</b>, <b>MySQL</b>,<b>HTML</b>, <b>Javascript</b>, <b>CSS</b>, <b>HTML</b> dan <b>Bash</b>.Sistem bersifat tertutup dan hanya dapat diakses menggunakan jaringan lokal kantor.',
+    },
+    {
+        target      : 'exp-3-title',
+        value       : 'SISGEN-BC',
+    },
+    {
+        target      : 'exp-3-p1',
+        value       : 'Merancang dan mengembangkan sistem informasi generator dokumen berkas penyidikan pada Bea Cukai wilayah madya Malang II. Sistem digunakan sebagai generator dokumen dan pencatatan otomatis untuk setiap penyidikan kasus yang dilakukan.',
+    },
+    {
+        target      : 'exp-3-p2',
+        value       : 'Sistem dikembangkan menggunakan bahasa <b>Java</b>, <b>FXML</b>, basis data<b>MySQL</b> dan <b>LAMPP</b>. Sistem bersifat tertutup dan hanya dapat diakses menggunakan jaringan lokal kantor.',
+    },
+    {
+        target      : 'exp-4-title',
+        value       : 'FASEN-TW',
+    },
+    {
+        target      : 'exp-4-p1',
+        value       : 'Mengembangkan sistem revolusioner yang dapat digunakan untuk mendukung proses transformasi digital di bidang pendidikan.',
+    },
+    {
+        target      : 'exp-4-p2',
+        value       : 'Program dikembangkan menggunakan <b>Node.js</b> dan bersifat <b>API</b>.',
+    },
+    {
+        target      : 'exp-5-title',
+        value       : 'PD-Kopertis 6',
+    },
+    {
+        target      : 'exp-5-p1',
+        value       : 'Mengembangkan program otomatisasi pengklasifikasian data sekolah pada Kopertis VI Jawa Tengah.',
+    },
+    {
+        target      : 'exp-5-p2',
+        value       : 'Program dikembangkan menggunakan bahasa <b>Python</b> dengan antar-muka<em>command-line</em>.',
+    },
+    {
+        target      : 'exp-6-title',
+        value       : 'SIAKAD Yayasan Al-Furqon Magetan',
+    },
+    {
+        target      : 'exp-6-p1',
+        value       : 'Merancang dan mengembangkan sistem informasi akademik pada yayasan Al-Furqon kabupaten Magetan. Sistem dirancang sebagai sarana pendaftaran peserta didik baru secara daring, pengelolaan siswa serta pembayaran uang SPP.',
+    },
+    {
+        target      : 'exp-6-p2',
+        value       : 'Sistem dikembangkan menggunakan framework <b>Laravel</b>, berbasis<b>webapp</b> dan bersifat terbuka.',
+    },
+    {
+        target      : 'exp-7-title',
+        value       : 'Sistem Informasi Absensi Rapat berbasis kode QR',
+    },
+    {
+        target      : 'exp-7-p1',
+        value       : 'Merancang dan mengembangkan sistem informasi absensi rapat menggunakan kodeQR pada program studi Informatika Universitas Muhammadiyah Malang. Sistem dikembangkan untuk meminimalisir kontak fisik saat masa pandemi COVID-19 menggunakan basis QR sebagai absensi jarak jauh.',
+    },
+    {
+        target      : 'exp-7-p2',
+        value       : 'Sistem dikembangkan menggunakan framework <b>Laravel</b>, berbasis<b>webapp</b> dan bersifat tertutup.',
+    },
+    {
+        target      : 'exp-8-title',
+        value       : 'Sistem E-Government Kecamatan Karanggeneng Kabupaten Lamongan, Jawa Timur',
+    },
+    {
+        target      : 'exp-8-p1',
+        value       : 'Merancang dan Mengembangkan Sistem Informasi E-Government dengan memanfaatkan konsep <i>smart city</i> terintegrasi pada kecamatan Karanggeneng, Lamongan, Jawa Timur. Sistem terdiri dari 5 Sistem kecil,yaitu sistem kepegawaian desa, kependudukan, sistem utama dan sistem pengelolaan arsip-arsip desa.',
+    },
+    {
+        target      : 'exp-8-p2',
+        value       : 'Sistem dikembangkan menggunakan framework <b>Laravel</b>, <b>Python</b>, <b>MySQL</b>, <b>Javascript</b>. Dibangun menjadi model <b>End-Use</b> dan<b>API</b>.',
+    },
+    {
+        target      : 'exp-9-title',
+        value       : 'SIAKAD Yayasan Ummul Qurro\' Kota Batam',
+    },
+    {
+        target      : 'exp-9-p1',
+        value       : 'Merancang dan mengembangkan sistem informasi akademik pada yayasan Ummul Qurro\'. Sistem dirancang sebagai sarana pendaftaran peserta didik baru secara daring, pengelolaan siswa serta pembayaran uang SPP.',
+    },
+    {
+        target      : 'exp-9-p2',
+        value       : 'Sistem dikembangkan menggunakan framework <b>Laravel</b>, berbasis<b>webapp</b> dan bersifat terbuka.',
+    },
+    {
+        target      : 'exp-10-title',
+        value       : 'SIMPEG TVRI Kota Makassar',
+    },
+    {
+        target      : 'exp-10-p1',
+        value       : 'Merancang dan mengembangkan sistem informasi kepegawaian untuk keperluan administrasi data kepegawaian pada kantor stasiun TVRI kota Makassar.',
+    },
+    {
+        target      : 'exp-10-p2',
+        value       : 'Sistem dikembangkan menggunakan framework <b>Laravel</b>, <b>MySQL</b>,<b>HTML</b>, <b>Javascript</b>, <b>CSS</b>, <b>HTML</b> dan <b>Bash</b>.Sistem bersifat tertutup dan hanya dapat diakses menggunakan jaringan lokal kantor.',
+    },
+    {
+        target      : 'load-more',
+        value       : 'tampilkan lainnya',
+    },
+    {
+        target      : 'load-less',
+        value       : 'sembunyikan',
+    },
+    {
         target      : 'works-title',
         value       : 'Pekerjaan',
     },
@@ -428,6 +684,134 @@ window.lang_cn      = [
     {
         target      : 'experience-item-3-subtitle',
         value       : '优化最终用途的软件性能并保持软件供应商版本为最新',
+    },
+    {
+        target      : 'exp-1-title',
+        value       : '基于桌面的元音和辅音学习媒体应用程序',
+    },
+    {
+        target      : 'exp-1-p1',
+        value       : '开发 Muhammadiyah Malang 大学英语学习计划的学生使用的学习媒体应用程序，作为向小学生介绍元音和辅音的一种手段。',
+    },
+    {
+        target      : 'exp-1-p2',
+        value       : '应用程序是使用 <b>Java</b> 和 <b>FXML</b> 语言开发的。应用程序是使用 <b>Java</b> 和 <b>FXML</b> 语言开发的。',
+    },
+    {
+        target      : 'exp-2-title',
+        value       : '辛佩格·丁克斯·帕苏鲁安',
+    },
+    {
+        target      : 'exp-2-p1',
+        value       : '为东爪哇省 Pasuruan 区卫生局的人事数据管理设计和开发人事信息系统。',
+    },
+    {
+        target      : 'exp-2-p2',
+        value       : '该系统使用<b>Laravel</b>、<b>MySQL</b>、<b>HTML</b>、<b>Javascript</b>、<b>CSS</b>、 <b>CSS</b> 框架。 b>HTML</b> 和 <b>Bash</b>。系统已关闭，只能使用本地办公网络访问。',
+    },
+    {
+        target      : 'exp-3-title',
+        value       : 'SISGEN-BC',
+    },
+    {
+        target      : 'exp-3-p1',
+        value       : '为 Madya Malang II 地区的海关和消费税调查文件设计和开发一个文件生成器信息系统。该系统用作文件生成器，并自动记录所进行的每个案件调查。',
+    },
+    {
+        target      : 'exp-3-p2',
+        value       : '该系统使用<b>Java</b>、<b>FXML</b>、数据库<b>MySQL</b>和<b>LAMPP</b>语言开发。系统已关闭，只能使用本地办公网络访问。',
+    },
+    {
+        target      : 'exp-4-title',
+        value       : 'FASEN-TW',
+    },
+    {
+        target      : 'exp-4-p1',
+        value       : '开发可用于支持教育数字化转型过程的革命性系统。',
+    },
+    {
+        target      : 'exp-4-p2',
+        value       : '该程序是使用 <b>Node.js</b> 开发的，是 <b>API</b>。',
+    },
+    {
+        target      : 'exp-5-title',
+        value       : 'PD-Kopertis 6',
+    },
+    {
+        target      : 'exp-5-p1',
+        value       : '在 Kopertis VI Central Java 开发学校数据分类自动化程序。',
+    },
+    {
+        target      : 'exp-5-p2',
+        value       : '该程序使用<b>Python</b>语言开发，带有<em>命令行</em>界面。程序使用<b>Python</b>语言开发，带有<em>命令行</ em>界面。',
+    },
+    {
+        target      : 'exp-6-title',
+        value       : 'SIAKAD Al-Furqon Magetan 基金会',
+    },
+    {
+        target      : 'exp-6-p1',
+        value       : '在 Magetan 区的 Al-Furqon 基金会设计和开发学术信息系统。该系统旨在作为在线注册新生、管理学生和支付学费的一种手段。',
+    },
+    {
+        target      : 'exp-6-p2',
+        value       : '该系统是使用<b>Laravel</b> 框架开发的，基于<b>webapp</b> 并且是开放的。',
+    },
+    {
+        target      : 'exp-7-title',
+        value       : '基于二维码的会议考勤信息系统',
+    },
+    {
+        target      : 'exp-7-p1',
+        value       : '在 Muhammadiyah Malang 大学的信息学研究项目中使用二维码设计和开发会议出席信息系统。该系统的开发是为了在 COVID-19 大流行期间使用 QR 基地作为远程考勤，最大限度地减少身体接触。',
+    },
+    {
+        target      : 'exp-7-p2',
+        value       : '该系统是使用<b>Laravel</b>框架开发的，基于一个<b>webapp</b>并且是封闭的。该系统是使用<b>Laravel</b>框架开发的，基于一个<b>webapp</b>并且是封闭的。该系统是使用<b>Laravel</b>框架开发的，基于一个<b>webapp</b>并且是封闭的。该系统是使用<b>Laravel</b>框架开发的，基于一个<b>webapp</b>并且是封闭的。',
+    },
+    {
+        target      : 'exp-8-title',
+        value       : '电子政务系统，Karanggeneng 区，Lamongan Regency，东爪哇省 电子政务系统，Karanggeneng 区，Lamongan Regency，东爪哇',
+    },
+    {
+        target      : 'exp-8-p1',
+        value       : '利用东爪哇省拉蒙根市 Karanggeneng 分区的综合<i>智慧城市</i>概念设计和开发电子政务信息系统。该系统由5个小系统组成，即村人事系统、人口系统、主体系统和村档案管理系统。',
+    },
+    {
+        target      : 'exp-8-p2',
+        value       : '该系统是使用 <b>Laravel</b>、<b>Python</b>、<b>MySQL</b>、<b>Javascript</b> 框架开发的。内置于 <b>End-Use</b> 和 <b>API</b> 模型中。',
+    },
+    {
+        target      : 'exp-9-title',
+        value       : 'SIAKAD Ummul Quro\' Foundation Batam City',
+    },
+    {
+        target      : 'exp-9-p1',
+        value       : '在 Ummul Qurro 基金会设计和开发学术信息系统。该系统旨在作为在线注册新生、管理学生和支付学费的一种手段。',
+    },
+    {
+        target      : 'exp-9-p2',
+        value       : '该系统是使用<b>Laravel</b> 框架开发的，基于<b>webapp</b> 并且是开放的。',
+    },
+    {
+        target      : 'exp-10-title',
+        value       : 'SIMPEG TVRI 望加锡市',
+    },
+    {
+        target      : 'exp-10-p1',
+        value       : '为望加锡市 TVRI 车站办公室的人事数据管理设计和开发人事信息系统。',
+    },
+    {
+        target      : 'exp-10-p2',
+        value       : '该系统使用<b>Laravel</b>、<b>MySQL</b>、<b>HTML</b>、<b>Javascript</b>、<b>CSS</b>、 <b>CSS</b> 框架。 b>HTML</b> 和 <b>Bash</b>。系统已关闭，只能使用本地办公网络访问。',
+    },
+    {
+        target      : 'load-more',
+        value       : '装载更多',
+    },
+    {
+        target      : 'load-less',
+        value       : '负载少',
     },
     {
         target      : 'works-title',
