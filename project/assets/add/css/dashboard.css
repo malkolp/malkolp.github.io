@@ -1,0 +1,300 @@
+body {
+
+}
+/*
+SIDEBAR CONTROL
+.ds-sidebar->width
+.ds-head->padding-left
+.ds-body->margin-left
+
+.ds-sidebar-overlay = 100-sidebar
+*/
+
+.hide-overflow-x {
+    overflow-x: hidden;
+}
+
+/*SIDEBAR*/
+.ds-sidebar {
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    height: 100vh;
+    z-index: 9;
+    white-space: nowrap;
+    overflow-x: hidden;
+    user-select: none;
+    -webkit-box-shadow: 13px 0 8px -4px rgba(161,161,161,0.25);
+    -moz-box-shadow: 13px 0 8px -4px rgba(161,161,161,0.25);
+    box-shadow: 13px 0 8px -4px rgba(161,161,161,0.25);
+}
+.side-head {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: var(--ly-2);
+    top: 0;
+    left: 0;
+    height: 48px;
+    width: 100%;
+    z-index: 12;
+}
+.side-head-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: calc(48px * 3);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.side-head-bg::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.side-head-bg img {
+    position: relative;
+    z-index: 13;
+    width: 120px;
+    height: 120px;
+}
+.ds-sidebar-overlay {
+    top: 0;
+    right: 0;
+    position: fixed;
+    background-color: var(--dark);
+    opacity: 0.5;
+    height: 100vh;
+    z-index: 8;
+    overflow-y: hidden;
+}
+.ds-side-menu, .side-footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: var(--ly-6);
+}
+.side-footer {
+    flex-grow: 1;
+    justify-content: end;
+    margin-bottom: var(--ly-8);
+}
+.side-menu {
+    padding: 0 var(--ly-2);
+    transition: all 300ms;
+    cursor: pointer;
+}
+.side-menu:not(.active):hover {
+    color: var(--muted);
+    background-color: var(--success-thr);
+    transition: all 300ms;
+}
+.side-menu:not(.active):active {
+    color: var(--white);
+    background-color: var(--success-sec);
+    transition: all 300ms;
+}
+.side-menu.active {
+    color: var(--white);
+    background: rgb(40,180,99);
+    background: linear-gradient(90deg, rgba(40,180,99,0.9121621621621622) 37%, rgba(40,180,99,0.34009009009009006) 82%);
+}
+.side-menu-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform: capitalize;
+    padding: var(--ly-2) 0;
+    border-bottom: 1px solid var(--lightgrey);
+}
+.side-menu-content svg{
+    margin-right: var(--ly-2);
+}
+.side-menu-content .side-label {
+    line-height: 0;
+    margin-top: 0.2rem;
+}
+.side-footer .side-menu-content:last-child {
+    border-bottom: none;
+}
+
+/*HEAD & BODY*/
+.ds-head {
+    top: 0;
+    right: 0;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    height: 48px;
+    width: 100%;
+    box-shadow: var(--lightgrey) 0 5px 5px;
+    user-select: none;
+}
+.ds-head-right {
+    display: flex;
+    flex-grow: 1;
+    justify-content: end;
+}
+.ds-body {
+    display: flex;
+    flex-direction: row;
+    padding-top: 48px;
+    min-height: 100vh;
+}
+.ds-content {
+    right: 0;
+    top: 0;
+    width: 100%;
+    padding: var(--ly-2);
+}
+.ds-side-blank {
+}
+
+/*SECTIONING*/
+.section {
+    padding: var(--ly-2) var(--ly-2);
+    width: 100%;
+    min-height: 100%;
+}
+
+/*R-CARD*/
+.r-card {
+    flex-grow: 0;
+    background-color: var(--white);
+    display: inline-block;
+    width: 100%;
+}
+.r-card-header {
+    text-transform: capitalize;
+    padding-bottom: var(--ly-2);
+    margin-bottom: var(--ly-2);
+    border-bottom: 1px solid var(--lightgrey);
+}
+
+/*R-DATA ROW*/
+.r-data {
+    display: grid;
+    grid-template-columns: 8fr repeat(2, 0.25fr);
+    grid-template-rows: 100%;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+.r-data-prim {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: start;
+    grid-area: 1 / 1 / 2 / 2;
+}
+.r-data-detail-mob {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.r-data-info {
+    white-space: nowrap;
+}
+.r-data-detail {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: var(--ly-4);
+}
+.r-data-detail div:first-child {
+    margin-right: var(--ly-2);
+}
+.r-data-qr {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+@media (max-width: 575px){
+    .pc {
+        display: none!important;
+    }
+    .section:not(.keep-pad) {
+        padding: 0;
+    }
+    .r-card-header {
+        border-bottom: none;
+    }
+    .r-data {
+        grid-template-columns: 4fr repeat(2, 0.5fr);
+    }
+    .r-data-prim, .r-data-info {
+        display: block;
+    }
+    .r-data-qr {
+        width: 100%;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px){
+    .pc {
+        display: none!important;
+    }
+    .section:not(.keep-pad) {
+        padding: 0;
+    }
+    .r-card-header {
+        border-bottom: none;
+    }
+    .r-data {
+        grid-template-columns: 4fr repeat(2, 0.5fr);
+    }
+    .r-data-prim, .r-data-info {
+        display: block;
+    }
+    .r-data-qr {
+        width: 42px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .mob {
+        display: none!important;
+    }
+    .r-data {
+        grid-template-columns: 6fr repeat(2, 0.5fr);
+    }
+    .ds-sidebar-overlay {
+        display: none;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .mob {
+        display: none!important;
+    }
+    .ds-sidebar-overlay {
+        display: none;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1399px){
+    .mob {
+        display: none!important;
+    }
+    .ds-sidebar-overlay {
+        display: none;
+    }
+}
+@media (min-width: 1400px){
+    .mob {
+        display: none!important;
+    }
+    .ds-sidebar-overlay {
+        display: none;
+    }
+}

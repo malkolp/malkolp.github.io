@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!--suppress JSUnresolvedLibraryURL -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prototype BKP</title>
+    <link rel="icon" href="assets/img/logo/logo.png">
+    <meta name="data-root" content="http://localhost:63342/quarantine/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/add/css/preloader.css">
+    <link rel="stylesheet" href="assets/add/css/landing-page.css">
+    <link rel="stylesheet" href="assets/add/css/template.css">
+</head>
+<body>
+    <div id="loader-wrapper" class="preloader">
+        <div id="loader">
+            <div>
+                <img src="assets/img/logo/logo.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="navigation bor-bottom-lightgrey" data-page="launcher">
+        <div class="nav-content pt-3 pb-3">
+            <div class="nav-logo">
+                <img class="img-fluid" src="assets/img/logo/logo-bkp.svg" alt="">
+            </div>
+            <div class="nav-right">
+                <div class="nav-item">
+                    <div class="but but-sm but-success" data-page-toggle="login">
+                        masuk
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <i class="but" data-feather="grid"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header section bkg-light" data-page="launcher">
+        <div class="mob-logo">
+            <img class="img-fluid" src="assets/img/logo/logo-bkp.svg" alt="">
+        </div>
+        <div class="title">
+            <h4 class="text-capitalize txt-success">sistem informasi lalulintas hewan</h4>
+            <h1 class="text-capitalize txt-dark">Badan Karantina Pertanian</h1>
+            <h4 class="text-capitalize txt-success">provinsi maluku</h4>
+        </div>
+        <div class="mob-menu wpc-100">
+            <div class="mob-menu-content wpc-70">
+                <div class="d-flex flex-column wpc-100">
+                    <div class="but but-grow but-success but-sm mgb-3" data-page-toggle="login">
+                        masuk
+                    </div>
+                    <div class="but but-grow but-lightgrey but-sm">
+                        layanan
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section bkg-light" data-page="login">
+        <div class="r-card bkg-white pd-0">
+            <div class="left-card">
+                <div class="side-bkg" style="background-image: url('assets/img/landing/side-bg.jpg')"></div>
+                <div class="side-overlay"></div>
+                <div class="side-content">
+                    <div class="txt-white">belum memiliki akun?</div>
+                    <div class="but but-outline-white but-sm mgt-2" data-page-toggle="signup">
+                        daftar
+                    </div>
+                </div>
+                <div class="side-logo-ctr pdt-4 pdl-4 pdb-4">
+                    <div class="but" data-page-toggle="launcher">
+                        <img src="assets/img/logo/logo-white.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="right-card pd-4 d-flex justify-content-center">
+                <div class="r-form d-flex flex-column align-items-center justify-content-center hpc-100 wpc-55">
+                    <div class="mob mob-logo-sec">
+                        <img src="assets/img/logo/logo-green.svg" alt="" data-page-toggle="launcher">
+                    </div>
+                    <h4 class="txt-success text-capitalize mgb-5">masuk</h4>
+                    <div class="group group-sm group-success group-grow mgb-2">
+                        <i class="icon" data-feather="user"></i>
+                        <input id="inp-login-user" placeholder="NIK / Nama Pengguna" type="text" class="input">
+                    </div>
+                    <div class="group group-sm group-success group-grow mgb-2">
+                        <i class="icon" data-feather="lock"></i>
+                        <input id="inp-login-pass" placeholder="Kata Sandi" type="password" class="input">
+                    </div>
+                    <div class="d-inline-block mgb-6 txt-right wpc-100 bor-bottom-lightgrey pdt-2 pdb-1 txt-click txt-dark" data-page-toggle="forgot-password">
+                        lupa kata sandi
+                    </div>
+                    <button id="inp-login-submit" class="but but-success but-sm but-grow mgt-4 disabled" disabled>
+                        login
+                    </button>
+                </div>
+                <div class="mob mob-footer">
+                    belum memiliki akun? <span class="txt-success txt-click" data-page-toggle="signup">daftar</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section bkg-light" data-page="forgot-password">
+        <div class="r-card bkg-white pd-0">
+            <div class="left-card">
+                <div class="side-bkg" style="background-image: url('assets/img/landing/side-bg.jpg')"></div>
+                <div class="side-overlay"></div>
+                <div class="side-content">
+                    <div class="txt-white">sudah memiliki akun?</div>
+                    <div class="but but-outline-white but-sm mgt-2" data-page-toggle="login">
+                        login
+                    </div>
+                </div>
+                <div class="side-logo-ctr pdt-4 pdl-4 pdb-4">
+                    <div class="but" data-page-toggle="launcher">
+                        <img src="assets/img/logo/logo-white.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="right-card pd-4 d-flex justify-content-center">
+                <div class="r-form d-flex flex-column align-items-center justify-content-center hpc-100 wpc-55">
+                    <div class="mob mob-logo-sec">
+                        <img src="assets/img/logo/logo-green.svg" alt="" data-page-toggle="launcher">
+                    </div>
+                    <h4 class="txt-success text-capitalize mgb-5">lupa kata sandi</h4>
+                    <div class="group group-sm group-success group-grow mgb-2">
+                        <i class="icon" data-feather="user"></i>
+                        <input placeholder="NIK / Nama Pengguna" type="text" class="input">
+                    </div>
+                    <div class="d-inline-block mgb-6 txt-left txt-muted wpc-100 bor-bottom-lightgrey pdt-2 pdb-1 fns-10" data-page-toggle="forgot-password">
+                        <div>
+                            kode akan dikirim ke nomor Whatsapp sebagai verifikasi untuk mengatur
+                            ulang kata sandi pengguna.
+                        </div>
+                        <div>
+                            atau dapat datang langsung ke kantor Badan Karantina Pertanian provinsi Maluku
+                        </div>
+                    </div>
+                    <button class="but but-success but-sm but-grow mgt-4">
+                        kirim kode verifikasi
+                    </button>
+                </div>
+                <div class="mob mob-footer">
+                    sudah memiliki akun? <span class="txt-success txt-click" data-page-toggle="login">login</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section bkg-light" data-page="signup">
+        <div class="r-card bkg-white pd-0">
+            <div class="left-card">
+                <div class="side-bkg" style="background-image: url('assets/img/landing/side-bg.jpg')"></div>
+                <div class="side-overlay"></div>
+                <div class="side-content">
+                    <div class="txt-white">sudah memiliki akun?</div>
+                    <div class="but but-outline-white but-sm mgt-2" data-page-toggle="login">
+                        masuk
+                    </div>
+                </div>
+                <div class="side-logo-ctr pdt-4 pdl-4 pdb-4">
+                    <div class="but" data-page-toggle="launcher">
+                        <img src="assets/img/logo/logo-white.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="right-card pd-4 d-flex justify-content-center">
+                <div class="r-form d-flex flex-column align-items-center justify-content-center hpc-100 wpc-55">
+                    <div class="mob mob-logo-sec">
+                        <img src="assets/img/logo/logo-green.svg" alt="" data-page-toggle="launcher">
+                    </div>
+                    <h4 class="txt-success text-capitalize mgb-5">daftar</h4>
+                    <div class="group group-sm group-success group-grow mgb-2">
+                        <i class="icon" data-feather="credit-card"></i>
+                        <input id="inp-signup-cid" placeholder="NIK" type="text" class="input">
+                    </div>
+                    <div class="group group-sm group-success group-grow mgb-2">
+                        <i class="icon" data-feather="user"></i>
+                        <input id="inp-signup-fullname" placeholder="Nama Lengkap" type="text" class="input">
+                    </div>
+                    <div id="inp-signup-pass-req" class="txt-left wpc-100 fns-10 mgb-1 txt-danger">
+                        kata sandi salah
+                    </div>
+                    <div class="group group-sm group-success group-grow mgb-2">
+                        <i class="icon" data-feather="lock"></i>
+                        <input id="inp-signup-password" placeholder="Kata Sandi" type="password" class="input">
+                    </div>
+                    <div class="group group-sm group-success group-grow mgb-2">
+                        <i class="icon" data-feather="lock"></i>
+                        <input id="inp-signup-verification" placeholder="Verifikasi Kata Sandi" type="password" class="input">
+                    </div>
+                    <div class="d-flex flex-row mgb-6 txt-right wpc-100 bor-bottom-lightgrey pdt-2 pdb-1 txt-dark">
+                        <label class="group-checkbox group-checkbox-sm group-checkbox-success">
+                            <span>
+                                <input id="inp-signup-agree" type="checkbox">
+                            </span>
+                            <span>Saya berniat menggunakan layanan dari BKP provinsi Maluku</span>
+                        </label>
+                    </div>
+                    <button id="inp-signup-submit" class="but but-success but-sm but-grow mgt-4 disabled" disabled>
+                        daftar
+                    </button>
+                </div>
+                <div class="mob mob-footer">
+                    sudah memiliki akun? <span class="txt-success txt-click" data-page-toggle="login">masuk</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section bkg-light" data-page="register-data">
+        <div class="r-card bkg-white pd-4 fluid">
+            <div class="right-card pd-4 d-flex justify-content-center">
+                <div class="r-form d-flex flex-column align-items-center justify-content-center hpc-100 wpc-55">
+                    <h4 class="txt-success text-capitalize mgb-5">Kelengkapan data akun</h4>
+                    <div class="flex-input mgb-2">
+                        <div class="wpc-100">
+                            <div class="group-select group-select-sm group-select-success">
+                                <select id="inp-register-province">
+                                    <option value="1" selected>provinsi Maluku</option>
+                                    <option value="0">luar provinsi Maluku</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="wpc-100">
+                            <div class="group-select group-select-sm group-select-success disabled">
+                                <select id="inp-register-district" disabled>
+                                    <option value="0">-</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="wpc-100">
+                            <div class="group-select group-select-sm group-select-success disabled">
+                                <select id="inp-register-region" disabled>
+                                    <option value="0">-</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group-text-area group-text-area-sm group-text-area-success mgb-2">
+                        <textarea id="inp-register-address" placeholder="detail alamat"></textarea>
+                    </div>
+                    <div class="group group-sm group-success group-grow mgb-2">
+                        <i class="icon" data-feather="phone"></i>
+                        <input id="inp-register-phone" placeholder="nomor telp/wa" type="tel" class="input">
+                    </div>
+                    <div class="group group-sm group-success group-grow mgb-2 pdb-9 bor-bottom-lightgrey">
+                        <i class="icon" data-feather="mail"></i>
+                        <input id="inp-register-email" placeholder="e-mail (opsional)" type="email" class="input">
+                    </div>
+                    <button id="inp-register-submit" class="but but-success but-sm but-grow mgt-4 disabled" disabled>
+                        simpan
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="assets/add/js/notice.min.js"></script>
+    <script src="assets/add/js/preloader.js"></script>
+    <script src="assets/add/js/page-switcher.js"></script>
+    <script src="assets/add/js/notify.js"></script>
+    <script src="assets/add/data/district.js"></script>
+    <script src="assets/add/js/page/landing.js"></script>
+    <script src="assets/add/js/page/login.js"></script>
+    <script src="assets/add/js/page/signup.js"></script>
+    <script src="assets/add/js/page/register.js"></script>
+</body>
+</html>
