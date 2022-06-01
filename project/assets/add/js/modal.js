@@ -26,6 +26,7 @@
     modal.close             = ()=>{
         overlay.animate({opacity:'0'},200, ()=>{
             overlay.addClass('hide-modal-overlay');
+            modal.hide();
         });
     };
     overlay.click(()=>{

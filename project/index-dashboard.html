@@ -1,20 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" translate="no">
 <head>
     <meta charset="UTF-8">
     <title>Prototype Dashboard</title>
     <link rel="icon" href="assets/img/logo/logo.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <meta name="data-root" content="http://localhost:63342/quarantine/">
+    <meta name="data-prevent-auto-fade">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/add/dist/owl-carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/add/dist/owl-carousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/add/dist/spinThatSh1t/style.css">
     <link rel="stylesheet" href="assets/add/css/preloader.css">
     <link rel="stylesheet" href="assets/add/css/template.css">
     <link rel="stylesheet" href="assets/add/css/dashboard.css">
+    <link rel="stylesheet" href="assets/add/css/modify.css">
+    <link rel="stylesheet" href="assets/add/css/qr-print.css">
 </head>
 <body>
+    <div class="qr-print-wrapper">
+        <div id="qr-print" class="active">
+            <div class="qr-print-bg" style="background-image: url('assets/img/landing/side-bg.jpg')"></div>
+            <div class="qr-print-bottom"></div>
+            <div class="qr-print-content">
+                <div class="position-absolute bottom-0 text-capitalize fns-12 fnw-700 txt-center mgl-2 mgr-2 mgb-9 pdb-6"><span style="white-space: nowrap">badan karantina pertanian</span><br>provinsi maluku</div>
+                <div class="wpc-20 mgb-9">
+                    <img src="assets/img/logo/logo-white.png" alt="" class="img-fluid">
+                </div>
+                <div class="mgt-9 mgb-9 wpc-55 txt-center">
+                    <div class="bkg-white d-inline-block pd-9 bor-radius-xxl">
+                        <img id="qr-print-qr" src="assets/sample/qr.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div style="display: inline-block;height: 140px;width: 100%">
+
+                </div>
+                <div class="text-capitalize fns-24 fnw-700 txt-center mgt-9 wpc-70">
+                    <span id="qr-print-title">Dokumen blablablabla</span>
+                </div>
+                <div class="text-capitalize fns-24 fnw-700 txt-center wpc-70">
+                    <span id="qr-print-number">87987567577889</span>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="loader-wrapper" class="preloader">
     <div id="loader">
         <div>
@@ -22,7 +54,7 @@
         </div>
     </div>
 </div>
-    <div class="ds-sidebar">
+    <div class="ds-sidebar" data-sidebar-swiper="off">
         <div class="side-head">
             <div class="but pc mgl-2 txt-white" data-sidebar-toggle="off">
                 <i data-feather="x"></i>
@@ -32,13 +64,13 @@
             <img class="but" src="assets/img/logo/logo-white.svg" alt="">
         </div>
         <div class="ds-side-menu">
-            <div class="side-menu active">
+            <div class="side-menu active" data-sidebar-menu="dashboard" data-sidebar-page="documents">
                 <div class="side-menu-content">
                     <i data-feather="home"></i>
                     <div class="fnw-600 side-label">dashboard</div>
                 </div>
             </div>
-            <div class="side-menu">
+            <div class="side-menu" data-sidebar-menu="setting" data-sidebar-page="settings">
                 <div class="side-menu-content">
                     <i data-feather="settings"></i>
                     <div class="fnw-600 side-label">pengaturan</div>
@@ -51,6 +83,9 @@
                     <i data-feather="power"></i>
                     <div class="fnw-600 side-label">keluar</div>
                 </div>
+            </div>
+            <div class="fns-10 fnw-600 txt-center txt-lightgrey">
+                E-BKP Provinsi Maluku<br>by Malkolp
             </div>
         </div>
     </div>
@@ -67,39 +102,588 @@
             </div>
         </div>
     </div>
-    <div class="ds-body bkg-light">
+    <div class="ds-body bkg-light" data-sidebar-swiper="on">
         <div class="ds-content">
-            <div class="section" data-page="doc-qr">
-                <div class="r-card mgb-2">
-
+            <div class="section doc-section" data-page="documents" data-page-title="dashboard">
+                <div id="document-tags" class="owl-carousel pdb-3" style="" data-disable-swiper>
+                    <div class="bls active default">
+                        <div>
+                            <span>terakhir</span>
+                            <span><i data-feather="x"></i></span>
+                        </div>
+                    </div>
+                    <div class="bls">SKKPH</div>
+                    <div class="bls">DOK REKOM</div>
+                    <div class="bls">ACDC</div>
+                    <div class="bls">doc e</div>
+                    <div class="bls">doc f</div>
+                    <div class="bls">doc g</div>
+                </div>
+                <div id="document-lists"></div>
+                <div class="doc-modal-control">
+                    <div class="r-card mgb-2 mob-min mob-modal-card detail-card">
+                        <div class="mob card-slider detail-card-swiper" data-disable-swiper>
+                            <div></div>
+                        </div>
+                        <div class="d-flex flex-row text-capitalize fns-14 fnw-700 pdb-2 bor-bottom-lightgrey">
+                            <div class="flex-grow-1">
+                                <span>dokumen </span>
+                                <span id="doc-detail-title">surat keterangan kesehatan peternakan</span>
+                                <span> </span>
+                                <span id="doc-detail-alias" class="txt-muted text-uppercase">(skkph)</span>
+                            </div>
+                            <div class="btn btn-sm pc close-detail-card"><i data-feather="x"></i></div>
+                        </div>
+                        <div class="detail-card-content">
+                            <div class="pdt-2 fns-10 pdb-6 fnw-600 txt-success">
+                                <span id="doc-detail-token">JOI892JFIo__398CXX</span>
+                            </div>
+                            <div id="doc-detail-image" data-disable-swiper>
+                            </div>
+                            <div class="mgt-4 mgb-4 d-flex flex-row">
+                                <div class="flex-grow-0 mgr-2">
+                                    <div class="but but-sm qr-detail-btn">
+                                        <svg width="22" height="22" viewBox="0 0 96 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(0.145455,2.81795e-33,-2.81795e-33,-0.145455,-21.8182,117.818)"><path d="M150,810L150,570L180,570C207,570 210,567 210,540C210,513 207,510 180,510C153,510 150,507 150,480C150,453 153,450 180,450C207,450 210,453 210,480C210,507 213,510 240,510C267,510 270,507 270,480C270,453 273,450 300,450C327,450 330,447 330,420L330,390L150,390L150,150L390,150L390,390L570,390L570,420C570,447 567,450 540,450C513,450 510,453 510,480L510,510L630,510L630,480C630,453 633,450 660,450C687,450 690,447 690,420C690,393 687,390 660,390C633,390 630,387 630,360L630,330L480,330L480,150L540,150L540,270L660,270L660,240C660,213 657,210 630,210C603,210 600,207 600,180C600,153 603,150 630,150C657,150 660,153 660,180C660,207 663,210 690,210C717,210 720,213 720,240C720,260 725,270 735,270C745,270 750,280 750,300C750,327 753,330 780,330C807,330 810,333 810,360C810,387 807,390 780,390C753,390 750,393 750,420C750,447 753,450 780,450C807,450 810,453 810,480C810,507 807,510 780,510C753,510 750,513 750,540C750,567 753,570 780,570L810,570L810,810L570,810L570,570L390,570L390,810L150,810ZM330,750L330,630L210,630L210,750L330,750ZM750,750L750,630L630,630L630,750L750,750ZM390,540C390,513 393,510 420,510C447,510 450,507 450,480L450,450L330,450L330,480C330,507 327,510 300,510C273,510 270,513 270,540L270,570L390,570L390,540ZM690,540C690,513 693,510 720,510C747,510 750,507 750,480C750,453 747,450 720,450C693,450 690,453 690,480C690,507 687,510 660,510C633,510 630,513 630,540C630,567 633,570 660,570C687,570 690,567 690,540ZM750,360C750,333 747,330 720,330C693,330 690,333 690,360C690,387 693,390 720,390C747,390 750,387 750,360ZM330,330L330,210L210,210L210,330L330,330Z" style="fill-rule:nonzero;"/></g><g transform="matrix(0.145455,2.81795e-33,-2.81795e-33,-0.145455,-21.8182,117.818)"><path d="M240,690C240,663 243,660 270,660C297,660 300,663 300,690C300,717 297,720 270,720C243,720 240,717 240,690Z" style="fill-rule:nonzero;"/></g><g transform="matrix(0.145455,2.81795e-33,-2.81795e-33,-0.145455,-21.8182,117.818)"><path d="M660,690C660,663 663,660 690,660C717,660 720,663 720,690C720,717 717,720 690,720C663,720 660,717 660,690Z" style="fill-rule:nonzero;"/></g><g transform="matrix(0.145455,2.81795e-33,-2.81795e-33,-0.145455,-21.8182,117.818)"><path d="M240,270C240,243 243,240 270,240C297,240 300,243 300,270C300,297 297,300 270,300C243,300 240,297 240,270Z" style="fill-rule:nonzero;"/></g><g transform="matrix(0.145455,2.81795e-33,-2.81795e-33,-0.145455,-21.8182,117.818)"><path d="M450,750C450,703 447,690 435,690C425,690 420,680 420,660C420,640 425,630 435,630C443,630 450,623 450,615C450,605 460,600 480,600C509,600 510,602 510,645C510,678 514,690 525,690C535,690 540,700 540,720C540,740 535,750 525,750C515,750 510,760 510,780C510,807 507,810 480,810L450,810L450,750Z" style="fill-rule:nonzero;"/></g><g transform="matrix(0.145455,2.81795e-33,-2.81795e-33,-0.145455,-21.8182,117.818)"><path d="M750,180C750,153 753,150 780,150C807,150 810,153 810,180C810,207 807,210 780,210C753,210 750,207 750,180Z" style="fill-rule:nonzero;"/></g></svg>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <div class="but but-sm but-success">
+                                        unduh dokumen
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mob">
+                                <div id="doc-detail-info-mob" data-disable-swiper>
+                                    <div class="info-carousel owl-carousel">
+                                        <div class="item-slider">
+                                            <div class="mgt-4 pdb-1 mgb-2 bor-bottom-lightgrey text-capitalize">
+                                                <span class="fnw-700 fns-11">informasi umum</span>
+                                            </div>
+                                            <div>
+                                                <div class="mgb-2">
+                                                    <div class="d-flex flex-row align-items-center justify-content-center">
+                                                        <div class="mgr-2 txt-muted"><i data-feather="file"></i></div>
+                                                        <div class="flex-grow-1">
+                                                            <div class="fnw-500 fns-9 txt-muted">nomor</div>
+                                                            <div class="fnw-600 fns-10">23IPO90</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mgb-2">
+                                                    <div class="d-flex flex-row align-items-center justify-content-center">
+                                                        <div class="mgr-2 txt-muted"><i data-feather="user"></i></div>
+                                                        <div class="flex-grow-1">
+                                                            <div class="fnw-500 fns-9 txt-muted">pemilik</div>
+                                                            <div class="fnw-600 fns-11">malik pajar lapele</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mgb-2">
+                                                    <div class="d-flex flex-row align-items-center justify-content-center">
+                                                        <div class="mgr-2 txt-muted"><i data-feather="briefcase"></i></div>
+                                                        <div class="flex-grow-1">
+                                                            <div class="fnw-500 fns-9 txt-muted">dibuat oleh</div>
+                                                            <div class="fnw-600 fns-11">zhao zilong</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mgb-2">
+                                                    <div class="d-flex flex-row align-items-center justify-content-center">
+                                                        <div class="mgr-2 txt-muted"><i data-feather="calendar"></i></div>
+                                                        <div class="flex-grow-1">
+                                                            <div class="fnw-500 fns-9 txt-muted">tempat / tanggal</div>
+                                                            <div class="fnw-600 fns-11">kota ambon / 18 maret 2022</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-slider">
+                                            <div class="mgt-4 pdb-1 mgb-2 bor-bottom-lightgrey text-capitalize">
+                                                <span class="fnw-700 fns-11">detail</span>
+                                            </div>
+                                            <div>
+                                                <table class="r-table-stripped">
+                                                    <tbody>
+                                                    <tr class="r-table-row">
+                                                        <td class="text-capitalize fnw-700 fns-10 pdb-2" colspan="2">identitas dokumen</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fns-10 fnw-600">nomor</td>
+                                                        <td class="fns-10 fnw-500">945878</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fns-10 fnw-600">token</td>
+                                                        <td class="fns-10 fnw-500">9jdOJADWI-94HIUFE-FHIWUEkj</td>
+                                                    </tr>
+                                                    <tr class="r-table-row">
+                                                        <td class="text-capitalize fnw-700 fns-10 pdb-2" colspan="2">pemilik</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fns-10 fnw-600">nama lengkap</td>
+                                                        <td class="fns-10 fnw-500">malik pajar lapele</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fns-10 fnw-600">alamat</td>
+                                                        <td class="fns-10 fnw-500">Jl Belakang Rumah, Kecamatan Sirimau, Kota Ambon, Provinsi Maluku</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fns-10 fnw-600">nomor telp</td>
+                                                        <td class="fns-10 fnw-500">081343373983</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fns-10 fnw-600">email</td>
+                                                        <td class="fns-10 fnw-500">mf64849@gmail.com</td>
+                                                    </tr>
+                                                    <tr class="r-table-row">
+                                                        <td class="text-capitalize fnw-700 fns-10 pdb-2" colspan="2">rincian dokumen</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fns-10 fnw-600">nama dokumen</td>
+                                                        <td class="fns-10 fnw-500">surat keterangan kesehatan pangan</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fns-10 fnw-600">tempat pembuatan</td>
+                                                        <td class="fns-10 fnw-500">surat keterangan kesehatan pangan</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fns-10 fnw-600">tanggal/waktu</td>
+                                                        <td class="fns-10 fnw-500">surat keterangan kesehatan pangan</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fns-10 fnw-600">dibuat oleh</td>
+                                                        <td class="fns-10 fnw-500">zhao yun zilong</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fns-10 fnw-600">jabatan</td>
+                                                        <td class="fns-10 fnw-500">dokter hewan dinas BKP provinsi Maluku</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="item-slider">
+                                            <div class="mgt-4 pdb-1 mgb-2 bor-bottom-lightgrey text-capitalize">
+                                                <span class="fnw-700 fns-11">riwayat pengecekan</span>
+                                            </div>
+                                            <div>
+                                                <table class="r-table-stripped wpc-100">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td style="padding-right: 0!important;">
+                                                            <div class="d-flex flex-row align-items-center justify-content-center">
+                                                                <div class="fnw-700 fns-24 txt-center txt-muted">12</div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex flex-row align-items-center justify-content-center">
+                                                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                                                    <div class="fnw-700 fns-9 txt-center text-uppercase">mar</div>
+                                                                    <div class="fnw-700 fns-9 txt-center">2022</div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div>
+                                                                <div class="fnw-500 fns-10 text-capitalize">pegawai dinas BKP</div>
+                                                                <div class="fnw-500 fns-10 text-capitalize">
+                                                                    <span>kecamatan sirimau</span>
+                                                                    <span>kota ambon</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding-right: 0!important;">
+                                                            <div class="d-flex flex-row align-items-center justify-content-center">
+                                                                <div class="fnw-700 fns-24 txt-center txt-muted">12</div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex flex-row align-items-center justify-content-center">
+                                                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                                                    <div class="fnw-700 fns-9 txt-center text-uppercase">mar</div>
+                                                                    <div class="fnw-700 fns-9 txt-center">2022</div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div>
+                                                                <div class="fnw-500 fns-10 text-capitalize">pegawai dinas BKP</div>
+                                                                <div class="fnw-500 fns-10 text-capitalize">
+                                                                    <span>kecamatan sirimau</span>
+                                                                    <span>kota ambon</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding-right: 0!important;">
+                                                            <div class="d-flex flex-row align-items-center justify-content-center">
+                                                                <div class="fnw-700 fns-24 txt-center txt-muted">12</div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex flex-row align-items-center justify-content-center">
+                                                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                                                    <div class="fnw-700 fns-9 txt-center text-uppercase">mar</div>
+                                                                    <div class="fnw-700 fns-9 txt-center">2022</div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div>
+                                                                <div class="fnw-500 fns-10 text-capitalize">pegawai dinas BKP</div>
+                                                                <div class="fnw-500 fns-10 text-capitalize">
+                                                                    <span>kecamatan sirimau</span>
+                                                                    <span>kota ambon</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="pdt-5 pdb-5 fnw-600 txt-muted txt-center">
+                                                    tidak ada riwayat pengecekan
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pc">
+                                <div id="doc-detail-info-pc">
+                                    <div class="mgt-4 pdb-1 mgb-2 bor-bottom-lightgrey text-capitalize">
+                                        <span class="fnw-700 fns-11">informasi umum</span>
+                                    </div>
+                                    <div>
+                                        <div class="mgb-2">
+                                            <div class="d-flex flex-row align-items-center justify-content-center">
+                                                <div class="mgr-2 txt-muted"><i data-feather="file"></i></div>
+                                                <div class="flex-grow-1">
+                                                    <div class="fnw-500 fns-9 txt-muted">nomor</div>
+                                                    <div class="fnw-600 fns-10">23IPO90</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mgb-2">
+                                            <div class="d-flex flex-row align-items-center justify-content-center">
+                                                <div class="mgr-2 txt-muted"><i data-feather="user"></i></div>
+                                                <div class="flex-grow-1">
+                                                    <div class="fnw-500 fns-9 txt-muted">pemilik</div>
+                                                    <div class="fnw-600 fns-11">malik pajar lapele</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mgb-2">
+                                            <div class="d-flex flex-row align-items-center justify-content-center">
+                                                <div class="mgr-2 txt-muted"><i data-feather="briefcase"></i></div>
+                                                <div class="flex-grow-1">
+                                                    <div class="fnw-500 fns-9 txt-muted">dibuat oleh</div>
+                                                    <div class="fnw-600 fns-11">zhao zilong</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mgb-2">
+                                            <div class="d-flex flex-row align-items-center justify-content-center">
+                                                <div class="mgr-2 txt-muted"><i data-feather="calendar"></i></div>
+                                                <div class="flex-grow-1">
+                                                    <div class="fnw-500 fns-9 txt-muted">tempat / tanggal</div>
+                                                    <div class="fnw-600 fns-11">kota ambon / 18 maret 2022</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mgt-4 pdb-1 mgb-2 bor-bottom-lightgrey text-capitalize">
+                                        <span class="fnw-700 fns-11">detail</span>
+                                    </div>
+                                    <div>
+                                        <table class="r-table-stripped">
+                                            <tbody>
+                                            <tr class="r-table-row">
+                                                <td class="text-capitalize fnw-700 fns-10 pdb-2" colspan="2">identitas dokumen</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fns-10 fnw-600">nomor</td>
+                                                <td class="fns-10 fnw-500">945878</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fns-10 fnw-600">token</td>
+                                                <td class="fns-10 fnw-500">9jdOJADWI-94HIUFE-FHIWUEkj</td>
+                                            </tr>
+                                            <tr class="r-table-row">
+                                                <td class="text-capitalize fnw-700 fns-10 pdb-2" colspan="2">pemilik</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fns-10 fnw-600">nama lengkap</td>
+                                                <td class="fns-10 fnw-500">malik pajar lapele</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fns-10 fnw-600">alamat</td>
+                                                <td class="fns-10 fnw-500">Jl Belakang Rumah, Kecamatan Sirimau, Kota Ambon, Provinsi Maluku</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fns-10 fnw-600">nomor telp</td>
+                                                <td class="fns-10 fnw-500">081343373983</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fns-10 fnw-600">email</td>
+                                                <td class="fns-10 fnw-500">mf64849@gmail.com</td>
+                                            </tr>
+                                            <tr class="r-table-row">
+                                                <td class="text-capitalize fnw-700 fns-10 pdb-2" colspan="2">rincian dokumen</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fns-10 fnw-600">nama dokumen</td>
+                                                <td class="fns-10 fnw-500">surat keterangan kesehatan pangan</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fns-10 fnw-600">tempat pembuatan</td>
+                                                <td class="fns-10 fnw-500">surat keterangan kesehatan pangan</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fns-10 fnw-600">tanggal/waktu</td>
+                                                <td class="fns-10 fnw-500">surat keterangan kesehatan pangan</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fns-10 fnw-600">dibuat oleh</td>
+                                                <td class="fns-10 fnw-500">zhao yun zilong</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fns-10 fnw-600">jabatan</td>
+                                                <td class="fns-10 fnw-500">dokter hewan dinas BKP provinsi Maluku</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="mgt-4 pdb-1 mgb-2 bor-bottom-lightgrey text-capitalize">
+                                        <span class="fnw-700 fns-11">riwayat pengecekan</span>
+                                    </div>
+                                    <div>
+                                        <table class="r-table-stripped wpc-100">
+                                            <tbody>
+                                            <tr>
+                                                <td style="padding-right: 0!important;">
+                                                    <div class="d-flex flex-row align-items-center justify-content-center">
+                                                        <div class="fnw-700 fns-24 txt-center txt-muted">12</div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex flex-row align-items-center justify-content-center">
+                                                        <div class="d-flex flex-column align-items-center justify-content-center">
+                                                            <div class="fnw-700 fns-9 txt-center text-uppercase">mar</div>
+                                                            <div class="fnw-700 fns-9 txt-center">2022</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <div class="fnw-500 fns-10 text-capitalize">pegawai dinas BKP</div>
+                                                        <div class="fnw-500 fns-10 text-capitalize">
+                                                            <span>kecamatan sirimau</span>
+                                                            <span>kota ambon</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-right: 0!important;">
+                                                    <div class="d-flex flex-row align-items-center justify-content-center">
+                                                        <div class="fnw-700 fns-24 txt-center txt-muted">12</div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex flex-row align-items-center justify-content-center">
+                                                        <div class="d-flex flex-column align-items-center justify-content-center">
+                                                            <div class="fnw-700 fns-9 txt-center text-uppercase">mar</div>
+                                                            <div class="fnw-700 fns-9 txt-center">2022</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <div class="fnw-500 fns-10 text-capitalize">pegawai dinas BKP</div>
+                                                        <div class="fnw-500 fns-10 text-capitalize">
+                                                            <span>kecamatan sirimau</span>
+                                                            <span>kota ambon</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-right: 0!important;">
+                                                    <div class="d-flex flex-row align-items-center justify-content-center">
+                                                        <div class="fnw-700 fns-24 txt-center txt-muted">12</div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex flex-row align-items-center justify-content-center">
+                                                        <div class="d-flex flex-column align-items-center justify-content-center">
+                                                            <div class="fnw-700 fns-9 txt-center text-uppercase">mar</div>
+                                                            <div class="fnw-700 fns-9 txt-center">2022</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <div class="fnw-500 fns-10 text-capitalize">pegawai dinas BKP</div>
+                                                        <div class="fnw-500 fns-10 text-capitalize">
+                                                            <span>kecamatan sirimau</span>
+                                                            <span>kota ambon</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="pdt-5 pdb-5 fnw-600 txt-muted txt-center">
+                                            tidak ada riwayat pengecekan
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="r-card mgb-2 mob-min mob-modal-card qr-card">
+                        <div class="mob card-slider qr-card-swiper" data-disable-swiper>
+                            <div></div>
+                        </div>
+                        <div class="d-flex flex-row-reverse">
+                            <div class="flex-grow-0">
+                                <span class="btn btn-sm pc close-qr-card"><i class="" data-feather="x"></i></span>
+                            </div>
+                        </div>
+                        <div class="qr-template txt-dark">
+                            <div class="text-capitalize fns-14 fnw-700 txt-center mgl-2 mgr-2">
+                                <span>kode QR dokumen </span>
+                                <span id="qr-doc-type"></span>
+                            </div>
+                            <div class="text-capitalize fns-11 fnw-700 txt-center mgl-2 mgr-2 mgb-6">badan karantina pertanian<br>provinsi maluku</div>
+                            <div class="mgt-9 mgb-9 wpc-55 txt-center">
+                                <img id="qr-doc-qr" src="assets/sample/qr.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="fnw-500 mgt-6">
+                                <span class="fns-9 txt-muted">nomor dokumen : </span><br>
+                                <span id="qr-doc-token" class="fns-11">2349753289789</span>
+                            </div>
+                            <button class="but but-success but-sm but-grow mgt-4 qr-code-download">
+                                unduh kode QR
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="section" data-page="documents">
-                <div class="r-card mgb-2">
+            <div class="section keep-pad keep-pad-y" data-page="settings" data-page-title="pengaturan">
+                <div class="r-card mgb-2 mob-min pd-0">
                     <div class="r-card-body">
-                        <div class="r-data">
-                            <div class="r-data-prim">
-                            <span class="r-data-title">
-                                <span class="text-capitalize fns-11 fnw-700 txt-dark">surat tanda kesehatan pangan</span>
-                                <span class="txt-muted mgr-2 fns-11 fnw-500">(SKHK)</span>
-                                <span class="r-data-info fns-10-5">
-                                <span class="text-capitalize">Kota Ambon</span>
-                                <span class="txt-muted"> / </span>
-                                <span class="">12 Maret 2022</span>
-                            </span>
-                            </span>
-                                <div class="r-data-detail-mob mob" data-modal-open="document"></div>
-                            </div>
-                            <div class="r-data-detail pc">
-                                <div class="but">
-                                    <i data-feather="download"></i>
-                                </div>
-                                <div class="but txt-info">
-                                    <i data-feather="info"></i>
+                        <div>
+                            <div class="setting-btn fns-12 fnw-600 text-capitalize pd-4" data-tab-target="setting-profile">
+                                <div class="but but-static">
+                                    <div class="txt-left d-flex flex-row align-items-center">
+                                        <span class="txt-danger"><i data-feather="minus"></i></span>
+                                        <span><i data-feather="user"></i></span>
+                                        <span class="mgl-1">profil</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="r-data-qr but">
-                                <svg viewBox="0 0 96 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(0.145455,2.81795e-33,-2.81795e-33,-0.145455,-21.8182,117.818)"><path d="M150,810L150,570L180,570C207,570 210,567 210,540C210,513 207,510 180,510C153,510 150,507 150,480C150,453 153,450 180,450C207,450 210,453 210,480C210,507 213,510 240,510C267,510 270,507 270,480C270,453 273,450 300,450C327,450 330,447 330,420L330,390L150,390L150,150L390,150L390,390L570,390L570,420C570,447 567,450 540,450C513,450 510,453 510,480L510,510L630,510L630,480C630,453 633,450 660,450C687,450 690,447 690,420C690,393 687,390 660,390C633,390 630,387 630,360L630,330L480,330L480,150L540,150L540,270L660,270L660,240C660,213 657,210 630,210C603,210 600,207 600,180C600,153 603,150 630,150C657,150 660,153 660,180C660,207 663,210 690,210C717,210 720,213 720,240C720,260 725,270 735,270C745,270 750,280 750,300C750,327 753,330 780,330C807,330 810,333 810,360C810,387 807,390 780,390C753,390 750,393 750,420C750,447 753,450 780,450C807,450 810,453 810,480C810,507 807,510 780,510C753,510 750,513 750,540C750,567 753,570 780,570L810,570L810,810L570,810L570,570L390,570L390,810L150,810ZM330,750L330,630L210,630L210,750L330,750ZM750,750L750,630L630,630L630,750L750,750ZM390,540C390,513 393,510 420,510C447,510 450,507 450,480L450,450L330,450L330,480C330,507 327,510 300,510C273,510 270,513 270,540L270,570L390,570L390,540ZM690,540C690,513 693,510 720,510C747,510 750,507 750,480C750,453 747,450 720,450C693,450 690,453 690,480C690,507 687,510 660,510C633,510 630,513 630,540C630,567 633,570 660,570C687,570 690,567 690,540ZM750,360C750,333 747,330 720,330C693,330 690,333 690,360C690,387 693,390 720,390C747,390 750,387 750,360ZM330,330L330,210L210,210L210,330L330,330Z" style="fill-rule:nonzero;"/></g><g transform="matrix(0.145455,2.81795e-33,-2.81795e-33,-0.145455,-21.8182,117.818)"><path d="M240,690C240,663 243,660 270,660C297,660 300,663 300,690C300,717 297,720 270,720C243,720 240,717 240,690Z" style="fill-rule:nonzero;"/></g><g transform="matrix(0.145455,2.81795e-33,-2.81795e-33,-0.145455,-21.8182,117.818)"><path d="M660,690C660,663 663,660 690,660C717,660 720,663 720,690C720,717 717,720 690,720C663,720 660,717 660,690Z" style="fill-rule:nonzero;"/></g><g transform="matrix(0.145455,2.81795e-33,-2.81795e-33,-0.145455,-21.8182,117.818)"><path d="M240,270C240,243 243,240 270,240C297,240 300,243 300,270C300,297 297,300 270,300C243,300 240,297 240,270Z" style="fill-rule:nonzero;"/></g><g transform="matrix(0.145455,2.81795e-33,-2.81795e-33,-0.145455,-21.8182,117.818)"><path d="M450,750C450,703 447,690 435,690C425,690 420,680 420,660C420,640 425,630 435,630C443,630 450,623 450,615C450,605 460,600 480,600C509,600 510,602 510,645C510,678 514,690 525,690C535,690 540,700 540,720C540,740 535,750 525,750C515,750 510,760 510,780C510,807 507,810 480,810L450,810L450,750Z" style="fill-rule:nonzero;"/></g><g transform="matrix(0.145455,2.81795e-33,-2.81795e-33,-0.145455,-21.8182,117.818)"><path d="M750,180C750,153 753,150 780,150C807,150 810,153 810,180C810,207 807,210 780,210C753,210 750,207 750,180Z" style="fill-rule:nonzero;"/></g></svg>
+                            <div class="r-form mgl-auto mgr-auto pd-4" data-tab-id="setting-profile" data-tab-group="setting">
+                                <div class="group group-sm group-success group-grow mgb-2 mgt-4">
+                                    <i class="icon" data-feather="user"></i>
+                                    <input id="inp-setting-fullname" placeholder="Nama Lengkap" type="text" class="input">
+                                </div>
+                                <div class="flex-input mgb-2">
+                                    <div class="wpc-100">
+                                        <div class="group-select group-select-sm group-select-success">
+                                            <select id="inp-setting-province">
+                                                <option value="1" selected>provinsi Maluku</option>
+                                                <option value="0">luar provinsi Maluku</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="wpc-100">
+                                        <div class="group-select group-select-sm group-select-success disabled">
+                                            <select id="inp-setting-district" disabled>
+                                                <option value="0">-</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="wpc-100">
+                                        <div class="group-select group-select-sm group-select-success disabled">
+                                            <select id="inp-setting-region" disabled>
+                                                <option value="0">-</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="group-text-area group-text-area-sm group-text-area-success mgb-2 pdb-9 bor-bottom-lightgrey">
+                                    <textarea id="inp-setting-address" placeholder="detail alamat"></textarea>
+                                </div>
+                                <button id="inp-setting-profile-submit" class="but but-success but-sm but-grow mgt-2 mgb-6 disabled" disabled>
+                                    simpan
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="r-card mgb-2 mob-min pd-0">
+                    <div class="r-card-body">
+                        <div>
+                            <div class="setting-btn fns-12 fnw-600 text-capitalize pd-4" data-tab-target="setting-contact">
+                                <div class="but but-static">
+                                    <div class="txt-left d-flex flex-row align-items-center">
+                                        <span class="txt-danger"><i data-feather="minus"></i></span>
+                                        <span><i data-feather="phone"></i></span>
+                                        <span class="mgl-1">kontak</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="r-form mgl-auto mgr-auto pd-4" data-tab-id="setting-contact" data-tab-group="setting">
+                                <div class="group group-sm group-success group-grow mgb-2 mgt-4">
+                                    <i class="icon" data-feather="phone"></i>
+                                    <input id="inp-setting-phone" placeholder="nomor telp/wa" type="tel" class="input">
+                                </div>
+                                <div class="group group-sm group-success group-grow mgb-2 pdb-9 bor-bottom-lightgrey">
+                                    <i class="icon" data-feather="mail"></i>
+                                    <input id="inp-setting-email" placeholder="e-mail (opsional)" type="email" class="input">
+                                </div>
+                                <button id="inp-contact-submit" class="but but-success but-sm but-grow mgt-2 mgb-6 disabled" disabled>
+                                    simpan
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="r-card mgb-2 mob-min pd-0">
+                    <div class="r-card-body">
+                        <div>
+                            <div class="setting-btn fns-12 fnw-600 text-capitalize pd-4" data-tab-target="setting-password">
+                                <div class="but but-static">
+                                    <div class="txt-left d-flex flex-row align-items-center">
+                                        <span class="txt-danger"><i data-feather="minus"></i></span>
+                                        <span><i data-feather="lock"></i></span>
+                                        <span class="mgl-1">kata sandi</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="r-form mgl-auto mgr-auto pd-4" data-tab-id="setting-password" data-tab-group="setting">
+                                <div class="group group-sm group-success group-grow mgb-2 mgt-4">
+                                    <i class="icon" data-feather="lock"></i>
+                                    <input id="inp-setting-password-current" placeholder="Kata Sandi sekarang" type="password" class="input">
+                                </div>
+                                <div id="inp-setting-password-info" class="fns-9 txt-danger d-none">
+                                    password minimal 3 angka
+                                </div>
+                                <div class="group group-sm group-success group-grow mgb-2">
+                                    <i class="icon" data-feather="lock"></i>
+                                    <input id="inp-setting-password-new" placeholder="Kata Sandi baru" type="password" class="input">
+                                </div>
+                                <div class="group group-sm group-success group-grow mgb-2 pdb-9 bor-bottom-lightgrey">
+                                    <i class="icon" data-feather="lock"></i>
+                                    <input id="inp-setting-password-verification" placeholder="Verifikasi Kata Sandi" type="password" class="input">
+                                </div>
+                                <button id="inp-password-submit" class="but but-success but-sm but-grow mgt-2 disabled" disabled>
+                                    simpan
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -107,14 +691,14 @@
             </div>
         </div>
     </div>
-    <div class="ds-sidebar-overlay" data-sidebar-toggle="off"></div>
+    <div class="ds-sidebar-overlay" data-sidebar-toggle="off" data-sidebar-swiper="off"></div>
     <div class="modal-overlay">
         <div class="ds-modal ds-modal-bg" data-modal="document">
             <div class="ds-modal-option">
-                <div class="but txt-info fns-11 fnw-600" data-modal-close>
+                <div id="doc-modal-detail" class="but txt-info fns-11 fnw-600" data-modal-close>
                     detail
                 </div>
-                <div class="but txt-dark fns-11 fnw-600" data-modal-close>
+                <div id="doc-modal-download" class="but txt-dark fns-11 fnw-600" data-modal-close>
                     unduh
                 </div>
             </div>
@@ -134,20 +718,34 @@
                 </div>
             </div>
         </div>
+        <div data-modal="media">
+            <div id="doc-detail-media-modal" style="width: 100vw"></div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="assets/add/dist/owl-carousel/dist/owl.carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html-to-image/1.9.0/html-to-image.min.js" integrity="sha512-hI+X0tF436khDUBN21w65R/x9r74gU8e8OpL6T8JFsEFUtIT8L+YAPj5iGFex9IC7pmqGlA0KhxlDFSAckxeaw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/add/js/swipe-event.js"></script>
+    <script src="assets/add/js/moment.js"></script>
     <script src="assets/add/js/notice.min.js"></script>
     <script src="assets/add/js/preloader.js"></script>
     <script src="assets/add/js/page-switcher.js"></script>
+    <script src="assets/add/js/swiper-card.js"></script>
+    <script src="assets/add/js/date-format.js"></script>
+    <script src="assets/add/js/tab.js"></script>
     <script src="assets/add/js/notify.js"></script>
     <script src="assets/add/js/sidebar.js"></script>
     <script src="assets/add/js/modal.js"></script>
-    <script>
-        feather.replace();
-        page_switcher.focus('doc-qr');
-    </script>
+    <script src="assets/add/js/qr-print.js"></script>
+    <!--  TEST DATA SAMPLE  -->
+    <script src="assets/add/data/district.js"></script>
+    <script src="assets/add/data/doctype.js"></script>
+    <script src="assets/sample/user-page.js"></script>
+    <!--  APP MAIN SCRIPT  -->
+    <script src="assets/add/js/page/settings.js"></script>
+    <script src="assets/add/js/page/users/user.js"></script>
 </body>
 </html>

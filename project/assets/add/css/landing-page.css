@@ -154,7 +154,7 @@
         flex-direction: column;
         justify-content: end;
         height: 100%;
-        margin-bottom: 300px;
+        margin-bottom: 100px;
     }
     .r-card .left-card {
         display: none;

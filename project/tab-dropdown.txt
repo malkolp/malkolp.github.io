@@ -1,0 +1,113 @@
+<div class="section keep-pad keep-pad-y" data-page="settings" data-page-title="pengaturan">
+                <div class="r-card mgb-2 mob-min pd-0">
+                    <div class="r-card-body">
+                        <div>
+                            <div class="setting-btn fns-12 fnw-600 text-capitalize pd-4" data-tab-target="setting-profile">
+                                <div class="but but-static">
+                                    <div class="txt-left d-flex flex-row align-items-center">
+                                        <span class="txt-danger"><i data-feather="minus"></i></span>
+                                        <span><i data-feather="user"></i></span>
+                                        <span class="mgl-1">profil</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="r-form mgl-auto mgr-auto pd-4" data-tab-id="setting-profile" data-tab-group="setting">
+                                <div class="group group-sm group-success group-grow mgb-2 mgt-4">
+                                    <i class="icon" data-feather="user"></i>
+                                    <input id="inp-signup-fullname" placeholder="Nama Lengkap" type="text" class="input">
+                                </div>
+                                <div class="flex-input mgb-2">
+                                    <div class="wpc-100">
+                                        <div class="group-select group-select-sm group-select-success">
+                                            <select id="inp-register-province">
+                                                <option value="1" selected>provinsi Maluku</option>
+                                                <option value="0">luar provinsi Maluku</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="wpc-100">
+                                        <div class="group-select group-select-sm group-select-success disabled">
+                                            <select id="inp-register-district" disabled>
+                                                <option value="0">-</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="wpc-100">
+                                        <div class="group-select group-select-sm group-select-success disabled">
+                                            <select id="inp-register-region" disabled>
+                                                <option value="0">-</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="group-text-area group-text-area-sm group-text-area-success mgb-2 pdb-9 bor-bottom-lightgrey">
+                                    <textarea id="inp-register-address" placeholder="detail alamat"></textarea>
+                                </div>
+                                <button id="inp-profile-submit" class="but but-success but-sm but-grow mgt-2 mgb-6 disabled" disabled>
+                                    simpan
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="r-card mgb-2 mob-min pd-0">
+                    <div class="r-card-body">
+                        <div>
+                            <div class="setting-btn fns-12 fnw-600 text-capitalize pd-4" data-tab-target="setting-contact">
+                                <div class="but but-static">
+                                    <div class="txt-left d-flex flex-row align-items-center">
+                                        <span class="txt-danger"><i data-feather="minus"></i></span>
+                                        <span><i data-feather="phone"></i></span>
+                                        <span class="mgl-1">kontak</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="r-form mgl-auto mgr-auto pd-4" data-tab-id="setting-contact" data-tab-group="setting">
+                                <div class="group group-sm group-success group-grow mgb-2 mgt-4">
+                                    <i class="icon" data-feather="phone"></i>
+                                    <input id="inp-register-phone" placeholder="nomor telp/wa" type="tel" class="input">
+                                </div>
+                                <div class="group group-sm group-success group-grow mgb-2 pdb-9 bor-bottom-lightgrey">
+                                    <i class="icon" data-feather="mail"></i>
+                                    <input id="inp-register-email" placeholder="e-mail (opsional)" type="email" class="input">
+                                </div>
+                                <button id="inp-contact-submit" class="but but-success but-sm but-grow mgt-2 mgb-6 disabled" disabled>
+                                    simpan
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="r-card mgb-2 mob-min pd-0">
+                    <div class="r-card-body">
+                        <div>
+                            <div class="setting-btn fns-12 fnw-600 text-capitalize pd-4" data-tab-target="setting-password">
+                                <div class="but but-static">
+                                    <div class="txt-left d-flex flex-row align-items-center">
+                                        <span class="txt-danger"><i data-feather="minus"></i></span>
+                                        <span><i data-feather="lock"></i></span>
+                                        <span class="mgl-1">kata sandi</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="r-form mgl-auto mgr-auto pd-4" data-tab-id="setting-password" data-tab-group="setting">
+                                <div class="group group-sm group-success group-grow mgb-2 mgt-4">
+                                    <i class="icon" data-feather="lock"></i>
+                                    <input id="inp-password-current" placeholder="Kata Sandi baru" type="password" class="input">
+                                </div>
+                                <div class="group group-sm group-success group-grow mgb-2">
+                                    <i class="icon" data-feather="lock"></i>
+                                    <input id="inp-password-new" placeholder="Kata Sandi baru" type="password" class="input">
+                                </div>
+                                <div class="group group-sm group-success group-grow mgb-2 pdb-9 bor-bottom-lightgrey">
+                                    <i class="icon" data-feather="lock"></i>
+                                    <input id="inp-password-verification" placeholder="Verifikasi Kata Sandi" type="password" class="input">
+                                </div>
+                                <button id="inp-password-submit" class="but but-success but-sm but-grow mgt-2 disabled" disabled>
+                                    simpan
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>

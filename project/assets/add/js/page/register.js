@@ -2,71 +2,7 @@
 
 (()=>{
     const emptyOption       = '<option value="0">-</option>';
-    const data_districts    = (()=>{
-        const read          = d=>{
-            const o         = {
-                id          : d.id,
-                name        : (()=>{if (d.city) return 'Kota '  + d.name;return 'Kabupaten ' + d.name;})(),
-                regions     : [],
-                next        : undefined,
-                prev        : undefined,
-            };
-
-            o.forEach       = (callback=()=>{})=>{
-                o.regions.forEach(callback);
-            };
-            o.option        = '<option value="'+o.id+'">'+o.name+'</option>';
-            o.options       = '';
-            d.regions.forEach(r=>{
-                const a     = {
-                    id      : r.id,
-                    name    : r.name,
-                };
-
-                a.option    = '<option value="'+a.id+'">Kecamatan '+a.name+'</option>';
-                o.options  += a.option;
-                o.regions.push(a);
-            });
-
-            return o;
-        };
-        const x             = {
-            head            : undefined,
-            tail            : undefined,
-            data            : {},
-            options         : '',
-        };
-
-        x.forEach           = (callback=()=>{})=>{
-            let ptr         = x.head;
-
-            while (ptr !== undefined) {
-                const now   = ptr;
-
-                callback(now);
-                ptr         = now.next;
-            }
-        };
-        (()=>{
-            const tmp       = window.data_district_.shift();
-            x.data[tmp.id]  = read(tmp);
-            x.head          = x.data[tmp.id];
-            x.tail          = x.data[tmp.id];
-            x.options       = x.data[tmp.id].option;
-        })();
-        window.data_district_.forEach(d=>{
-            const dis       = read(d);
-
-            x.data[dis.id]  = dis;
-            dis.prev        = x.tail;
-            x.tail.next     = dis;
-            x.tail          = dis;
-            x.options      += dis.option;
-        });
-        delete window.data_district_;
-
-        return x;
-    })();
+    const data_districts    = window.read_district_(true);
     const form              = (()=>{
         const x             = {
             input           : {
@@ -175,13 +111,17 @@
         });
     };
 
+    window.test = data_districts;
+
     ((i=form.input, p=form.parent)=>{
         p.district.removeClass('disabled');
         p.region.removeClass('disabled');
         i.district.removeAttr('disabled');
         i.region.removeAttr('disabled');
-        i.district[0].innerHTML = data_districts.options;
-        i.region[0].innerHTML   = data_districts.data[i.district[0].value].options;
+        if (i.province[0].value === '1') {
+            toggleSelect(i.district, p.district, data_districts.options, true);
+            toggleSelect(i.region, p.region, data_districts.data[i.district[0].value].options, true);
+        }
     })();
 
     ((i=form.input, p= form.parent)=>{

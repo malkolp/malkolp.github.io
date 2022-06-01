@@ -1,0 +1,57 @@
+.qr-print-wrapper {
+    top: 0;
+    position: absolute;
+    z-index: 0;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+}
+#qr-print {
+    position: absolute;
+    top: 0;
+    background-color: var(--white);
+}
+#qr-print:not(.active) {
+    display: none!important;
+}
+#qr-print.active {
+    width: 799px;
+    height: 1420px;
+}
+.qr-print-bg {
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.qr-print-bg::after {
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    content: "";
+    background-color: var(--success);
+    opacity: 0.35;
+    width: 100%;
+    height: 100%;
+}
+.qr-print-bottom {
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    content: "";
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 100%;
+    height: 53%;
+    z-index: 2;
+}
+.qr-print-content {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}

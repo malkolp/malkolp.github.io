@@ -37,5 +37,6 @@
         });
     })();
 
-    preloader_.fadeOut();
+    if (!$('meta[name="data-prevent-auto-fade"]')[0])
+        preloader_.fadeOut();
 })();
