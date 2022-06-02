@@ -3,6 +3,7 @@
 (()=>{
     const win_              = $(window);
     const body_             = document.body;
+    const overlay_          = $('.card-overlay')[0];
     const execute           = (parent, range, callTop, callBot)=>{
         if (range > 0) {
             if (win_.height() / 2.5 < range) {
@@ -50,7 +51,9 @@
         }
     };
 
-    window.card_swiper      = (s, prop={})=>{
+    overlay_.setAttribute('style', 'transform:translateY(100vh);');
+
+    window.card_swiper      = (s, prop={}, o=overlay_)=>{
         const slider        = $(s)[0];
         const parent        = slider.parentNode;
         let callTop         = ()=>{};
@@ -71,6 +74,7 @@
             moveY           = e.touches[0].clientY;
             rangeY          = moveY - startY;
             parent.setAttribute('style', 'transform:translate(0, '+rangeY+'px)');
+            o.setAttribute('style', 'transform:translate(0, '+rangeY+'px)');
             e.preventDefault();
         });
         slider.addEventListener('touchend', ()=>{
@@ -80,40 +84,49 @@
             rangeY          = 0;
         });
     };
-    window.card_swiper_open = (s, c=()=>{})=>{
+    window.card_swiper_open = (s, c=()=>{},o=overlay_)=>{
         let height          = win_.height() + 10;
 
         body_.setAttribute('style', 'overflow-y:hidden!important;');
         s.setAttribute('style', 'transform:translate(0, '+height+'px);');
+        o.setAttribute('style', 'transform:translate(0, '+height+'px);');
         c();
         let anim            = setInterval(()=>{
             height         -= 18;
             if (height < 0) {
                 s.setAttribute('style', 'transform:translate(0,0);');
+                o.setAttribute('style', 'transform:translate(0, 0);');
                 body_.setAttribute('style', '');
                 clearInterval(anim);
             }
-            else
+            else {
                 s.setAttribute('style', 'transform:translate(0,'+height+'px);');
+                o.setAttribute('style', 'transform:translate(0,'+height+'px);');
+            }
         }, 2);
     };
-    window.card_swiper_close    = (s, c=()=>{})=>{
+    window.card_swiper_close    = (s, c=()=>{}, o=overlay_)=>{
         let par             = s.parentNode;
         let height          = $(par).height();
         let range           = 0;
 
         s.setAttribute('style', 'transform:translate(0, '+height+'px);');
+        o.setAttribute('style', 'transform:translate(0, '+height+'px);');
         let anim            = setInterval(()=>{
             range          += 8;
             height         -= 12;
             if (height < 0) {
                 par.setAttribute('style', 'max-height:0px;transform:translate(0,'+range+'px)');
+                o.setAttribute('style', 'transform:translate(0,'+range+'px)');
                 clearInterval(anim);
                 c();
                 par.setAttribute('style', '');
+                o.setAttribute('style', '');
             }
-            else
+            else {
                 par.setAttribute('style', 'max-height:'+height+'px;transform:translate(0,'+range+'px)');
+                o.setAttribute('style', 'transform:translate(0,'+range+'px)');
+            }
         }, 2);
     };
 })();

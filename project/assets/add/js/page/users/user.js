@@ -5,15 +5,34 @@
     let mediaDetailLoader;
 
     const root          = $('meta[name="data-root"]').attr('content');
+    const win_          = $(window);
+    const mobileAct     = (()=>{
+        if (win_.width() < 768) {
+            const docList   = $('#document-lists')[0];
+            return {
+                mouseDrag   : false,
+                touchDrag   : true,
+                modalAct    : ()=>{
+                    docList.setAttribute('style','max-height:80vh;overflow:hidden;');
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth',
+                    });
+                },
+                modalClose  : ()=>{
+                    docList.setAttribute('style', '');
+                },
+            };
+        }
+        return {
+            mouseDrag       : true,
+            touchDrag       : false,
+            modalAct        : ()=>{},
+        };
+    })();
     const makeLoader    = ()=>{
         return '<div class="mgt-3 mgb-2"><div class="loader01"></div></div>';
     };
-    const win_          = $(window);
-    const interact      = (()=>{
-        if (win_.width() < 768)
-            return 'touchstart';
-        return 'click';
-    })();
     const cards         = {
         detail          : $('.detail-card'),
         qr              : $('.qr-card'),
@@ -133,6 +152,7 @@
             fillDocDetail(documents.focus);
             fillDocQr(documents.focus);
             if (win_.width() < 768) {
+                mobileAct.modalAct();
                 card_swiper_open(cards.qr[0], ()=>{
                     cards.qr.removeClass('d-none');
                 });
@@ -168,14 +188,18 @@
                 carousel.setAttribute('class', 'image-carousel owl-carousel');
                 modalMedia.setAttribute('class', 'image-carousel owl-carousel');
                 $(carousel).owlCarousel({
-                    items:2,
-                    loop:false,
-                    margin:10,
+                    items       : 1,
+                    loop        : false,
+                    margin      : 10,
+                    mouseDrag   : mobileAct.mouseDrag,
+                    touchDrag   : mobileAct.touchDrag,
                 });
                 $(modalMedia).owlCarousel({
-                    items:1,
-                    loop:false,
-                    margin:10,
+                    items       : 1,
+                    loop        : false,
+                    margin      : 10,
+                    mouseDrag   : mobileAct.mouseDrag,
+                    touchDrag   : mobileAct.touchDrag,
                 });
             }
 
@@ -270,6 +294,8 @@
                 itemsDesktopSmall   : false,
                 itemsTablet         : false,
                 itemsMobile         : false,
+                mouseDrag           : mobileAct.mouseDrag,
+                touchDrag           : mobileAct.touchDrag,
             });
 
             return {
@@ -303,7 +329,7 @@
     const doctype       = window.read_doctype_(true);
     const documents     = ((docs=window.data_user.documents, len=window.data_user.total_docs)=>{
         const x         = {
-            body        : $('[data-page="documents"]')[0].children[1],
+            body        : $('#document-lists')[0],
             focus       : undefined,
             head        : undefined,
             tail        : undefined,
@@ -321,6 +347,100 @@
         };
 
         if (len > 0) {
+            const wrapper       = $('#document-tags');
+            (()=>{
+                const createEl  = (t='semua', html='innerHTML')=>{
+                    const tag   = document.createElement('div');
+
+                    tag.setAttribute('class', 'bls');
+                    tag[html]   = '<div><span>'+t+'</span></div>';
+
+                    return {
+                        button  : tag,
+                    };
+                };
+
+                x.types     = {
+                    isOn    : 0,
+                    size    : 0,
+                    data    : {},
+                    allDocs : $(),
+                    allBtn  : $(),
+                    wrapper : wrapper,
+                    set     : (k, t)=>{
+                        const ins_          = x.types;
+                        let obj             = ins_.data[k];
+
+                        if (!obj) {
+                            const els       = createEl(t);
+
+                            obj             = {
+                                button      : $(els.button),
+                                add         : d=>{
+                                    obj.elements = obj.elements.add(d);
+                                    ins_.allDocs = ins_.allDocs.add(d);
+                                },
+                                elements    : $(),
+                            };
+                            obj.button.click(()=>{
+                                ins_.focus(k);
+                            });
+                            ins_.wrapper[0].appendChild(els.button);
+                            ins_.allBtn     = ins_.allBtn.add(els.button);
+                            ins_.data[k]    = obj;
+                            ins_.size++;
+                        }
+
+                        return obj;
+                    },
+                    default : (()=>{
+                        const els       = createEl('semua');
+                        wrapper[0].appendChild(els.button);
+                        return          $(els.button).
+                        addClass('default active').
+                        click(()=>{
+                            x.types.default.addClass('active');
+                            x.types.allBtn.addClass('active');
+                            x.types.isOn = x.types.size;
+                            x.types.focAll();
+                        });
+                    })(),
+                    focus   : k=>{
+                        const ins_      = x.types;
+                        const data      = ins_.data[k];
+
+                        ins_.allDocs.addClass('d-none');
+
+                        if (data.button.hasClass('active')) {
+                            data.button.removeClass('active');
+                            ins_.isOn--;
+                        }
+                        else {
+                            data.button.addClass('active');
+                            ins_.isOn++;
+                        }
+                        if ((ins_.isOn === 0) || (ins_.isOn === ins_.size)) {
+                            ins_.focAll();
+                        }
+                        else {
+                            ins_.default.removeClass('active');
+                            for (let key in ins_.data) {
+                                const el    = ins_.data[key];
+
+                                if (el.button.hasClass('active'))
+                                    el.elements.removeClass('d-none');
+                            }
+                        }
+                    },
+                    focAll  : ()=>{
+                        const ins_      = x.types;
+
+                        ins_.default.addClass('active');
+                        ins_.allDocs.removeClass('d-none');
+                    },
+                    refresh : ()=>{},
+                };
+            })();
             (()=>{
                 const d     = docs.shift();
 
@@ -333,6 +453,7 @@
                     x.head          = o;
                     x.tail          = o;
 
+                    x.types.set(o.type.tid, o.type['alias']).add(o.ui);
                     x.body.appendChild(o.ui);
                 }
             })();
@@ -344,7 +465,17 @@
                 o.prev          = x.tail;
                 x.tail.next     = o;
                 x.tail          = o;
+
+                x.types.set(o.type.tid, o.type['alias']).add(o.ui);
                 x.body.appendChild(o.ui);
+            });
+            wrapper.owlCarousel({
+                items: 6,
+                loop: false,
+                margin: 10,
+                autoWidth: true,
+                mouseDrag: mobileAct.mouseDrag,
+                touchDrag: mobileAct.touchDrag,
             });
         }
         else {
@@ -366,8 +497,6 @@
 
     //init document tag, detail, modal & card swiping
     (()=>{
-        const documentTags      = $('#document-tags');
-        const documentList      = documents.body;
         const mediaDetailCtr    = $('#doc-detail-image')[0];
         const mediaModal        = $('#doc-detail-media-modal')[0];
         const mediaLoader       = ()=>{
@@ -380,18 +509,8 @@
             },1000);
         };
 
-        documentTags.owlCarousel({
-            items:6,
-            loop:false,
-            margin:10,
-            autoWidth: true,
-        });
         $('#doc-modal-detail').click(()=>{
-            documentList.setAttribute('style','max-height:88vh;overflow:hidden;');
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
+            mobileAct.modalAct();
             card_swiper_open(cards.detail[0], ()=>{
                 cards.detail.removeClass('d-none');
                 cards.docControl.addClass('active');
@@ -421,7 +540,7 @@
         });
         card_swiper('.detail-card-swiper', {
             swipedBot   : ()=>{
-                documentList.setAttribute('style','');
+                mobileAct.modalClose();
                 cards.detail.addClass('d-none');
                 cards.docControl.removeClass('active');
                 if (mediaDetailLoader)
@@ -430,6 +549,7 @@
         });
         card_swiper('.qr-card-swiper', {
             swipedBot   : ()=>{
+                mobileAct.modalClose();
                 cards.qr.addClass('d-none');
                 cards.docControl.removeClass('active');
             },

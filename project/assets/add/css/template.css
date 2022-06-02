@@ -223,7 +223,7 @@ table .r-table-row:first-child td{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0,0,0,0.35);
+    background-color: rgba(0,0,0,0.45);
     z-index: 100;
     width: 100vw;
     height: 100vh;
@@ -459,19 +459,7 @@ table .r-table-row:first-child td{
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-.bls.active:not(.default) {
-    padding: var(--ly-2) var(--ly-2) var(--ly-2) var(--ly-6);
-}
-.bls.active:not(.default) div span:last-child {
-    margin-left: var(--ly-3);
-}
-.bls.active.default div span:last-child{
-    display: none;
-}
-.bls svg {
-    width: 18px;
-    height: 18px;
+    position: relative;
 }
 .bls.active {
     background-color: var(--success);

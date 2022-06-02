@@ -204,6 +204,14 @@ SIDEBAR CONTROL
     height: 3px;
     background-color: var(--dark-sec);
 }
+.card-slider:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 120px;
+}
 
 /*DETAIL CARD*/
 .detail-card-content {}
@@ -323,13 +331,12 @@ SIDEBAR CONTROL
         padding-bottom: 0;
     }
     .mob-modal-card {
-        min-height: 93vh;
+        min-height: 80vh;
         position: absolute;
         z-index: 13;
         top: 0;
-        margin-bottom: 0;
-        border-top-left-radius: var(--bor-radius-xxl);
-        border-top-right-radius: var(--bor-radius-xxl);
+        margin-bottom: 0!important;
+        border-radius: var(--bor-radius-xxl) var(--bor-radius-xxl) 0 0;
         -webkit-box-shadow: 0 -15px 15px -5px var(--lightgrey);
         -moz-box-shadow: 0 -15px 15px -5px var(--lightgrey);
         box-shadow: 0 -15px 15px -5px var(--lightgrey);
@@ -346,6 +353,22 @@ SIDEBAR CONTROL
     }
     .hide-overflow-x {
         overflow-x: hidden;
+    }
+    .doc-modal-control {
+        position: sticky;
+        bottom: 0;
+        z-index: 90;
+    }
+    .qr-card {
+        top: 10px;
+    }
+    .card-overlay {
+        bottom: -60vh;
+        display: inline-block;
+        position: fixed;
+        background-color: var(--white);
+        width: 100%;
+        height: 100vh;
     }
 }
 @media (min-width: 576px) and (max-width: 767px){
@@ -384,10 +407,10 @@ SIDEBAR CONTROL
         padding-bottom: 0;
     }
     .mob-modal-card {
-        min-height: 93vh;
+        min-height: 100vh;
         position: absolute;
         top: 0;
-        margin-bottom: 0;
+        margin-bottom: 0!important;
         border-top-left-radius: var(--bor-radius-xxl);
         border-top-right-radius: var(--bor-radius-xxl);
     }
