@@ -4,62 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <title>Prototype BKP</title>
-    <link rel="icon" href="assets/img/logo/logo.png">
+    <link rel="icon" href="/project/assets/img/logo/logo.png">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <meta name="data-root" content="http://localhost:63342/quarantine/">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/add/css/preloader.css">
-    <link rel="stylesheet" href="assets/add/css/landing-page.css">
-    <link rel="stylesheet" href="assets/add/css/template.css">
+    <link rel="stylesheet" href="/project/assets/add/css/preloader.css">
+    <link rel="stylesheet" href="/project/assets/add/css/landing-page.css">
+    <link rel="stylesheet" href="/project/assets/add/css/template.css">
 </head>
 <body>
     <div id="loader-wrapper" class="preloader">
         <div id="loader">
             <div>
-                <img src="assets/img/logo/logo.svg" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="navigation bor-bottom-lightgrey" data-page="launcher">
-        <div class="nav-content pt-3 pb-3">
-            <div class="nav-logo">
-                <img class="img-fluid" src="assets/img/logo/logo-bkp.svg" alt="">
-            </div>
-            <div class="nav-right">
-                <div class="nav-item">
-                    <div class="but but-sm but-success" data-page-toggle="login">
-                        masuk
-                    </div>
-                </div>
-                <div class="nav-item">
-                    <i class="but" data-feather="grid"></i>
-                </div>
+                <img src="/project/assets/img/logo/logo.svg" alt="">
             </div>
         </div>
     </div>
     <div class="header section bkg-light" data-page="launcher">
-        <div class="mob-logo">
-            <img class="img-fluid" src="assets/img/logo/logo-bkp.svg" alt="">
+        <div id="landing-bg" class="mob header-mob-bg" style="background-image: url('assets/img/landing/side-bg.jpg')">
+            <div class="mob-bg-bg"></div>
+            <div class="header-mob-bg-overlay"></div>
+            <div class="header-mob-bg-logo">
+                <img class="img-fluid" src="/project/assets/img/logo/logo-white.svg" alt="">
+            </div>
         </div>
-        <div class="title">
-            <h4 class="text-capitalize txt-success">sistem informasi lalulintas hewan</h4>
-            <h1 class="text-capitalize txt-dark">Badan Karantina Pertanian</h1>
-            <h4 class="text-capitalize txt-success">provinsi maluku</h4>
-        </div>
-        <div class="mob-menu wpc-100">
-            <div class="mob-menu-content wpc-70">
-                <div class="d-flex flex-column wpc-100">
-                    <div class="but but-grow but-success but-sm mgb-3" data-page-toggle="login">
-                        masuk
-                    </div>
-                    <div class="but but-grow but-lightgrey but-sm">
-                        layanan
+        <div class="header-content">
+            <div id="landing-items" class="header-content-items">
+                <div class="pc header-logo">
+                    <img class="img-fluid" src="/project/assets/img/logo/logo-green.svg" alt="">
+                </div>
+                <div class="fns-28 fnw-800 text-capitalize mgb-3 header-title">nama app</div>
+                <div class="fns-11 fnw-600 text-capitalize mgb-4 txt-muted header-subtitle mob">sistem informasi <span class="text-uppercase">FUNGSI APP</span> badan karantina pertanian dinas pertanian provinsi Maluku</div>
+                <div class="but but-success but-sm wpc-40 txt-left header-login">
+                    <div class="fns-11 d-flex align-items-center justify-content-between fnw-600" data-page-toggle="login">
+                        <span>masuk</span>
+                        <span style="letter-spacing: -0.15rem">---------</span>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="fns-10 fnw-400 text-capitalize mgb-4 txt-muted landing-pc-footer pc txt-center">
+            sistem informasi <span class="text-uppercase">FUNGSI APP</span> badan karantina pertanian<br>dikembangkan oleh dinas pertanian provinsi Maluku © 2022
         </div>
     </div>
     <div class="section bkg-light" data-page="login">
@@ -75,14 +63,14 @@
                 </div>
                 <div class="side-logo-ctr pdt-4 pdl-4 pdb-4">
                     <div class="but" data-page-toggle="launcher">
-                        <img src="assets/img/logo/logo-white.svg" alt="">
+                        <img src="/project/assets/img/logo/logo-white.svg" alt="">
                     </div>
                 </div>
             </div>
             <div class="right-card pd-4 d-flex justify-content-center">
                 <div class="r-form d-flex flex-column align-items-center justify-content-center hpc-100 wpc-55">
                     <div class="mob mob-logo-sec">
-                        <img src="assets/img/logo/logo-green.svg" alt="" data-page-toggle="launcher">
+                        <img src="/project/assets/img/logo/logo-green.svg" alt="" data-page-toggle="launcher">
                     </div>
                     <h4 class="txt-success text-capitalize mgb-5">masuk</h4>
                     <div class="group group-sm group-success group-grow mgb-2">
@@ -119,14 +107,14 @@
                 </div>
                 <div class="side-logo-ctr pdt-4 pdl-4 pdb-4">
                     <div class="but" data-page-toggle="launcher">
-                        <img src="assets/img/logo/logo-white.svg" alt="">
+                        <img src="/project/assets/img/logo/logo-white.svg" alt="">
                     </div>
                 </div>
             </div>
             <div class="right-card pd-4 d-flex justify-content-center">
                 <div class="r-form d-flex flex-column align-items-center justify-content-center hpc-100 wpc-55">
                     <div class="mob mob-logo-sec">
-                        <img src="assets/img/logo/logo-green.svg" alt="" data-page-toggle="launcher">
+                        <img src="/project/assets/img/logo/logo-green.svg" alt="" data-page-toggle="launcher">
                     </div>
                     <h4 class="txt-success text-capitalize mgb-5">lupa kata sandi</h4>
                     <div class="group group-sm group-success group-grow mgb-2">
@@ -165,14 +153,14 @@
                 </div>
                 <div class="side-logo-ctr pdt-4 pdl-4 pdb-4">
                     <div class="but" data-page-toggle="launcher">
-                        <img src="assets/img/logo/logo-white.svg" alt="">
+                        <img src="/project/assets/img/logo/logo-white.svg" alt="">
                     </div>
                 </div>
             </div>
             <div class="right-card pd-4 d-flex justify-content-center">
                 <div class="r-form d-flex flex-column align-items-center justify-content-center hpc-100 wpc-55">
                     <div class="mob mob-logo-sec">
-                        <img src="assets/img/logo/logo-green.svg" alt="" data-page-toggle="launcher">
+                        <img src="/project/assets/img/logo/logo-green.svg" alt="" data-page-toggle="launcher">
                     </div>
                     <h4 class="txt-success text-capitalize mgb-5">daftar</h4>
                     <div class="group group-sm group-success group-grow mgb-2">
@@ -263,14 +251,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script src="assets/add/js/notice.min.js"></script>
-    <script src="assets/add/js/preloader.js"></script>
-    <script src="assets/add/js/page-switcher.js"></script>
-    <script src="assets/add/js/notify.js"></script>
-    <script src="assets/add/data/district.js"></script>
-    <script src="assets/add/js/page/landing.js"></script>
-    <script src="assets/add/js/page/login.js"></script>
-    <script src="assets/add/js/page/signup.js"></script>
-    <script src="assets/add/js/page/register.js"></script>
+    <script src="/project/assets/add/js/notice.min.js"></script>
+    <script src="/project/assets/add/js/preloader.js"></script>
+    <script src="/project/assets/add/js/page-switcher.js"></script>
+    <script src="/project/assets/add/js/notify.js"></script>
+    <script src="/project/assets/add/data/district.js"></script>
+    <script src="/project/assets/add/js/page/landing.js"></script>
+    <script src="/project/assets/add/js/page/login.js"></script>
+    <script src="/project/assets/add/js/page/signup.js"></script>
+    <script src="/project/assets/add/js/page/register.js"></script>
 </body>
 </html>
