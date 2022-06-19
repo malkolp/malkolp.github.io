@@ -1,3 +1,5 @@
+// noinspection DuplicatedCode
+
 window.data_user    = {
     account         : {
         id          : 1,

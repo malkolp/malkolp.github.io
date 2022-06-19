@@ -6,30 +6,7 @@
 
     const root          = $('meta[name="data-root"]').attr('content');
     const win_          = $(window);
-    const mobileAct     = (()=>{
-        if (win_.width() < 768) {
-            const docList   = $('#document-lists')[0];
-            return {
-                mouseDrag   : false,
-                touchDrag   : true,
-                modalAct    : ()=>{
-                    docList.setAttribute('style','max-height:80vh;overflow:hidden;');
-                    window.scrollTo({
-                        top: 0,
-                        behavior: 'smooth',
-                    });
-                },
-                modalClose  : ()=>{
-                    docList.setAttribute('style', '');
-                },
-            };
-        }
-        return {
-            mouseDrag       : true,
-            touchDrag       : false,
-            modalAct        : ()=>{},
-        };
-    })();
+    const mobileAct     = mobile_act(true);
     const makeLoader    = ()=>{
         return '<div class="mgt-3 mgb-2"><div class="loader01"></div></div>';
     };
@@ -179,7 +156,6 @@
                 b.innerHTML = '<img src="'+m+'" alt="">';
 
                 $(a.firstElementChild).click(()=>{
-                    console.log('clicked');
                     modal.show('media');
                     $(modalMedia).trigger('to.owl.carousel', [iter, 1]);
                 });

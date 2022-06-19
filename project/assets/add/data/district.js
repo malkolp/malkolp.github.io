@@ -1,9 +1,12 @@
+// noinspection JSUnresolvedFunction
+
 window.data_district_       = [
     {
         id		: 1,
         did     : 'dis1',
         city    : false,
         name    : 'Buru',
+        svg     : 'dis-1',
         regions : [
             {
                 id		: 1,
@@ -62,6 +65,7 @@ window.data_district_       = [
         did     : 'dis2',
         city    : false,
         name    : 'Buru Selatan',
+        svg     : 'dis-2',
         regions : [
             {
                 id		: 1,
@@ -100,6 +104,7 @@ window.data_district_       = [
         did     : 'dis3',
         city    : false,
         name    : 'Kepulauan Aru',
+        svg     : 'dis-3',
         regions : [
             {
                 id		: 1,
@@ -157,7 +162,67 @@ window.data_district_       = [
         id		: 4,
         did     : 'dis4',
         city    : false,
+        name    : 'Kepulauan Tanimbar',
+        svg     : 'dis-4',
+        regions : [
+            {
+                id		: 1,
+                rid     : 'reg74',
+                name    : 'Tanimbar Selatan',
+            },
+            {
+                id		: 1,
+                rid     : 'reg75',
+                name    : 'Selaru',
+            },
+            {
+                id		: 1,
+                rid     : 'reg76',
+                name    : 'Wer Tamrian',
+            },
+            {
+                id		: 1,
+                rid     : 'reg77',
+                name    : 'Wer Maktian',
+            },
+            {
+                id		: 1,
+                rid     : 'reg78',
+                name    : 'Tanimbar Utara',
+            },
+            {
+                id		: 1,
+                rid     : 'reg79',
+                name    : 'Yaru',
+            },
+            {
+                id		: 1,
+                rid     : 'reg80',
+                name    : 'Wuar Labobar',
+            },
+            {
+                id		: 1,
+                rid     : 'reg81',
+                name    : 'Kormomolin',
+            },
+            {
+                id		: 1,
+                rid     : 'reg82',
+                name    : 'Nirunmas',
+            },
+            {
+                id		: 1,
+                rid     : 'reg83',
+                name    : 'Molu Maru',
+            },
+        ],
+    },
+    {
+        id		: 5,
+        did     : 'dis5',
+        city    : false,
         name    : 'Maluku Barat Daya',
+        svg     : 'dis-5',
         regions : [
             {
                 id		: 1,
@@ -247,10 +312,11 @@ window.data_district_       = [
         ],
     },
     {
-        id		: 5,
-        did     : 'dis5',
+        id		: 6,
+        did     : 'dis6',
         city    : false,
         name    : 'Maluku Tengah',
+        svg     : 'dis-6',
         regions : [
             {
                 id		: 1,
@@ -350,10 +416,11 @@ window.data_district_       = [
         ],
     },
     {
-        id		: 6,
-        did     : 'dis6',
+        id		: 7,
+        did     : 'dis7',
         city    : false,
         name    : 'Maluku Tenggara',
+        svg     : 'dis-7',
         regions : [
             {
                 id		: 1,
@@ -413,68 +480,11 @@ window.data_district_       = [
         ],
     },
     {
-        id		: 7,
-        did     : 'dis7',
-        city    : false,
-        name    : 'Kepulauan Tanimbar',
-        regions : [
-            {
-                id		: 1,
-                rid     : 'reg74',
-                name    : 'Tanimbar Selatan',
-            },
-            {
-                id		: 1,
-                rid     : 'reg75',
-                name    : 'Selaru',
-            },
-            {
-                id		: 1,
-                rid     : 'reg76',
-                name    : 'Wer Tamrian',
-            },
-            {
-                id		: 1,
-                rid     : 'reg77',
-                name    : 'Wer Maktian',
-            },
-            {
-                id		: 1,
-                rid     : 'reg78',
-                name    : 'Tanimbar Utara',
-            },
-            {
-                id		: 1,
-                rid     : 'reg79',
-                name    : 'Yaru',
-            },
-            {
-                id		: 1,
-                rid     : 'reg80',
-                name    : 'Wuar Labobar',
-            },
-            {
-                id		: 1,
-                rid     : 'reg81',
-                name    : 'Kormomolin',
-            },
-            {
-                id		: 1,
-                rid     : 'reg82',
-                name    : 'Nirunmas',
-            },
-            {
-                id		: 1,
-                rid     : 'reg83',
-                name    : 'Molu Maru',
-            },
-        ],
-    },
-    {
         id		: 8,
         did     : 'dis8',
         city    : false,
         name    : 'Seram Bagian Barat',
+        svg     : 'dis-8',
         regions : [
             {
                 id		: 1,
@@ -538,6 +548,7 @@ window.data_district_       = [
         did     : 'dis9',
         city    : false,
         name    : 'Seram Bagian Timur',
+        svg     : 'dis-9',
         regions : [
             {
                 id		: 1,
@@ -621,6 +632,7 @@ window.data_district_       = [
         did     : 'dis10',
         city    : true,
         name    : 'Ambon',
+        svg     : 'dis-10',
         regions : [
             {
                 id		: 1,
@@ -654,6 +666,7 @@ window.data_district_       = [
         did     : 'dis11',
         city    : true,
         name    : 'Tual',
+        svg     : 'dis-11',
         regions : [
             {
                 id		: 1,
@@ -684,18 +697,22 @@ window.data_district_       = [
     },
 ];
 
-window.read_district_   = (remove=false)=>{
+window.read_district_   = (remove=false, loadSvg=false)=>{
     const data_dist     = window.data_district_.slice();
     const read          = d=>{
+        const data_reg  = d.regions.slice();
         const o         = {
             id          : d.id,
             did         : d.did,
             name        : (()=>{if (d.city) return 'Kota '  + d.name;return 'Kabupaten ' + d.name;})(),
+            alias       : (()=>{if (d.city) return 'Kota '  + d.name;return 'Kab. ' + d.name;})(),
+            original    : d.name,
             regions     : {},
             head        : undefined,
             tail        : undefined,
             next        : undefined,
             prev        : undefined,
+            svg         : d.svg,
         };
 
         o.forEach       = (callback=()=>{})=>{
@@ -705,13 +722,15 @@ window.read_district_   = (remove=false)=>{
         o.options       = '';
 
         (()=>{
-            const v     = d.regions.shift();
-            const a     = {
-                id      : v.id,
-                rid     : v.rid,
-                name    : 'Kecamatan ' + v.name,
-                prev    : undefined,
-                next    : undefined,
+            const v         = data_reg.shift();
+            const a         = {
+                id          : v.id,
+                rid         : v.rid,
+                name        : 'Kecamatan ' + v.name,
+                alias       : 'Kec. ' + v.name,
+                original    : v.name,
+                prev        : undefined,
+                next        : undefined,
             };
 
             a.option            = '<option value="'+a.rid+'">'+a.name+'</option>';
@@ -719,15 +738,19 @@ window.read_district_   = (remove=false)=>{
             o.regions[a.rid]    = a;
             o.head              = a;
             o.tail              = a;
+            a.district          = o;
+            x.regions[a.rid]    = a;
         })();
 
-        d.regions.forEach(r=>{
-            const a     = {
-                id      : r.id,
-                rid     : r.rid,
-                name    : 'Kecamatan ' + r.name,
-                prev    : o.tail,
-                next    : undefined,
+        data_reg.forEach(r=>{
+            const a         = {
+                id          : r.id,
+                rid         : r.rid,
+                name        : 'Kecamatan ' + r.name,
+                alias       : 'Kec. ' + r.name,
+                original    : r.name,
+                prev        : o.tail,
+                next        : undefined,
             };
 
             a.option            = '<option value="'+a.rid+'">'+a.name+'</option>';
@@ -735,6 +758,8 @@ window.read_district_   = (remove=false)=>{
             o.regions[a.rid]    = a;
             o.tail.next         = a;
             o.tail              = a;
+            a.district          = o;
+            x.regions[a.rid]    = a;
         });
 
         return o;
@@ -744,7 +769,42 @@ window.read_district_   = (remove=false)=>{
         tail            : undefined,
         data            : {},
         options         : '',
+        regions         : {},
     };
+
+    if (loadSvg) {
+        loadSvg         = e=>{
+            let svg     = e.svg;
+            const pid   = 'path-' + e.did;
+
+            if (typeof svg === 'string') {
+                svg     = {
+                    shape   : document.getElementById(svg),
+                    point   : document.getElementById('cds-' + e.did),
+                    label   : document.getElementById('lab-' + e.did),
+                    value   : document.getElementById('val-' + e.did),
+                    paths   : {
+                        select  : $('.' + pid),
+                        target  : {},
+                    },
+                };
+
+                svg.paths.select.each((i, e)=>{
+                    let attr                = e.getAttribute('class');
+
+                    attr                    = attr.replace(pid, '');
+                    attr                    = attr.replace(' ', '');
+                    attr                    = attr.replace('path-', '');
+                    svg.paths.target[attr]  = e;
+                });
+
+                e.svg   = svg;
+            }
+        };
+    }
+    else {
+        loadSvg         = ()=>{};
+    }
 
     x.forEach           = (callback=()=>{})=>{
         let ptr         = x.head;
@@ -764,6 +824,7 @@ window.read_district_   = (remove=false)=>{
         x.head          = res;
         x.tail          = res;
         x.options       = res.option;
+        loadSvg(res);
     })();
     data_dist.forEach(d=>{
         const dis       = read(d);
@@ -773,6 +834,7 @@ window.read_district_   = (remove=false)=>{
         x.tail.next     = dis;
         x.tail          = dis;
         x.options      += dis.option;
+        loadSvg(dis);
     });
     if (remove)
         delete window.data_district_;

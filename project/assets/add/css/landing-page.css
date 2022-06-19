@@ -12,6 +12,7 @@
 /*header*/
 .header {
     position        : relative;
+    overflow        : hidden;
     height          : 100vh;
     width           : 100vw;
 }
@@ -323,7 +324,7 @@
         align-items: center;
     }
     .header-content-items {
-        width: 30%;
+        width: 35%;
         padding: var(--ly-6) 0;
         justify-content: center;
     }
@@ -339,6 +340,6 @@
         bottom: 0;
         width: 100%;
     }
-    .r-card {width: 60%;}
+    .r-card {width: 65%;}
     .mob {display: none;!important;}
 }

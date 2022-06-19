@@ -111,11 +111,22 @@
         $('[data-sidebar-menu]').each((i, e)=>{
             const page  = e.getAttribute('data-sidebar-page');
             const menu  = e.getAttribute('data-sidebar-menu');
+            const togHd = e.getAttribute('data-toggle-head') === 'true';
 
             o_.add(menu, e);
 
-            if (page)
-                $(e).click(()=>{page_switcher.focus(page);o_.setActive(menu);if (mobile)fun_off();});
+            if (page) {
+                $(e).click(()=>{
+                    page_switcher.focus(page);
+                    o_.setActive(menu);
+                    if (mobile)
+                        fun_off();
+                    if (togHd)
+                        app_head.removeClass('d-none');
+                    else
+                        app_head.addClass('d-none');
+                });
+            }
         });
         o_.setActive('dashboard');
         window.sidebar  = o_;

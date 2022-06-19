@@ -50,9 +50,93 @@
             }
         }
     };
+    const execStatic        = (parent, range, low, mid, high)=>{
+        if (range < low.size) {
+            let interval    = setInterval(()=>{
+                range -= 8;
+
+                if (range > 0)
+                    parent.setAttribute('style', 'transform:translate(0, ' + range + 'px)');
+                else {
+                    parent.setAttribute('style', 'transform:translate(0, 0)');
+                    clearInterval(interval);
+                }
+            }, 2);
+            low.call();
+
+            return 0;
+        }
+        else {
+            let standard        = high.size;
+            let call            = high.call;
+
+            if (range < mid.size) {
+                standard    = mid.size;
+                call        = mid.call;
+            }
+
+            let interval        = setInterval(()=>{
+                range += 8;
+
+                if (range < standard)
+                    parent.setAttribute('style', 'transform:translate(0, ' + range + 'px)');
+                else {
+                    parent.setAttribute('style', 'transform:translate(0, '+ standard + 'px)');
+                    clearInterval(interval);
+                }
+            }, 2);
+            call();
+
+            return standard;
+        }
+    };
 
     overlay_.setAttribute('style', 'transform:translateY(100vh);');
 
+    window.static_swiper    = (s, prop={})=>{
+        const slider        = $(s)[0];
+        const parent        = slider.parentNode;
+        const low           = win_.height() * 0.25;
+        const mid           = win_.height() * 0.6;
+        const high          = win_.height() * 0.85;
+        let lowCall         = prop.low;
+        let midCall         = prop.mid;
+        let higCall         = prop.high;
+        let anchor          = prop.anchor;
+        let start, move, range;
+
+        if (!lowCall)
+            lowCall         = ()=>{};
+        if (!midCall)
+            midCall         = ()=>{};
+        if (!higCall)
+            higCall         = ()=>{};
+        if (!anchor)
+            anchor          = 45;
+
+        const lowProp       = {size:low, call:lowCall};
+        const midProp       = {size:mid, call:midCall};
+        const highProp      = {size:high, call:higCall};
+
+        slider.addEventListener('touchstart', e=>{
+            if (!move) {
+                start = e.touches[0].clientY;
+                move  = start;
+            }
+        });
+        slider.addEventListener('touchmove', e=>{
+            move    = e.touches[0].clientY;
+            range   = move - start;
+            if (start <= 0)
+                range -= anchor;
+            parent.setAttribute('style', 'transform:translate(0, ' + range + 'px)');
+            e.preventDefault();
+        });
+        slider.addEventListener('touchend', ()=>{
+            move    = execStatic(parent, range, lowProp, midProp, highProp);
+            start   = 0;
+        });
+    };
     window.card_swiper      = (s, prop={}, o=overlay_)=>{
         const slider        = $(s)[0];
         const parent        = slider.parentNode;
