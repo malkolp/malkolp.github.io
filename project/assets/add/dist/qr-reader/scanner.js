@@ -18,12 +18,15 @@ window.scanner_     = ((id='camera-input', fps=30)=>{
         else
             errors.error.addClass('d-none');
 
-        Html5Qrcode.getCameras().then(()=>{
+        Html5Qrcode.getCameras().then(cameras=>{
             errors.error.addClass('d-none');
             $('.camera-rtc').removeClass('d-none');
+
         });
 
-        cam = new Html5QrcodeScanner(id, {fps:fps});
+        cam = new Html5QrcodeScanner(id);
+
+        cam.start();
     }, () => {
         errors.permission.addClass('d-none');
         errors.null.removeClass('d-none');
