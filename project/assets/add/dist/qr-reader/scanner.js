@@ -18,7 +18,7 @@ window.scanner_     = ((id='camera-input', fps=30)=>{
             errors.error.addClass('d-none');
 
         navigator.mediaDevices.
-        getUserMedia().
+        getUserMedia({video:true}).
         then(()=>{
             errors.error.addClass('d-none');
             $('.camera-rtc').removeClass('d-none');
