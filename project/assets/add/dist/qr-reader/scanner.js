@@ -8,8 +8,9 @@ window.scanner_     = ((id='camera-input', fps=30)=>{
     };
 
     errors.error.removeClass('d-none');
+    let cam;
 
-    if (DetectRTC.hasWebcam) {
+    navigator.getUserMedia({video: true}, () => {
         if (!DetectRTC.isWebsiteHasWebcamPermissions) {
             errors.permission.removeClass('d-none');
             errors.null.addClass('d-none');
@@ -22,11 +23,12 @@ window.scanner_     = ((id='camera-input', fps=30)=>{
             $('.camera-rtc').removeClass('d-none');
         });
 
-        return new Html5QrcodeScanner(id, {fps:fps});
-    }
-    errors.permission.addClass('d-none');
-    errors.null.removeClass('d-none');
-    $('.scanner-card').addClass('d-none');
+        cam = new Html5QrcodeScanner(id, {fps:fps});
+    }, () => {
+        errors.permission.addClass('d-none');
+        errors.null.removeClass('d-none');
+        $('.scanner-card').addClass('d-none');
+    });
 
-    return undefined;
+    return cam;
 })();
