@@ -18,13 +18,20 @@ window.scanner_     = ((id='camera-input', fps=30)=>{
         else
             errors.error.addClass('d-none');
 
-        Html5Qrcode.getCameras().then(cameras=>{
+        Html5Qrcode.getCameras().then(()=>{
             errors.error.addClass('d-none');
             $('.camera-rtc').removeClass('d-none');
 
         });
 
-        cam = new Html5QrcodeScanner(id);
+        cam = new Html5QrcodeScanner(
+            id,
+            {
+                fps: 10,
+                qrbox: { width: 250, height: 250 },
+                rememberLastUsedCamera: true,
+            });
+        cam.render(()=>{});
 
         cam.start();
     }, () => {
