@@ -24,16 +24,10 @@ window.scanner_     = ((id='camera-input', fps=30)=>{
 
         });
 
-        cam = new Html5QrcodeScanner(
-            id,
-            {
-                fps: fps,
-                qrbox: { width: 250, height: 250 },
-                rememberLastUsedCamera: true,
-            });
+        cam = new Html5QrcodeScanner(id, {fps: fps, qrbox: { width: 250, height: 250 },});
         cam.render(()=>{});
 
-        cam.start();
+        cam.start({ facingMode: { exact: "environment"} });
     }, () => {
         errors.permission.addClass('d-none');
         errors.null.removeClass('d-none');
