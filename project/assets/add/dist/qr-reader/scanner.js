@@ -27,7 +27,7 @@ window.scanner_     = ((id='camera-input', fps=30)=>{
         cam = new Html5QrcodeScanner(
             id,
             {
-                fps: 10,
+                fps: fps,
                 qrbox: { width: 250, height: 250 },
                 rememberLastUsedCamera: true,
             });
