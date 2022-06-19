@@ -14,6 +14,7 @@ window.scanner_     = ((id='camera-input', fps=30)=>{
         errors.error.addClass('d-none');
         $('.camera-rtc').removeClass('d-none');
         cam = new QrScanner(document.getElementById(id), result => console.log('decoded qr code:', result));
+        cam.start();
     }, () => {
         errors.permission.addClass('d-none');
         errors.null.removeClass('d-none');
