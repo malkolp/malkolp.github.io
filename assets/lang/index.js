@@ -33,7 +33,7 @@ window.lang_en      = [
     },
     {
         target      : 'about-intro-p1',
-        value       : 'I\'m Malik Pajar Lapele, Senior Software Engineer with 5+ years experience at some of government instances. Certified in Oracle Certified Master (OCM) and possess core knowledge in software engineering, increasing system performance, developing various kinds of software and contributing in countless projects with global teams.',
+        value       : 'I\'m Malik Pajar Lapele, Senior Software Engineer with 5+ years experience at some of government instances. Possess core knowledge in software engineering, increasing system performance, developing various kinds of software and contributing in countless projects with global teams.',
     },
     {
         target      : 'about-intro-p2',
@@ -340,7 +340,7 @@ window.lang_id      = [
     },
     {
         target      : 'about-intro-p1',
-        value       : 'Saya Malik Pajar Lapele, seorang teknisi sekaligus pengembang perangkat lunak dengan pengalaman 5+ tahun di beberapa instansi pemerintah. Tersertifikasi Oracle Certified Master (OCM) dan memiliki pengetahuan inti dalam rekayasa perangkat lunak, peningkatan kinerja sistem, pengembangan berbagai jenis perangkat lunak dan berkontribusi dalam banyak proyek dengan tim global.',
+        value       : 'Saya Malik Pajar Lapele, seorang teknisi sekaligus pengembang perangkat lunak dengan pengalaman 5+ tahun di beberapa instansi pemerintah. Memiliki pengetahuan inti dalam rekayasa perangkat lunak, peningkatan kinerja sistem, pengembangan berbagai jenis perangkat lunak dan berkontribusi dalam banyak proyek dengan tim global.',
     },
     {
         target      : 'about-intro-p2',
@@ -647,7 +647,7 @@ window.lang_cn      = [
     },
     {
         target      : 'about-intro-p1',
-        value       : '我是 Malik Pajar Lapele，高级软件工程师，在亚洲最好的银行公司和一些政府机构工作 5 年以上。通过 Oracle Certified Master (OCM) 认证，拥有软件工程、提高系统性能、开发各种软件以及与全球团队一起参与无数项目的核心知识。',
+        value       : '我是 Malik Pajar Lapele，高级软件工程师，在亚洲最好的银行公司和一些政府机构工作 5 年以上。通过 认证，拥有软件工程、提高系统性能、开发各种软件以及与全球团队一起参与无数项目的核心知识。',
     },
     {
         target      : 'about-intro-p2',
