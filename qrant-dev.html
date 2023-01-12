@@ -1,0 +1,686 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link href='https://fonts.loli.net/css?family=Merriweather:900,900italic,300,300italic&subset=latin-ext' rel='stylesheet' type='text/css' /><link href='https://fonts.loli.net/css?family=Lato:900,300&subset=latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+.mac-os-11 { --title-bar-height:28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+html {
+  scroll-behavior: smooth;
+}
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex:2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+
+
+@include-when-export url(https://fonts.loli.net/css?family=Merriweather:900,900italic,300,300italic&subset=latin-ext);
+@include-when-export url(https://fonts.loli.net/css?family=Lato:900,300&subset=latin-ext);
+
+:root {
+	--control-text-color: #777;
+}
+
+/**
+ * forked from pixyll.com
+ * MIT license
+ */
+
+h1,
+.h1,
+.f1 {
+	font-size: 2rem;
+	line-height: 2.5rem;
+}
+h2,
+.h2,
+.f2 {
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+h3,
+.h3,
+.f3 {
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+}
+p,
+.p,
+.f4,
+h4,
+h5,
+h6,
+dl,
+ol,
+ul,
+pre[cid],
+div[cid],
+#typora-source {
+	font-size: 1.125rem;
+	line-height: 1.5rem;
+}
+
+h4 {
+	font-size: 1.13rem;
+}
+/*
+ Pixyll
+ A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff.
+ Best served with BASSCSS (http://jxnblk.github.io/basscss)
+ Crafted with <3 by John Otander (@4lpine) - ©2015 John Otander MIT License http://opensource.org/licenses/MIT
+
+*/
+
+body {
+	font-family: "Merriweather", "PT Serif", Georgia, "Times New Roman", "STSong", 'Segoe UI Emoji', Serif;
+	line-height: 1.5rem;
+	font-weight: 400;
+}
+
+#write {
+	max-width: 914px;
+	color: #333;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1100px;
+	}
+}
+
+@media only screen and (min-width: 1700px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+img {
+	width: auto;
+	max-width: 100%;
+}
+body {
+	font-size: 1.5rem;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.ty-table-edit {
+	background: #ededed;
+}
+
+table {
+	width: 100%;
+	font-size: 1.125rem;
+}
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td,
+table > tfoot > tr > th,
+table > tfoot > tr > td {
+	padding: 12px;
+	line-height: 1.2;
+	vertical-align: top;
+	border-top: 1px solid #333;
+}
+table > thead > tr > th {
+	vertical-align: bottom;
+	border-bottom: 2px solid #333;
+}
+table > caption + thead > tr:first-child > th,
+table > caption + thead > tr:first-child > td,
+table > colgroup + thead > tr:first-child > th,
+table > colgroup + thead > tr:first-child > td,
+table > thead:first-child > tr:first-child > th,
+table > thead:first-child > tr:first-child > td {
+	border-top: 0;
+}
+table > tbody + tbody {
+	border-top: 2px solid #333;
+}
+p {
+	font-weight: 300;
+	line-height: 1.5;
+	text-align: justify;
+	text-indent: 4rem;
+}
+li p {
+	text-indent: 0;
+	margin-left: 1.2rem;
+}
+abbr {
+	border-bottom: 1px black dotted;
+	cursor: help;
+}
+pre,
+code {
+	font-family: Menlo, Monaco, "Courier New", monospace;
+}
+
+code,
+.md-fences  {
+	color: #7a7a7a;
+}
+
+.md-fences {
+	padding: 1.125em;
+	margin-bottom: 0.88em;
+	font-size: 1rem;
+	border: 1px solid #7a7a7a;
+	padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
+}
+
+blockquote {
+	padding: 1.33em;
+	font-style: italic;
+	border-left: 5px solid #7a7a7a;
+	color: #555;
+}
+blockquote em {
+	color: #000;
+}
+blockquote footer {
+	font-size: .85rem;
+	font-style: normal;
+	background-color: #fff;
+	color: #7a7a7a;
+	border-color: transparent;
+}
+h1 {
+	text-align: center;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+	font-family: "Lato", 'Helvetica Neue', Helvetica, sans-serif;
+	font-weight: bold;
+	line-height: 1.2;
+	margin: 1em 0 0.5em;
+}
+@media screen and (min-width: 48em) {
+	.h1,
+	h1 {
+		font-size: 3.250rem;
+	}
+	.h2,
+	h2 {
+		font-size: 2.298rem;
+	}
+	.h3,
+	h3 {
+		font-size: 1.625rem;
+	}
+	.h4,
+	h4 {
+		font-size: 1.3rem;
+	}
+	#write>h4.md-focus:before,
+	#write>h5.md-focus:before,
+	#write>h6.md-focus:before{
+		top: 1px;
+	}
+	.p,
+	p,
+	li {
+		font-size: 1.25rem;
+		line-height: 1.8;
+	}
+	table {
+		font-size: 1.25rem;
+	}
+}
+@media (max-width: 48em) {
+	blockquote {
+		margin-left: 1rem;
+		margin-right: 0;
+		padding: 0.5em;
+	}
+	.h1,
+	h1 {
+		font-size: 2.827rem;
+	}
+	.h2,
+	h2 {
+		font-size: 1.999rem;
+	}
+	.h3,
+	h3 {
+		font-size: 1.413rem;
+	}
+	.h4,
+	h4 {
+		font-size: 1.3rem;
+	}
+}
+@media screen and (min-width: 64em) {
+	.h1,
+	h1 {
+		font-size: 4.498rem;
+	}
+	.h2,
+	h2 {
+		font-size: 2.29rem;
+	}
+	.h3,
+	h3 {
+		font-size: 1.9rem;
+	}
+	.h4,
+	h4 {
+		font-size: 1.591rem;
+	}
+	#write>h4.md-focus:before{
+		top:4px;
+	}
+}
+a {
+	color: #463F5C;
+	text-decoration: underline;
+}
+
+#write {
+	padding-top: 2rem;
+}
+
+#write pre.md-meta-block {
+	min-height: 35px;
+	padding: 0.5em 1em;
+	white-space: pre;
+	border: 0px;
+
+	border-left: 30px #f8f8f8 solid;
+	border-right: 30px #f8f8f8 solid;
+	width: 100vw;
+	max-width: calc(100% + 60px);
+
+	margin-left: -30px;
+	margin-bottom: 2em;
+	margin-top: -2010px;
+	padding-top: 2000px;
+	padding-bottom: 10px;
+	line-height: 1.5em;
+	color: #7a7a7a;
+	background-color: #fafafa;
+	font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+	font-weight: 300;
+	clear: both;
+	padding-left: 0;
+	font-size:1.125rem;
+}
+.md-image>.md-meta {
+	color: #463F5C
+}
+.footnotes {
+	font-size:1.1rem;
+}
+.md-tag {
+	font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+}
+.code-tooltip {
+	background: white;
+}
+.code-tooltip-content {
+	font-size: 1.1rem;
+}
+
+.task-list{
+	padding-left: 0;
+}
+
+.md-task-list-item {
+	padding-left:34px;
+}
+
+.md-task-list-item > input{
+	width: 1.25rem;
+	height: 1.25rem;
+	display: block;
+	-webkit-appearance: initial;
+	top: -0.2rem;
+	margin-left: -1.6em;
+	margin-top: calc(1rem - 7px);
+	border: none;
+}
+
+.md-task-list-item > input:focus{
+	outline: none;
+	box-shadow: none;
+}
+
+.md-task-list-item > input:before{
+	border: 1px solid #555;
+	border-radius: 1.5rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	background: #fff;
+	content: ' ';
+	transition: background-color 200ms ease-in-out;
+	display: block;
+}
+
+.md-task-list-item > input:checked:before,
+.md-task-list-item > input[checked]:before{
+	background: #333;
+	border-width: 2px;
+	display:inline-block;
+	transition: background-color 200ms ease-in-out;
+}
+
+.md-task-list-item > input:checked:after,
+.md-task-list-item > input[checked]:after {
+	opacity: 1;
+}
+
+.md-task-list-item > input:after {
+	opacity: 1;
+	-webkit-transition: opacity 0.05s ease-in-out;
+	-moz-transition: opacity 0.05s ease-in-out;
+	transition: opacity 0.05s ease-in-out;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 0.4375rem;
+	left: 0.28125rem;
+	width: 0.9375rem;
+	height: 0.5rem;
+	border: 3px solid #fff;
+	border-top: 0;
+	border-right: 0;
+	content: ' ';
+	opacity: 0;
+}
+
+.md-tag {
+	color:inherit;
+}
+
+.md-toc:focus .md-toc-content{
+	margin-top: 19px;
+}
+
+#typora-sidebar {
+	font-size:1rem !important;
+}
+
+.html-for-mac #typora-sidebar {
+	background-color:white;
+}
+
+.outline-content li, .outline-content ul {
+	font-size:1rem !important;
+}
+
+.outline-title {
+	line-height: inherit;
+	margin-top: 10px;
+}
+
+.outline-expander {
+	width: 18px;
+}
+
+.outline-expander:before {
+ 	content: "+";
+	font-family: inherit;
+	color: rgb(108, 108, 108);
+  font-size: 1.5rem;
+ 	top: -0.1rem;
+}
+
+.outline-expander:hover:before {
+	content: "+";
+}
+
+.outline-item-open>.outline-item>.outline-expander:before{
+	content: "-";
+}
+
+/** source code mode */
+#typora-source {
+	font-family: Courier, monospace;
+    color: #6A6A6A;
+}
+
+.os-windows #typora-source {
+	font-family: inherit;
+}
+
+.cm-s-typora-default .cm-header,
+.cm-s-typora-default .cm-property,
+.CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
+	color: #428bca;
+}
+
+.cm-s-typora-default .cm-atom, .cm-s-typora-default .cm-number {
+	color: #777777;
+}
+
+.md-diagram-panel {
+	margin-top: 24px;
+	margin-left: -1.2em;
+}
+
+.md-mathjax-midline {
+	background: #fafafa;
+}
+
+.enable-diagrams pre.md-fences[lang="sequence"] .code-tooltip,
+.enable-diagrams pre.md-fences[lang="flow"] .code-tooltip,
+.enable-diagrams pre.md-fences[lang="mermaid"] .code-tooltip {
+    bottom: -3.4em;
+}
+
+.dropdown-menu .divider {
+	border-color: #e5e5e5;
+}
+
+
+</style><title>index</title>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='qrant'><span>Qrant</span></h1><p>&nbsp;</p><p><img src="asset-doc\image-20230112163346653.png" alt="image-20230112163346653" style="zoom:75%;" /></p><h2 id='aktor-sistem'><span>Aktor Sistem</span></h2><figure><table><thead><tr><th><span style="width:6rem;display:inline-block;"><span>Id</span></span></th><th><span style="width:18rem;display:inline-block;"><span>Aktor</span></span></th><th><strong><span>Deskripsi</span></strong></th></tr></thead><tbody><tr><td><span>ac-1</span></td><td><span>Admin super</span></td><td><span>Pihak yang memiliki hak akses super atau wewenang dalam mengelola data dokumen dan lalulintas komoditas.</span></td></tr><tr><td><span>ac-2</span></td><td><span>Petugas</span></td><td><span>Pihak yang memiliki wewenang untuk membuat dan memeriksa kelengkapan dokumen komoditas.</span></td></tr><tr><td><span>ac-3</span></td><td><span>Pengguna layanan</span></td><td><span>Pengguna layanan Badan Karantina Pertanian.</span></td></tr><tr><td><span>ac-4</span></td><td><span>Pengunjung</span></td><td><span>Pengguna layanan yang belum mendaftar.</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table></figure><h2 id='kebutuhan-fungsional'><span>Kebutuhan Fungsional</span></h2><figure><table><thead><tr><th><span style="width:6rem;display:inline-block;"><span>Id</span></span></th><th><strong><span>Use Case</span></strong></th><th><strong><span>Deskripsi</span></strong></th><th><strong><span>Aktor</span></strong></th></tr></thead><tbody><tr><td><span><a href="#fn-1">fn-1</a></span></td><td><span>Login</span></td><td><span>Otentikasi keamanan dan identifikasi pada sistem untuk setiap pengguna. Proses ini wajib dilakukan oleh setiap pengguna, dapat dilakukan lewat halaman login atau menggunakan API.</span></td><td><span>ac-1, ac-2, ac-3</span></td></tr><tr><td><span><a href="#fn-2">fn-2</a></span></td><td><span>Logout</span></td><td><span> Bagian dari otentikasi keamanan. Proses ini digunakan untuk mengakhiri akses sistem pada perangkat tertentu, dapat dilakukan lewat UI sistem atau API</span></td><td><span>ac-1, ac-2, ac-3</span></td></tr><tr><td><span><a href="#fn-3">fn-3</a></span></td><td><span>Daftar</span></td><td><span>Pengguna layanan Badan Karantina Pertanian dapat mendaftarkan akun baru. Proses ini tidak dapat dilakukan lewat API.</span></td><td><span>ac-4</span></td></tr><tr><td><span><a href="#fn-4">fn-4</a></span></td><td><span>Memperbahrui profil</span></td><td><span>Pengguna dapat mengelola dan memperbahrui data akun.</span></td><td><span>ac-1, ac-2, ac-3</span></td></tr><tr><td><span><a href="#fn-5">fn-5</a></span></td><td><span>Menambah akun petugas</span></td><td><span>Admin super dapat menambahkan akun petugas baru dengan jenis tertentu.</span></td><td><span>ac-1</span></td></tr><tr><td><span><a href="#fn-6">fn-6</a></span></td><td><span>Menghapus akun petugas</span></td><td><span>Admin super dapat menghapus seluruh jenis akun petugas kecuali akun dengan tipe “super”</span></td><td><span>ac-1</span></td></tr><tr><td><span><a href="#fn-7">fn-7</a></span></td><td><span>Menambah tipe komoditas</span></td><td><span>Admin super dapat menambah tipe komoditas baru serta satuan yang digunakan pada komoditas tersebut.</span></td><td><span>ac-1</span></td></tr><tr><td><span><a href="#fn-8">fn-8</a></span></td><td><span>Menghapus tipe komoditas</span></td><td><span>Admin super dapat menghapus tipe komoditas yang ada. Proses ini juga secara otomatis menghapus seluruh data komoditas dengan tipe komoditas terkait.</span></td><td><span>ac-1</span></td></tr><tr><td><span><a href="#fn-9">fn-9</a></span></td><td><span>Menambah tipe dokumen</span></td><td><span>Admin super dapat menambahkan tipe dokumen baru serta mengatur isi properti pada tipe tersebut.</span></td><td><span>ac-1</span></td></tr><tr><td><span><a href="#fn-10">fn-10</a></span></td><td><span>Menghapus tipe dokumen</span></td><td><span>Admin super dapat menghapus tipe dokumen yang ada. Proses ini juga secara otomatis menghapus seluruh dokumen dan permintaan dokumen yang dimiliki oleh pengguna biasa.</span></td><td><span>ac-1</span></td></tr><tr><td><span><a href="#fn-11">fn-11</a></span></td><td><span>Membuat dokumen</span></td><td><span>Petugas dapat membuat dokumen baru berdasarkan permintaan dokumen yang dibuat oleh pengguna biasa.</span></td><td><span>ac-2</span></td></tr><tr><td><span><a href="#fn-12">fn-12</a></span></td><td><span>Menghapus publikasi dokumen</span></td><td><span>Petugas dapat menghapus riwayat dokumen atau surat yang pernah dibuat.</span></td><td><span>ac-2</span></td></tr><tr><td><span><a href="#fn-13">fn-13</a></span></td><td><span>Memindai dokumen</span></td><td><span>Petugas dapat memindai kode dokumen komoditas untuk keperluan lalulintas. Proses ini juga dapat dilakukan dengan memindai kode komoditas.</span></td><td><span>ac-2</span></td></tr><tr><td><span><a href="#fn-14">fn-14</a></span></td><td><span>Menambah komoditas</span></td><td><span>Pengguna dapat menambah data komoditas baru. Proses ini juga dapat dilakukan menggunakan API.</span></td><td><span>ac-3</span></td></tr><tr><td><span><a href="#fn-15">fn-15</a></span></td><td><span>Menghapus komoditas</span></td><td><span>Pengguna dapat menghapus data komoditas yang ada. Penghapusan data komoditas secara otomatis juga menghapus dokumen dan permintaan dokumen yang berkaitan dengan komoditas tersebut. Proses ini juga bisa dilakukan menggunakan API.</span></td><td><span>ac-3</span></td></tr><tr><td><span><a href="#fn-16">fn-16</a></span></td><td><span>Transfer keluar komoditas</span></td><td><span>Pengguna dapat mengalihkan kepemilikan komoditas dengan jumlah tertentu kepada pengguna lain dengan memberikan PIN. Jika jumlah unit yang dialihkan kurang dari keseluruhan maka sistem akan mengurangi jumlah komoditas pada pengguna asal dan menduplikasi dokumen yang berkaitan dengan komoditas tersebut namun dengan kepemilikan yang berbeda sedangkan jika jumlah yang dialihkan sama dengan jumlah keseluruhan maka sistem akan menghapus data komoditas dan dokumen yang berkaitan pada pengguna asal.</span></td><td><span>ac-3</span></td></tr><tr><td><span><a href="#fn-17">fn-17</a></span></td><td><span>Transfer masuk komoditas</span></td><td><span>Pengguna dapat menambahkan komoditas milik pengguna lainnya dengan memasukkan kode PIN yang didapatkan. Proses ini memerlukan verifikasi dari pemilik komoditas asal sebelum transfer dilakukan. </span></td><td><span>ac-3</span></td></tr><tr><td><span><a href="#fn-18">fn-18</a></span></td><td><span>Membuat permintaan dokumen</span></td><td><span>Pengguna dapat membuat permintaan dokumen baru untuk komoditas tertentu. Proses ini menghasilkan kode QR yang dapat dipindai oleh petugas sebagai input pembuatan dokumen baru.</span></td><td><span>ac-3</span></td></tr><tr><td><span><a href="#fn-19">fn-19</a></span></td><td><span>Menghapus permintaan dokumen</span></td><td><span>Pengguna dapat menghapus permintaan dokumen yang pernah dibuat. Proses ini juga dapat dilakukan menggunakan API.</span></td><td><span>ac-3</span></td></tr><tr><td><span><a href="#fn-20">fn-20</a></span></td><td><span>Menghapus dokumen</span></td><td><span>Pengguna dapat menghapus dokumen komoditas tertentu yang dimiliki. Proses ini juga dapat dilakukan menggunakan API.</span></td><td><span>ac-3</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table></figure><h2 id='kebutuhan-non-fungsional'><span>Kebutuhan Non-fungsional</span></h2><figure><table><thead><tr><th><span style="width:6rem;display:inline-block;"><span>Id</span></span></th><th><strong><span>Deskripsi</span></strong></th></tr></thead><tbody><tr><td><span>Nofn-1</span></td><td><span>Sisi Front-end menggunakan model SPA(</span><em><span>Single Page Application</span></em><span>).</span></td></tr><tr><td><span>Nofn-2</span></td><td><span>Memiliki kemampuan dynamic loader (mampu memuat lebih banyak data tanpa perlu reload).</span></td></tr><tr><td><span>Nofn-3</span></td><td><span>Mengimplementasikan manajemen state untuk menghapus data-data yang tidak diperlukan secara otomatis ketika pengguna berpindah ke menu yang lain.</span></td></tr><tr><td><span>Nofn-4</span></td><td><span>Sistem menggunakan token sebagai identifikasi pengguna untuk setipa permintaan ke server.</span></td></tr><tr><td><span>Nofn-5</span></td><td><span>Sistem menggunakan arsitektur Microservices untuk mencegah adanya penumpukan proses.</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table></figure><h2 id='desain--implementasi-fitur'><span>Desain &amp; Implementasi Fitur</span></h2><h3 id='login-fn-1'><span id="fn-1">Login (fn-1)</span></h3><div style="text-align:center;font-weight:bold">Activity diagram</div><p><img src="asset-doc\image-20230112171314713.png" alt="image-20230112171314713" style="zoom:50%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Sequence diagram</div><p><img src="asset-doc\image-20230112174751598.png" alt="image-20230112174751598" style="zoom:75%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Implementation Result</div><p><img src="C:\Users\mf648\Downloads\gif\f-01.gif" alt="f-01" style="zoom:30%;" /></p><p>&nbsp;</p><h3 id='logout-fn-2'><span id="fn-2">Logout (fn-2)</span></h3><div style="text-align:center;font-weight:bold">Activity diagram</div><p><img src="asset-doc\image-20230112171604977.png" alt="image-20230112171604977" style="zoom:50%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Sequence diagram</div><p><img src="asset-doc\image-20230112175249717.png" alt="image-20230112175249717" style="zoom:75%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Implementation Result</div><p><img src="C:\Users\mf648\Downloads\gif\f-02.gif" alt="f-02" style="zoom:30%;" /></p><p>&nbsp;</p><h3 id='daftar-fn-3'><span id="fn-3">Daftar (fn-3)</span></h3><div style="text-align:center;font-weight:bold">Activity diagram</div><p><img src="asset-doc\image-20230112171629093.png" alt="image-20230112171629093" style="zoom:50%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Sequence diagram</div><p><img src="asset-doc\image-20230112175323858.png" alt="image-20230112175323858" style="zoom:75%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Implementation Result</div><p><img src="C:\Users\mf648\Downloads\gif\f-03.gif" alt="f-03" style="zoom:30%;" /></p><p>&nbsp;</p><h3 id='memperbahrui-profil-fn-4'><span id="fn-4">Memperbahrui Profil (fn-4)</span></h3><div style="text-align:center;font-weight:bold">Activity diagram</div><p><img src="asset-doc\image-20230112171658883.png" alt="image-20230112171658883" style="zoom:50%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Sequence diagram</div><p><img src="asset-doc\image-20230112175341067.png" alt="image-20230112175341067" style="zoom:75%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Implementation Result</div><p><img src="C:\Users\mf648\Downloads\gif\f-04.gif" alt="f-04" style="zoom:30%;" /></p><p>&nbsp;</p><h3 id='menambah-akun-petugas-fn-5'><span id="fn-5">Menambah Akun Petugas (fn-5)</span></h3><div style="text-align:center;font-weight:bold">Activity diagram</div><p><img src="asset-doc\image-20230112171714862.png" alt="image-20230112171714862" style="zoom:50%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Sequence diagram</div><p><img src="asset-doc\image-20230112175427269.png" alt="image-20230112175427269" style="zoom:75%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Implementation Result</div><p><img src="C:\Users\mf648\Downloads\gif\f-05.gif" alt="fn-05" style="zoom:30%;" /></p><p>&nbsp;</p><h3 id='menghapus-akun-petugas-fn-6'><span id="fn-6">Menghapus Akun Petugas (fn-6)</span></h3><div style="text-align:center;font-weight:bold">Activity diagram</div><p><img src="asset-doc\image-20230112171803551.png" alt="image-20230112171803551" style="zoom:50%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Sequence diagram</div><p><img src="asset-doc\image-20230112175459459.png" alt="image-20230112175459459" style="zoom:75%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Implementation Result</div><p><img src="C:\Users\mf648\Downloads\gif\f-06.gif" alt="f-06" style="zoom:30%;" /></p><p>&nbsp;</p><h3 id='menambah-tipe-komoditas-fn-7'><span id="fn-7">Menambah Tipe Komoditas (fn-7)</span></h3><div style="text-align:center;font-weight:bold">Activity diagram</div><p><img src="asset-doc\image-20230112171831440.png" alt="image-20230112171831440" style="zoom:50%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Sequence diagram</div><p><img src="asset-doc\image-20230112175518367.png" alt="image-20230112175518367" style="zoom:75%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Implementation Result</div><p><img src="C:\Users\mf648\Downloads\gif\f-07.gif" alt="f-07" style="zoom:30%;" /></p><p>&nbsp;</p><h3 id='menghapus-tipe-komoditas-fn-8'><span id="fn-8">Menghapus Tipe Komoditas (fn-8)</span></h3><div style="text-align:center;font-weight:bold">Activity diagram</div><p><img src="asset-doc\image-20230112171841073.png" alt="image-20230112171841073" style="zoom:50%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Sequence diagram</div><p><img src="asset-doc\image-20230112175532847.png" alt="image-20230112175532847" style="zoom:75%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Implementation Result</div><p><img src="C:\Users\mf648\Downloads\gif\f-08.gif" alt="f-08" style="zoom:30%;" /></p><p>&nbsp;</p><h3 id='menambah-tipe-dokumen-fn-9'><span id="fn-9">Menambah Tipe Dokumen (fn-9)</span></h3><div style="text-align:center;font-weight:bold">Activity diagram</div><p><img src="asset-doc\image-20230112174441347.png" alt="image-20230112174441347" style="zoom:50%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Sequence diagram</div><p><img src="asset-doc\image-20230112175548684.png" alt="image-20230112175548684" style="zoom:75%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Implementation Result</div><p><img src="C:\Users\mf648\Downloads\gif\f-09.gif" alt="f-09" style="zoom:30%;" /></p><p>&nbsp;</p><h3 id='menghapus-tipe-dokumen-fn-10'><span id="fn-10">Menghapus Tipe Dokumen (fn-10)</span></h3><div style="text-align:center;font-weight:bold">Activity diagram</div><p><img src="asset-doc\image-20230112174453956.png" alt="image-20230112174453956" style="zoom:50%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Sequence diagram</div><p><img src="asset-doc\image-20230112175616501.png" alt="image-20230112175616501" style="zoom:75%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Implementation Result</div><p><img src="C:\Users\mf648\Downloads\gif\f-10.gif" alt="f-10" style="zoom:30%;" /></p><p>&nbsp;</p><h3 id='membuat-dokumen-fn-11'><span id="fn-11">Membuat Dokumen (fn-11)</span></h3><div style="text-align:center;font-weight:bold">Activity diagram</div><p><img src="asset-doc\image-20230112174505611.png" alt="image-20230112174505611" style="zoom:50%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Sequence diagram</div><p><img src="asset-doc\image-20230112175640493.png" alt="image-20230112175640493" style="zoom:75%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Implementation Result</div><p><img src="asset-doc\image-20230112195823509.png" alt="image-20230112195823509" style="zoom:40%;" /></p><p>&nbsp;</p><h3 id='menghapus-publikasi-dokumen-fn-12'><span id="fn-12">Menghapus Publikasi Dokumen (fn-12)</span></h3><div style="text-align:center;font-weight:bold">Activity diagram</div><p><img src="asset-doc\image-20230112174518004.png" alt="image-20230112174518004" style="zoom:50%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Sequence diagram</div><p><img src="asset-doc\image-20230112175652748.png" alt="image-20230112175652748" style="zoom:75%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Implementation Result</div><p><img src="C:\Users\mf648\Downloads\gif\f-12.gif" alt="f-12" style="zoom:30%;" /></p><p>&nbsp;</p><h3 id='memindai-dokumen-fn-13'><span id="fn-13">Memindai Dokumen (fn-13)</span></h3><div style="text-align:center;font-weight:bold">Activity diagram</div><p><img src="asset-doc\image-20230112174533458.png" alt="image-20230112174533458" style="zoom:50%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Sequence diagram</div><p><img src="asset-doc\image-20230112175708848.png" alt="image-20230112175708848" style="zoom:75%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Implementation Result</div><p><img src="asset-doc\image-20230112195823509.png" alt="image-20230112195823509" style="zoom:40%;" /></p><p>&nbsp;</p><h3 id='menambah-komoditas-fn-14'><span id="fn-14">Menambah Komoditas (fn-14)</span></h3><div style="text-align:center;font-weight:bold">Activity diagram</div><p><img src="asset-doc\image-20230112174621165.png" alt="image-20230112174621165" style="zoom:50%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Sequence diagram</div><p><img src="asset-doc\image-20230112175724601.png" alt="image-20230112175724601" style="zoom:75%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Implementation Result</div><p><img src="C:\Users\mf648\Downloads\gif\f-14.gif" alt="f-14" style="zoom:30%;" /></p><p>&nbsp;</p><h3 id='menghapus-komoditas-fn-15'><span id="fn-15">Menghapus Komoditas (fn-15)</span></h3><div style="text-align:center;font-weight:bold">Activity diagram</div><p><img src="asset-doc\image-20230112174631368.png" alt="image-20230112174631368" style="zoom:50%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Sequence diagram</div><p><img src="asset-doc\image-20230112175749832.png" alt="image-20230112175749832" style="zoom:75%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Implementation Result</div><p><img src="C:\Users\mf648\Downloads\gif\f-15.gif" alt="f-15" style="zoom:30%;" /></p><p>&nbsp;</p><h3 id='transfer-keluar-komoditas-fn-16'><span id="fn-16">Transfer Keluar Komoditas (fn-16)</span></h3><div style="text-align:center;font-weight:bold">Activity diagram</div><p><img src="asset-doc\image-20230112174643060.png" alt="image-20230112174643060" style="zoom:50%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Sequence diagram</div><p><img src="asset-doc\image-20230112175803520.png" alt="image-20230112175803520" style="zoom:75%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Implementation Result</div><p><img src="C:\Users\mf648\Downloads\gif\f-16.gif" alt="f-16" style="zoom:30%;" /></p><p>&nbsp;</p><h3 id='transfer-masuk-komoditas-fn-17'><span id="fn-17">Transfer Masuk Komoditas (fn-17)</span></h3><div style="text-align:center;font-weight:bold">Activity diagram</div><p><img src="asset-doc\image-20230112174653959.png" alt="image-20230112174653959" style="zoom:50%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Sequence diagram</div><p><img src="asset-doc\image-20230112175815538.png" alt="image-20230112175815538" style="zoom:75%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Implementation Result</div><p><img src="C:\Users\mf648\Downloads\gif\f-17.gif" alt="f-17" style="zoom:30%;" /></p><p>&nbsp;</p><h3 id='membuat-permintaan-dokumen-fn-18'><span id="fn-18">Membuat Permintaan Dokumen (fn-18)</span></h3><div style="text-align:center;font-weight:bold">Activity diagram</div><p><img src="asset-doc\image-20230112174704698.png" alt="image-20230112174704698" style="zoom:50%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Sequence diagram</div><p><img src="asset-doc\image-20230112175832389.png" alt="image-20230112175832389" style="zoom:75%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Implementation Result</div><p><img src="C:\Users\mf648\Downloads\gif\f-18.gif" alt="f-18" style="zoom:30%;" /></p><p>&nbsp;</p><h3 id='menghapus-permintaan-dokumen-fn-19'><span id="fn-19">Menghapus Permintaan Dokumen (fn-19)</span></h3><div style="text-align:center;font-weight:bold">Activity diagram</div><p><img src="asset-doc\image-20230112174713415.png" alt="image-20230112174713415" style="zoom:50%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Sequence diagram</div><p><img src="asset-doc\image-20230112175850350.png" alt="image-20230112175850350" style="zoom:75%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Implementation Result</div><p><img src="C:\Users\mf648\Downloads\gif\f-19.gif" alt="f-19" style="zoom:30%;" /></p><p>&nbsp;</p><h3 id='menghapus-dokumen-fn-20'><span id="fn-20">Menghapus Dokumen (fn-20)</span></h3><div style="text-align:center;font-weight:bold">Activity diagram</div><p><img src="asset-doc\image-20230112174727875.png" alt="image-20230112174727875" style="zoom:50%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Sequence diagram</div><p><img src="asset-doc\image-20230112175906619.png" alt="image-20230112175906619" style="zoom:75%;" /></p><p>&nbsp;</p><div style="text-align:center;font-weight:bold">Implementation Result</div><p><img src="C:\Users\mf648\Downloads\gif\f-20.gif" alt="f-20" style="zoom:30%;" /></p><p>&nbsp;</p></div></div>
+</body>
+</html>
