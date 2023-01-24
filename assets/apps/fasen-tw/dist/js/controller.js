@@ -2880,6 +2880,7 @@
     })();
 
     let speech_active   = false;
+    const speech_el     = $('#speech');
     const speech_btn    = $('.speech-btn');
 
     speech.
@@ -2892,18 +2893,23 @@
     setEvent('heading', x=>{
         editor.actions.chapter(x);
     });
-    $('#speech').click(()=>{
-        speech_active   = !speech_active;
+    if (speech.error) {
+        speech_el.addClass('d-none');
+    }
+    else {
+        speech_el.click(()=>{
+            speech_active   = !speech_active;
 
-        if (speech_active) {
-            speech.start();
-            speech_btn.addClass('active');
-        }
-        else {
-            speech.stop();
-            speech_btn.removeClass('active');
-        }
-    });
+            if (speech_active) {
+                speech.start();
+                speech_btn.addClass('active');
+            }
+            else {
+                speech.stop();
+                speech_btn.removeClass('active');
+            }
+        });
+    }
 
     //previewer
     (()=>{
