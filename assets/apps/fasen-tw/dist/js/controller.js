@@ -2659,6 +2659,15 @@
 
     //editor
     const editor        = (()=>{
+        const read_pos  = ()=>{
+            const def       = e_input[0];
+            const sel       = window.getSelection();
+
+            if (!sel.focusNode) {
+                sel.collapse(def.lastChild, 0);
+                def.focus();
+            }
+        };
         const car_pos   = (s=0, e=0)=>{
             const sel       = window.getSelection();
             const foc       = sel.focusNode;
@@ -2754,46 +2763,59 @@
             command('bab ' + chapter + '\n', true);
         });
         $('#btn-control-h1').click(()=>{
+            read_pos();
             command('# header', true);
         });
         $('#btn-control-h2').click(()=>{
+            read_pos();
             command('#2 header', true);
         });
         $('#btn-control-h3').click(()=>{
+            read_pos();
             command('#3 header', true);
         });
         $('#btn-control-h4').click(()=>{
+            read_pos();
             command('#4 header', true);
         });
         $('#btn-control-h5').click(()=>{
+            read_pos();
             command('#5 header', true);
         });
         $('#btn-control-h6').click(()=>{
+            read_pos();
             command('#6 header', true);
         });
         $('#btn-control-bold').click(()=>{
+            read_pos();
             command('****');
             car_pos(-2, -2);
         });
         $('#btn-control-emphasis').click(()=>{
+            read_pos();
             command('**');
             car_pos(-1, -1);
         });
         $('#btn-control-underline').click(()=>{
+            read_pos();
             command('____');
             car_pos(-2, -2);
         });
         $('#btn-control-img').click(()=>{
+            read_pos();
             page_switcher.focus('image-handler');
         });
         $('#btn-control-cite').click(()=>{
+            read_pos();
             page_switcher.focus('source-handler');
         });
         $('#btn-control-var').click(()=>{
+            read_pos();
             page_switcher.focus('variable-handler');
         });
 
         $('#btn-control-tbl').click(()=>{
+            read_pos();
             command('|head 1|head 2| (description)\n|col 1| col 2|\n', true);
         });
         [[$('#btn-control-ls-num'), '1.'], [$('#btn-control-ls-alpha'), 'a)'], [$('#btn-control-ls-dash'), '-'], ].forEach(i=>{

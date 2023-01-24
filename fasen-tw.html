@@ -27,6 +27,32 @@
     <link id="template-stylesheet" rel="stylesheet" href="">
     <script src="assets/apps/fasen-tw/assets/extra-libs/prism/prism.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.js" integrity="sha384-483A6DwYfKeDa0Q52fJmxFXkcPCFfnXMoXblOkJ4JcA8zATN6Tm78UNL72AKk+0O" crossorigin="anonymous"></script>
+    <style>
+        /*SPEECH TEST*/
+        .editor {
+            position: relative;
+        }
+        #speech {
+            position: absolute;
+            right: 7.5rem;
+            bottom: 5rem;
+        }
+        .speech-btn {
+            cursor: pointer;
+            background-color: #21618C;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 72px;
+            height: 72px;
+        }
+        .speech-btn.active {
+            background-color: #E74C3C;
+            color: white!important;
+        }
+    </style>
 </head>
 <body>
 <div id="loader-wrapper" class="preloader">
@@ -174,6 +200,11 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div id="speech">
+            <div class="speech-btn">
+                <i class="fa fa-microphone"></i>
             </div>
         </div>
     </div>
