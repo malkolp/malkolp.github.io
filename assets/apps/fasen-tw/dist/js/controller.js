@@ -2701,6 +2701,97 @@
             document.execCommand('insertText', false, nc);
             render();
         };
+        const actions   = {
+            chapter     : (x={})=>{
+                if (!x.text) {
+                    let chapter;
+                    const toc   = document__.toc;
+
+                    if (toc === undefined)
+                        chapter = 'i';
+                    else {
+                        const has   = toc.has;
+
+                        if (!has.chapter_1)         chapter = 'i';
+                        else if (!has.chapter_2)    chapter = 'ii';
+                        else if (!has.chapter_3)    chapter = 'iii';
+                        else if (!has.chapter_4)    chapter = 'iv';
+                        else                        chapter = 'v';
+                    }
+
+                    command('bab ' + chapter + '\n', true);
+                }
+                else
+                    command(x.text + '\n', true);
+            },
+            heading1    : (x={})=>{
+                if (!x.text)
+                    x.text  = '# header';
+                read_pos();
+                command(x.text, true);
+            },
+            heading2    : (x={})=>{
+                if (!x.text)
+                    x.text  = '#2 header';
+                read_pos();
+                command(x.text, true);
+            },
+            heading3    : (x={})=>{
+                if (!x.text)
+                    x.text  = '#3 header';
+                read_pos();
+                command(x.text, true);
+            },
+            heading4    : (x={})=>{
+                if (!x.text)
+                    x.text  = '#4 header';
+                read_pos();
+                command(x.text, true);
+            },
+            heading5    : (x={})=>{
+                if (!x.text)
+                    x.text  = '#5 header';
+                read_pos();
+                command(x.text, true);
+            },
+            heading6    : (x={})=>{
+                if (!x.text)
+                    x.text  = '#6 header';
+                read_pos();
+                command(x.text, true);
+            },
+            bold        : ()=>{
+                read_pos();
+                command('****');
+                car_pos(-2, -2);
+            },
+            emphasis    : ()=>{
+                read_pos();
+                command('**');
+                car_pos(-1, -1);
+            },
+            underline   : ()=>{
+                read_pos();
+                command('____');
+                car_pos(-2, -2);
+            },
+            image       : ()=>{
+                read_pos();
+                page_switcher.focus('image-handler');
+            },
+            table       : ()=>{
+                read_pos();
+                command('|head 1|head 2| (description)\n|col 1| col 2|\n', true);
+            },
+            default     : (x={})=>{
+                if (!x.text)
+                    x.text  = 'test';
+                x.text     += ' ';
+                read_pos();
+                command(x.text, false);
+                console.log(x.text);
+            },
+        };
         const highlight = k=>{
             const t     = e_input[0].innerText;
             if (k < 37 || k > 40)
@@ -2744,67 +2835,17 @@
             render(e.keyCode);
         });
 
-        $('#btn-control-chapter').click(()=>{
-            let chapter;
-            const toc   = document__.toc;
-
-            if (toc === undefined)
-                chapter = 'i';
-            else {
-                const has   = toc.has;
-
-                if (!has.chapter_1)         chapter = 'i';
-                else if (!has.chapter_2)    chapter = 'ii';
-                else if (!has.chapter_3)    chapter = 'iii';
-                else if (!has.chapter_4)    chapter = 'iv';
-                else                        chapter = 'v';
-            }
-
-            command('bab ' + chapter + '\n', true);
-        });
-        $('#btn-control-h1').click(()=>{
-            read_pos();
-            command('# header', true);
-        });
-        $('#btn-control-h2').click(()=>{
-            read_pos();
-            command('#2 header', true);
-        });
-        $('#btn-control-h3').click(()=>{
-            read_pos();
-            command('#3 header', true);
-        });
-        $('#btn-control-h4').click(()=>{
-            read_pos();
-            command('#4 header', true);
-        });
-        $('#btn-control-h5').click(()=>{
-            read_pos();
-            command('#5 header', true);
-        });
-        $('#btn-control-h6').click(()=>{
-            read_pos();
-            command('#6 header', true);
-        });
-        $('#btn-control-bold').click(()=>{
-            read_pos();
-            command('****');
-            car_pos(-2, -2);
-        });
-        $('#btn-control-emphasis').click(()=>{
-            read_pos();
-            command('**');
-            car_pos(-1, -1);
-        });
-        $('#btn-control-underline').click(()=>{
-            read_pos();
-            command('____');
-            car_pos(-2, -2);
-        });
-        $('#btn-control-img').click(()=>{
-            read_pos();
-            page_switcher.focus('image-handler');
-        });
+        $('#btn-control-chapter').click(actions.chapter);
+        $('#btn-control-h1').click(actions.heading1);
+        $('#btn-control-h2').click(actions.heading2);
+        $('#btn-control-h3').click(actions.heading3);
+        $('#btn-control-h4').click(actions.heading4);
+        $('#btn-control-h5').click(actions.heading5);
+        $('#btn-control-h6').click(actions.heading6);
+        $('#btn-control-bold').click(actions.bold);
+        $('#btn-control-emphasis').click(actions.emphasis);
+        $('#btn-control-underline').click(actions.underline);
+        $('#btn-control-img').click(actions.image);
         $('#btn-control-cite').click(()=>{
             read_pos();
             page_switcher.focus('source-handler');
@@ -2813,11 +2854,7 @@
             read_pos();
             page_switcher.focus('variable-handler');
         });
-
-        $('#btn-control-tbl').click(()=>{
-            read_pos();
-            command('|head 1|head 2| (description)\n|col 1| col 2|\n', true);
-        });
+        $('#btn-control-tbl').click(actions.table);
         [[$('#btn-control-ls-num'), '1.'], [$('#btn-control-ls-alpha'), 'a)'], [$('#btn-control-ls-dash'), '-'], ].forEach(i=>{
             i[0].click(()=>{
                 command(i[1] + ' list item', true);
@@ -2838,8 +2875,35 @@
             parse       : parse,
             render      : render,
             output      : e_output,
+            actions     : actions,
         };
     })();
+
+    let speech_active   = false;
+    const speech_btn    = $('.speech-btn');
+
+    speech.
+    setEvent('default', x=>{
+        editor.actions.default(x);
+    }).
+    setEvent('subheading', x=>{
+        editor.actions['heading' + x.value](x);
+    }).
+    setEvent('heading', x=>{
+        editor.actions.chapter(x);
+    });
+    $('#speech').click(()=>{
+        speech_active   = !speech_active;
+
+        if (speech_active) {
+            speech.start();
+            speech_btn.addClass('active');
+        }
+        else {
+            speech.stop();
+            speech_btn.removeClass('active');
+        }
+    });
 
     //previewer
     (()=>{
@@ -3293,4 +3357,5 @@
     setTimeout(()=>{
         onInit = false;
     }, 3000);
+    window.actions = editor.actions;
 })();
