@@ -2892,6 +2892,8 @@
     }).
     setEvent('heading', x=>{
         editor.actions.chapter(x);
+    }).setEvent('new line', ()=>{
+        editor.actions.default({text:'\n'});
     });
     if (speech.error) {
         speech_el.addClass('d-none');

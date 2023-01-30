@@ -82,23 +82,27 @@ const speech                = (()=>{
                 },
             };
             const TOKENS            = {
-                COMMANDS            : [
+                SYNTAX              : [
                     {
                         command     : 'new line',
-                        pattern     : /^ ?\b(baris +baru|enter)\b$/m,
+                        pattern     : /^ ?\b(baris +baru|enter)\b *$/m,
                         call        : ()=>{
-
+                            return {
+                                text    : '\n',
+                                value   : undefined,
+                            }
                         },
                     },
                     {
                         command     : 'continue',
                         pattern     : /^ ?\blanjut\b$/m,
                         call        : ()=>{
-
+                            return {
+                                text    : ' ',
+                                value   : undefined,
+                            }
                         },
                     },
-                ],
-                SYNTAX              : [
                     {
                         command     : 'heading',
                         break       : true,
