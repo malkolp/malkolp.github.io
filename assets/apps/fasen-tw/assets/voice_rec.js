@@ -88,6 +88,7 @@ const speech                = (()=>{
                         pattern     : /^ ?\b(baris +baru|enter)\b *$/m,
                         call        : ()=>{
                             return {
+                                match   : true,
                                 text    : '\n',
                                 value   : undefined,
                             }
@@ -98,6 +99,7 @@ const speech                = (()=>{
                         pattern     : /^ ?\blanjut\b$/m,
                         call        : ()=>{
                             return {
+                                match   : true,
                                 text    : ' ',
                                 value   : undefined,
                             }
@@ -237,6 +239,7 @@ const speech                = (()=>{
             };
 
             return text=>{
+                console.log(text);
                 let match           = {
                     command         : 'default',
                     break           : false,
