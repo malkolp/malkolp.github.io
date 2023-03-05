@@ -9,6 +9,7 @@
             const path      = data.path;
             const targets   = data.targets;
 
+            console.log(`${path}${META}`);
             fetch(`${path}${META}`).
             then(r=>r.text()).
             then(r=>{
