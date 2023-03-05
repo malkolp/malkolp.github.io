@@ -3,7 +3,7 @@
 (()=>{
     const PARAM         = {
         preloader_timer : 0.3,
-        path            : `${window.location.origin}/landing-page/`,
+        path            : `${window.location.origin}/project/`,
         languages       : (()=>{
             const lang      = ['id', 'en', 'de', 'kr', 'jp', 'cn', 'ru'];
             const toggles   = {};
@@ -17,7 +17,7 @@
                 data        : lang,
                 toggles     : toggles,
                 default     : lang[0],
-                path        : `${window.location.origin}/assets/script/processes/lang/script.js`,
+                path        : `${window.location.origin}/project/assets/script/processes/lang/script.js`,
             }
         })(),
         contents        : (()=>{
@@ -36,7 +36,7 @@
             landing     : {
                 video       : {
                     target  : '.landing-header-container',
-                    source  : 'assets/video/landing-header-scene.mp4',
+                    source  : '/project/assets/video/landing-header-scene.mp4',
                     type    : 'video/mp4',
                 },
             },
