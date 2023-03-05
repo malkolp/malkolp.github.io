@@ -28,7 +28,7 @@
                 elementKey  : 'data-spa-content',
                 pages       : ['beranda', 'sejarah', 'struktur_organisasi', 'sertifikat', 'pertanyaan', 'layanan_interaktif', 'layanan_publik', 'layanan_ppid', 'status_dan_kontak', 'kerjasama', 'foto', 'video', 'berita', 'agenda_kegiatan'],
                 info        : {},
-                path        : `${window.location.origin}/assets/script/processes/content/script.js`,
+                path        : `${window.location.origin}/project/assets/script/processes/content/script.js`,
             };
         })(),
         navigator       : ['tentang_kami', 'layanan', 'regulasi', 'galeri'],
