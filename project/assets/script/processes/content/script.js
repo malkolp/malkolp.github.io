@@ -5,7 +5,7 @@
     };
     const commands          = {
         init                : data=>{
-            const META      = '_meta.js';
+            const META      = 'meta_data.js';
             const path      = data.path;
             const targets   = data.targets;
 
