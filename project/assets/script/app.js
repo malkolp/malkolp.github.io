@@ -36,7 +36,7 @@
             landing     : {
                 video       : {
                     target  : '.landing-header-container',
-                    source  : 'project/assets/video/landing-header-scene.mp4',
+                    source  : 'assets/video/landing-header-scene.mp4',
                     type    : 'video/mp4',
                 },
             },
