@@ -225,7 +225,7 @@ body {
     position            : relative;
     overflow            : hidden;
     width               : 100%;
-    min-height          : 720px;
+    min-height          : 480px;
 }
 
 /*CONTENT BLOCK*/
@@ -337,7 +337,7 @@ body {
 }
 .cus-card-thumbnail-img {
     background-repeat   : no-repeat;
-    background-size     : auto 100%;
+    background-size     : auto 120%;
     background-position : center;
     position            : absolute;
     top                 : 0;
@@ -348,7 +348,7 @@ body {
     cursor              : pointer;
 }
 .cus-card-thumbnail-img:hover {
-    background-size     : auto 120%;
+    background-size     : auto 140%;
     transition          : all 300ms ease-in-out;
 }
 .cus-card-thumbnail-overlay {
@@ -500,6 +500,9 @@ body {
 }
 
 /*TEXT*/
+.txt-weight-bold {
+    font-weight     : var(--sd-font-weight-bold);
+}
 .txt-light {
     color       : var(--color-light);
 }
@@ -640,11 +643,11 @@ p {
 .landing[data-theme="light"] .dark-mode-item {
     display     : none;
 }
-.landing[data-theme="light"] .navigator-mob:not(.reach-top) {
+.landing[data-theme="light"] .navigator-mob {
     color               : var(--color-dark);
     background-color    : var(--color-light);
 }
-.landing[data-theme="light"] .navigator-mob.reach-top {
+.landing[data-theme="light"][data-nav-theme="transparent"] .navigator-mob.reach-top {
     color               : var(--color-light);
     background-color    : transparent;
 }

@@ -26,7 +26,8 @@
             return {
                 default     : page,
                 elementKey  : 'data-spa-content',
-                pages       : ['beranda', 'sejarah', 'struktur_organisasi', 'sertifikat', 'pertanyaan', 'layanan_interaktif', 'layanan_publik', 'layanan_ppid', 'status_dan_kontak', 'kerjasama', 'foto', 'video', 'berita', 'agenda_kegiatan'],
+                dynamicMap  : 'data-spa-map',
+                pages       : ['beranda', 'sejarah', 'struktur_organisasi', 'sertifikat', 'pertanyaan', 'layanan_interaktif', 'layanan_publik', 'layanan_ppid', 'status_dan_kontak', 'kerjasama', 'foto', 'video', 'berita', 'agenda_kegiatan', 'innovation_qrant', 'innovation_data_api'],
                 info        : {},
                 path        : `${window.location.origin}/project/assets/script/processes/content/script.js`,
             };
@@ -38,6 +39,182 @@
                     target  : '.landing-header-container',
                     source  : 'assets/video/landing-header-scene.mp4',
                     type    : 'video/mp4',
+                },
+            },
+        },
+        appData         : {
+            schedule    : {
+                'senin'             : {
+                    open            : true,
+                    start           : {
+                        hour        : 7,
+                        minute      : 30,
+                    },
+                    end             : {
+                        hour        : 16,
+                        minute      : 0,
+                    },
+                    rest            : {
+                        start       : {
+                            hour    : 12,
+                            minute  : 0,
+                        },
+                        end         : {
+                            hour    : 13,
+                            minute  : 0,
+                        },
+                    },
+                    next            : 'selasa',
+                },
+                'selasa'            : {
+                    open            : true,
+                    start           : {
+                        hour        : 7,
+                        minute      : 30,
+                    },
+                    end             : {
+                        hour        : 16,
+                        minute      : 0,
+                    },
+                    rest            : {
+                        start       : {
+                            hour    : 12,
+                            minute  : 0,
+                        },
+                        end         : {
+                            hour    : 13,
+                            minute  : 0,
+                        },
+                    },
+                    next            : 'rabu',
+                },
+                'rabu'              : {
+                    open            : true,
+                    start           : {
+                        hour        : 7,
+                        minute      : 30,
+                    },
+                    end             : {
+                        hour        : 16,
+                        minute      : 0,
+                    },
+                    rest            : {
+                        start       : {
+                            hour    : 12,
+                            minute  : 0,
+                        },
+                        end         : {
+                            hour    : 13,
+                            minute  : 0,
+                        },
+                    },
+                    next            : 'kamis',
+                },
+                'kamis'             : {
+                    open            : true,
+                    start           : {
+                        hour        : 7,
+                        minute      : 30,
+                    },
+                    end             : {
+                        hour        : 16,
+                        minute      : 0,
+                    },
+                    rest            : {
+                        start       : {
+                            hour    : 12,
+                            minute  : 0,
+                        },
+                        end         : {
+                            hour    : 13,
+                            minute  : 0,
+                        },
+                    },
+                    next            : 'jumat',
+                },
+                'jumat'             : {
+                    open            : true,
+                    start           : {
+                        hour        : 7,
+                        minute      : 30,
+                    },
+                    end             : {
+                        hour        : 16,
+                        minute      : 30,
+                    },
+                    rest            : {
+                        start       : {
+                            hour    : 11,
+                            minute  : 30,
+                        },
+                        end         : {
+                            hour    : 13,
+                            minute  : 0,
+                        },
+                    },
+                    next            : 'sabtu',
+                },
+                'sabtu'             : {
+                    open            : true,
+                    start           : {
+                        hour        : 7,
+                        minute      : 30,
+                    },
+                    end             : {
+                        hour        : 16,
+                        minute      : 0,
+                    },
+                    rest            : {
+                        start       : {
+                            hour    : 12,
+                            minute  : 0,
+                        },
+                        end         : {
+                            hour    : 13,
+                            minute  : 0,
+                        },
+                    },
+                    next            : 'minggu',
+                },
+                'minggu'            : {
+                    open            : false,
+                    start           : {
+                        hour        : 7,
+                        minute      : 30,
+                    },
+                    end             : {
+                        hour        : 16,
+                        minute      : 0,
+                    },
+                    rest            : {
+                        start       : {
+                            hour    : 12,
+                            minute  : 0,
+                        },
+                        end         : {
+                            hour    : 13,
+                            minute  : 0,
+                        },
+                    },
+                    next            : 'senin',
+                },
+            },
+            schEvent    : {
+                open    : {
+                    status          : '.onsite-status-open',
+                    message         : `<span data-lang-id="onsite-service-open-message">Pelayanan secara luring dapat dilakukan sebelum jam tutup kantor di alamat Stasiun Karantina Pertanian Kelas I di</span>`,
+                },
+                early   : {
+                    status          : '.onsite-status-closed',
+                    message         : `<span data-lang-id="onsite-service-early-message">Pelayanan secara luring akan dibuka kembali pada pagi ini sesuai jadwal di alamat Stasiun Karantina Pertanian Kelas I di</span>`,
+                },
+                rest    : {
+                    status          : '.onsite-status-rest',
+                    message         : `<span data-lang-id="onsite-service-rest-message">Pelayanan secara luring ditutup sementara dan akan dibuka setelah jam istirahat selesai. Pelayanan luring kantor dapat dilakukan di alamat Stasiun Karantina Pertanian Kelas I di</span>`,
+                },
+                closed  : {
+                    status          : '.onsite-status-closed',
+                    message         : `<span data-lang-id="onsite-service-closed-message">Pelayanan secara luring akan dibuka kembali pada besok di alamat Stasiun Karantina Pertanian Kelas I di</span>`,
                 },
             },
         },
@@ -53,9 +230,9 @@
                     const opacity   = in_?[0.75, 1]:[0.25, 0];
 
                     (gsap.timeline()).to(element, {duration: 0.3, opacity:opacity[0], oncomplete:()=>{
-                            if (icon)
-                                (gsap.timeline()).to(icon, {duration: 0.3, opacity:opacity[1]});
-                        }});
+                        if (icon)
+                            (gsap.timeline()).to(icon, {duration: 0.3, opacity:opacity[1]});
+                    }});
                 },
             },
             boxCard     : {
@@ -165,6 +342,46 @@
                 });
             },
         },
+        date            : (()=>{
+            const days          = [
+                'minggu',
+                'senin',
+                'selasa',
+                'rabu',
+                'kamis',
+                'jumat',
+                'sabtu'
+            ];
+            const timeFunctions = {
+                timeMore            : (hour1, minute1, hour2, minute2)=>{
+                    if (hour1 < hour2)
+                        return false;
+                    if (hour1 > hour2)
+                        return true;
+
+                    return minute1 >= minute2;
+                },
+                timeLess            : (hour1, minute1, hour2, minute2)=>{
+                    if (hour1 > hour2)
+                        return false;
+                    if (hour1 < hour2)
+                        return true;
+
+                    return minute1 <= minute2;
+                },
+            };
+
+            return {
+                getToday            : ()=>{
+                    return days[(new Date()).getDay()];
+                },
+                timeMore            : timeFunctions.timeMore,
+                timeLess            : timeFunctions.timeLess,
+                timeRange           : (hourSrc, minSrc, hourMin, minMin, hourMax, minMax)=>{
+                    return timeFunctions.timeMore(hourSrc, minSrc, hourMin, minMin) && timeFunctions.timeLess(hourSrc, minSrc, hourMax, minMax);
+                },
+            };
+        })(),
         thread          : (()=>{
             const callbacks     = {};
             const setToken      = (()=>{
@@ -224,6 +441,7 @@
             container   : $($('.app-content')[0]),
         },
         theme           : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light',
+        destroy         : ()=>{},
     };
 
     //set preloader
@@ -236,19 +454,19 @@
                 preloader.addClass('onload');
                 app.elements.root.addClass('block');
                 (gsap.timeline()).to(preloader[0], {duration:0.3, opacity:1, oncomplete:()=>{
-                        setTimeout(()=>{
-                            callback();
-                        }, 300);
-                    }});
+                    setTimeout(()=>{
+                        callback();
+                    }, 300);
+                }});
             },
             fadeOut     : (callback=()=>{})=>{
                 (gsap.timeline()).to(preloader[0], {duration:0.3, opacity:0, oncomplete:()=>{
-                        setTimeout(()=>{
-                            preloader.removeClass('onload');
-                            app.elements.root.removeClass('block');
-                            callback();
-                        }, 300);
-                    }});
+                    setTimeout(()=>{
+                        preloader.removeClass('onload');
+                        app.elements.root.removeClass('block');
+                        callback();
+                    }, 300);
+                }});
             },
         };
     })();
@@ -320,7 +538,7 @@
     })();
 
     //set navigator
-    ((menuMap=PARAM.navigator, spaMap=PARAM.contents.elementKey)=>{
+    ((menuMap=PARAM.navigator, spaMap=PARAM.contents.elementKey, dynamicMap=PARAM.contents.dynamicMap)=>{
         if (!PARAM.mobileMode) {
             const readNavs      = str=>{
                 const navBtn                = $(`[data-nav-menu-target="${str}"]`);
@@ -425,9 +643,9 @@
                                 $(signs.plus).addClass('d-none');
                                 $(signs.minus).removeClass('d-none');
                                 (gsap.timeline()).to(menus, {duration:0.3, maxHeight:'400px', oncomplete:()=>{
-                                        active              = true;
-                                        activeMenu          = menuBlocks[label];
-                                    }});
+                                    active              = true;
+                                    activeMenu          = menuBlocks[label];
+                                }});
                             }
                         },
                         blur            : ()=>{
@@ -435,9 +653,9 @@
                                 $(signs.plus).removeClass('d-none');
                                 $(signs.minus).addClass('d-none');
                                 (gsap.timeline()).to(menus, {duration:0.3, maxHeight:'0px', oncomplete:()=>{
-                                        active              = false;
-                                        activeMenu          = undefined;
-                                    }});
+                                    active              = false;
+                                    activeMenu          = undefined;
+                                }});
                             }
                         },
                     };
@@ -470,10 +688,25 @@
             click(()=>{
                 app.navigator.blur();
                 app.preloader.fadeIn(()=>{
-                    app.contents.toggle(e.getAttribute('data-spa-content'));
+                    app.contents.toggle(e.getAttribute(spaMap));
                 });
             });
         });
+        app.map         = {
+            refresh     : ()=>{
+                $(`[${dynamicMap}]`).
+                each((i, e)=>{
+                    $(e).
+                    unbind('click').
+                    click(()=>{
+                        app.navigator.blur();
+                        app.preloader.fadeIn(()=>{
+                            app.contents.toggle(e.getAttribute(dynamicMap));
+                        });
+                    });
+                });
+            },
+        };
     })();
 
     //set content
@@ -494,8 +727,14 @@
                         return;
 
                     thread.run('get', {id:id}, content=>{
+                        app.destroy();
                         app.elements.container[0].innerHTML     = content.content;
                         document.title                          = content.meta.title;
+
+                        if (content.meta.navTransparent)
+                            app.elements.root[0].setAttribute('data-nav-theme', 'transparent');
+                        else
+                            app.elements.root[0].setAttribute('data-nav-theme', '');
 
                         window.history.pushState(`${PARAM.path}${content.meta.path}`, content.meta.title, `${PARAM.path}${content.meta.path}`);
                         feather.replace();
@@ -504,6 +743,7 @@
                         app.languages.toggle(app.languages.used, id);
                         app.preloader.fadeOut();
                         app.navigator.ready();
+                        app.map.refresh();
                         factory.href.update();
                         callback(id);
                     });
