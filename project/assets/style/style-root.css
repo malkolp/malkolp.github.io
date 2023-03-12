@@ -206,7 +206,7 @@ body {
     flex-grow           : 1;
     color               : var(--color-light)
 }
-.landing-header-overlay-content h1 {
+.landing-header-overlay-content h1, .title {
     letter-spacing      : 0.75rem;
     font-size           : calc(var(--sd-font-heading-1) * 2);
     font-weight         : var(--sd-font-weight-bold);
@@ -217,6 +217,9 @@ body {
     font-weight         : var(--sd-font-weight-thin);
     text-transform      : uppercase;
     margin-bottom       : var(--sd-pad-margin-md);
+}
+.title {
+    word-break          : break-word;
 }
 
 /*FULL BACKGROUND CONTAINER*/
@@ -234,6 +237,21 @@ body {
 }
 .content-body {
     margin-top          : var(--sd-pad-margin-xxl);
+}
+
+/*2 FLEX CONTAINER*/
+.flex-container-2 {
+    display         : flex;
+    flex-direction  : row;
+}
+.flex-container-2.reverse {
+    flex-direction  : row-reverse;
+}
+.flex-container-2>div {
+    flex-grow       : 1;
+}
+.flex-container-2.reverse>div:first-child {
+    margin-left     : var(--sd-pad-margin-md);
 }
 
 /*CUSTOM CARD GRID*/
@@ -384,9 +402,17 @@ body {
     font-size       : var(--sd-font-heading-4);
     font-weight     : var(--sd-font-weight-bold);
 }
+.cus-card-title-sm {
+    font-size       : var(--sd-font-heading-5);
+    font-weight     : var(--sd-font-weight-bold);
+}
 .cus-card-description {
     flex-grow       : 1;
     font-size       : var(--sd-font-heading-5-5);
+}
+.cus-card-description-sm {
+    flex-grow       : 1;
+    font-size       : calc(var(--sd-font-heading-5-5) * 0.75);
 }
 .cus-card-buttons {
     margin-top      : var(--sd-pad-margin-sm);
@@ -512,6 +538,9 @@ body {
 .txt-left {
     text-align  : left;
 }
+.txt-right {
+    text-align: right;
+}
 .txt-small {
     font-size           : calc(var(--sd-font-heading-5-5) / 1.3);
     font-weight         : var(--sd-font-weight-thin);
@@ -577,6 +606,16 @@ body {
 }
 .theme-btn {
     margin-left     : var(--sd-pad-margin-sm);
+}
+
+/*PHONE FRAME*/
+.phone-frame-md {
+    height: auto;
+    width: 300px;
+}
+.phone-frame-sm {
+    height: auto;
+    width: 240px;
 }
 
 /*ELEMENT*/
@@ -760,6 +799,17 @@ p {
         margin          : var(--sd-pad-margin-md) 0 0;
     }
 
+    .flex-container-2 {
+        display         : flex;
+        flex-direction  : column;
+    }
+    .flex-container-2.reverse {
+        flex-direction  : column-reverse;
+    }
+    .flex-container-2>div:first-child, .flex-container-2.reverse>div:first-child {
+        margin          : 0;
+    }
+
     .cus-grid-6 {
         display                 : grid;
         grid-template-columns   : repeat(2, 1fr);
@@ -816,6 +866,10 @@ p {
         width           : 100%;
         margin-left     : 5%;
         margin-right    : 5%;
+    }
+
+    .txt-right {
+        text-align: left;
     }
 
     .pc {
