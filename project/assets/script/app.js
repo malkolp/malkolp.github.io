@@ -2,6 +2,11 @@
 
 (()=>{
     const PARAM         = {
+        amountLoad      : {
+            small       : 5,
+            medium      : 10,
+            large       : 20,
+        },
         preloader_timer : 0.3,
         path            : `${window.location.origin}/project/`,
         languages       : (()=>{
@@ -27,7 +32,7 @@
                 default     : page,
                 elementKey  : 'data-spa-content',
                 dynamicMap  : 'data-spa-map',
-                pages       : ['beranda', 'sejarah', 'struktur_organisasi', 'sertifikat', 'pertanyaan', 'layanan_interaktif', 'layanan_publik', 'layanan_ppid', 'status_dan_kontak', 'kerjasama', 'foto', 'video', 'berita', 'agenda_kegiatan', 'innovation_qrant', 'innovation_data_api'],
+                pages       : ['beranda', 'sejarah', 'pegawai', 'sertifikat', 'layanan_interaktif', 'layanan_publik', 'status_dan_kontak', 'kerjasama', 'album_galeri', 'berita', 'agenda_kegiatan', 'innovation_qrant', 'innovation_data_api'],
                 info        : {},
                 path        : `${window.location.origin}/project/assets/script/processes/content/script.js`,
             };
@@ -221,8 +226,10 @@
         mobileMode      : document.body.clientWidth < 1200,
         width           : document.body.clientWidth,
     };
-    const factory       = {
-        animate         : {
+    const factory       = (()=>{
+        const f             = {};
+
+        f.animate           = {
             customCard  : {
                 hover       : (cardThumbnail, in_=false)=>{
                     const element   = cardThumbnail.children[1];
@@ -230,9 +237,9 @@
                     const opacity   = in_?[0.75, 1]:[0.25, 0];
 
                     (gsap.timeline()).to(element, {duration: 0.3, opacity:opacity[0], oncomplete:()=>{
-                        if (icon)
-                            (gsap.timeline()).to(icon, {duration: 0.3, opacity:opacity[1]});
-                    }});
+                            if (icon)
+                                (gsap.timeline()).to(icon, {duration: 0.3, opacity:opacity[1]});
+                        }});
                 },
             },
             boxCard     : {
@@ -271,12 +278,11 @@
                     let active;
                     let children;
 
-                    window.flick = carousel.flickity({
+                    (carousel.flickity({
                         cellAlign: 'left',
                         contain: true,
                         imagesLoaded:true,
-                    });
-                    window.flick.
+                    })).
                     on( 'change.flickity', ( event, index )=>{
                         $(active).removeClass('box-active');
                         $(active.header).removeClass('box-header-active');
@@ -308,9 +314,59 @@
                     }, 1000);
                 },
             },
-        },
-        event           : {
-            scrollTop   : (element, onTop, notOnTop)=>{
+            tagSlider   : {
+                setSlider           : element=>{
+                    const carousel  = $(`${element}`);
+                    const children  = carousel[0].children;
+                    const tags      = {};
+
+                    let active;
+                    for (let i=0; i<children.length; i++) {
+                        const child     = children[i];
+                        const id        = child.getAttribute('data-tag-id');
+
+                        tags[id]        = {
+                            element     : child,
+                            setActive   :()=>{
+                                if (child !== active) {
+                                    $(active).removeClass('tag-active');
+                                    $(child).addClass('tag-active');
+                                    tags[id].callback();
+                                    active  = child;
+                                }
+                            },
+                            callback    :()=>{},
+                        };
+                        $(child).unbind('click').on('click', ()=>{
+                            tags[id].setActive();
+                        });
+                    }
+
+                    (carousel.flickity({
+                        cellAlign: 'left',
+                        contain: true,
+                        imagesLoaded:true,
+                    }));
+
+                    return {
+                        setActive   : id=>{
+                            const tag   = tags[id];
+
+                            if (tag)
+                                tag.setActive();
+                        },
+                        setCallback : (id, cb=()=>{})=>{
+                            const tag   = tags[id];
+
+                            if (tag)
+                                tag.callback    = cb;
+                        },
+                    };
+                },
+            },
+        };
+        f.event             = {
+            scrollTop       : (element, onTop, notOnTop)=>{
                 let positionTop             = true;
 
                 document.body.onscroll      = ()=>{
@@ -328,8 +384,8 @@
                     }
                 };
             },
-        },
-        href            : {
+        };
+        f.href              = {
             update      : ()=>{
                 $(`[data-init-href][data-init=false]`).each((i, e)=>{
                     e.setAttribute('data-init', 'true');
@@ -341,8 +397,224 @@
                     });
                 });
             },
-        },
-        date            : (()=>{
+        };
+        f.input             = {
+            select          : {
+                set         : (target, onchange=()=>{})=>{
+                    const select        = $(`.${target}`);
+                    const el_value      = select[0].firstElementChild;
+                    const el_button     = select[0].children[1];
+                    const el_options    = select[0].lastElementChild.children;
+                    let onopen          = false;
+                    let selected        = undefined;
+                    let def_;
+
+                    $(el_value).
+                    unbind('change').
+                    on('change', ()=>{
+                        onchange(el_value.value);
+                    });
+
+                    $(el_button).
+                    unbind('click').
+                    click(()=>{
+                        if (onopen)
+                            select[0].setAttribute('data-option-open', 'false');
+                        else
+                            select[0].setAttribute('data-option-open', 'true');
+
+                        onopen          = !onopen;
+                    });
+
+                    for (let i=0; i<el_options.length; i++) {
+                        const option        = el_options[i];
+
+                        if (typeof option.getAttribute('data-selected') === 'string') {
+                            def_            = option;
+                            $(selected).removeAttr('data-selected');
+                            el_value.value  = option.getAttribute('data-value');
+                            selected        = option;
+                            $(selected).attr('data-selected', true);
+                        }
+
+                        $(option).
+                        unbind('click').
+                        click(()=>{
+                            $(el_value).val(option.getAttribute('data-value')).change();
+                            select[0].setAttribute('data-option-open', 'false');
+                            $(selected).removeAttr('data-selected');
+                            selected        = option;
+                            $(selected).attr('data-selected', true);
+                            onopen          = false;
+                        });
+                    }
+
+                    return {
+                        get             : ()=>{
+                            return selected.getAttribute('data-value');
+                        },
+                        clear           : ()=>{
+                            $(selected).removeAttr('data-selected');
+                            el_value.value  = def_.getAttribute('data-value');
+                            selected        = def_;
+                            $(def_).attr('data-selected', true);
+                        },
+                    }
+                },
+            },
+            radio           : (elements, onchange=()=>{})=>{
+                const x     = {
+                    value       : '',
+                    onchange    : onchange,
+                    clear       : ()=>{
+                        def_.checked    = true;
+                        x.value         = def_.value;
+                    },
+                };
+                let def_;
+
+                elements.forEach(e=>{
+                    if (e.checked) {
+                        def_        = e;
+                        x.value     = e.value;
+                    }
+
+                    $(e).
+                    unbind('click').
+                    click(()=>{
+                        x.value     = e.value;
+                        onchange(x.value);
+                    });
+                })
+
+                return x;
+            },
+        };
+        f.sd_table          = {
+            set         : (target, prop={})=>{
+                const select        = $(`[data-sd-table-id="${target}"]`);
+
+                if (!select[0])
+                    return {};
+
+                if (PARAM.mobileMode)
+                    select[0].setAttribute('data-sd-table-mode', 'mobile');
+
+                const elements      = {
+                    select          : select,
+                    search_input    : $($(`[data-sd-table-search="${target}"]`)[0]),
+                    focus_toggle    : $(`[data-sd-table-toggle-focus="${target}"]`),
+                    blur_toggle     : $(`[data-sd-table-toggle-blur="${target}"]`),
+                    options_menu    : $(`[data-sd-table-options="${target}"]`),
+                    table_body      : $(`[data-sd-table-body="${target}"]`),
+                    load_more       : $(`[data-sd-table-more="${target}"]`),
+                };
+                const object        = {
+                    insert          : content=>{
+                        const row       = document.createElement('tr');
+
+                        row.innerHTML   = content;
+
+                        elements.table_body[0].appendChild(row);
+                        select[0].setAttribute('data-sd-table-is-empty', 'false');
+
+                        return row;
+                    },
+                    reset           : ()=>{
+                        elements.table_body[0].innerHTML    = '';
+                        select[0].setAttribute('data-sd-table-is-empty', 'true');
+                        object.hasLoadMore(false);
+                    },
+                    onSearch        : ()=>{},
+                    onLoadMore      : ()=>{},
+                    hasLoadMore     : (bool=false)=>{
+                        select[0].setAttribute('data-sd-table-has-more', bool+'');
+                    },
+                    hide            : ()=>{
+                        select.addClass('d-none');
+                    },
+                    show            : ()=>{
+                        select.removeClass('d-none');
+                    },
+                };
+                let searchTyping;
+
+                if (elements.focus_toggle) {
+                    elements.focus_toggle.
+                    unbind('click').
+                    click(()=>{
+                        app.navigator.hide();
+                        select[0].setAttribute('data-sd-table-focus', 'true');
+                    });
+                    elements.blur_toggle.
+                    unbind('click').
+                    click(()=>{
+                        app.navigator.show();
+                        select[0].setAttribute('data-sd-table-focus', 'false');
+                    });
+                }
+                if (elements.search_input[0]) {
+                    elements.search_input   = $(elements.search_input[0].firstElementChild);
+                    elements.search_input.
+                    unbind('input').
+                    on('input', ()=>{
+                        select[0].setAttribute('data-sd-table-on-search', 'true');
+                        if (searchTyping)
+                            clearTimeout(searchTyping);
+                        searchTyping    = setTimeout(()=>{
+                            object.onSearch(elements.search_input.val());
+                            select[0].setAttribute('data-sd-table-on-search', 'false');
+                        }, 300);
+                    });
+                }
+                if (elements.load_more) {
+                    elements.load_more.
+                    unbind('click').
+                    click(()=>{
+                        object.onLoadMore();
+                    });
+                }
+                if (prop.hoverable)
+                    select[0].setAttribute('data-sd-table-hoverable', 'true');
+                if (prop.dataLabel) {
+                    select.on('click', '[data-label]', e=>{
+                        const label     = e.target.getAttribute('data-label');
+
+                        if (elements.search_input.val() !== label) {
+                            elements.search_input.val(label);
+                            object.onSearch(label);
+                        }
+                    });
+                }
+
+                return object;
+            },
+        };
+        f.formatter         = {
+            currency    : amount=>{
+                if (amount < 1000)
+                    return amount + '';
+
+                let res     = '';
+                let segment = 0;
+                amount      = (amount + '').split('');
+
+                for (let i = amount.length-1; i>=0; i--) {
+                    if (segment === 3) {
+                        res     = '.' + res;
+                        segment = 0;
+                    }
+                    res         = amount[i] + res;
+                    segment++;
+                }
+
+                return res;
+            },
+        };
+        f.validator         = {
+            noEmpty         : text=>/^\s*$/m.exec(text)==null,
+        };
+        f.date              = (()=>{
             const days          = [
                 'minggu',
                 'senin',
@@ -381,8 +653,8 @@
                     return timeFunctions.timeMore(hourSrc, minSrc, hourMin, minMin) && timeFunctions.timeLess(hourSrc, minSrc, hourMax, minMax);
                 },
             };
-        })(),
-        thread          : (()=>{
+        })();
+        f.thread            = (()=>{
             const callbacks     = {};
             const setToken      = (()=>{
                 const CHARACTERS        = 'abcdefghijklmnopqrstuvwxyz1234567890_';
@@ -400,8 +672,12 @@
             const createWorker  = path=>{
                 return new Worker(path);
             };
+            const workerData    = `${PARAM.path}/assets/script/processes/data/script.js`;
 
             return (path, functions=[])=>{
+                if (!path)
+                    path            = workerData;
+
                 let running         = 0;
                 const worker        = createWorker(path);
 
@@ -430,15 +706,49 @@
                             });
                         }
                     },
+                    terminate       : (callback=()=>{})=>{
+                        worker.terminate();
+                        callback();
+                    },
                     totalRunning    : ()=>{return running;},
                 };
             };
-        })(),
-    };
+        })();
+        f.extension         = (()=>{
+            const thread        = f.thread(`${PARAM.path}assets/script/processes/plugin/script.js`, ['init', 'install']);
+            const installed     = {};
+
+            thread.run('init', `${PARAM.path}assets/script/plugins/`);
+
+            return {
+                install         : (key, callback=()=>{})=>{
+                    if (!installed[key]) {
+                        thread.run('install', key, res=>{
+                            installed[key]  = eval(res);
+                            callback(installed[key]);
+                        });
+                    }
+                    else
+                        callback(installed[key]);
+                },
+                get             : key=>installed[key]?installed[key]:{},
+                uninstall       : (key, callback=()=>{})=>{
+                    if (installed[key]) {
+                        installed[key].destroy();
+                        delete installed[key];
+                        callback();
+                    }
+                },
+            };
+        })();
+
+        return f;
+    })();
     const app           = {
         elements        : {
             root        : $($('.landing')[0]),
             container   : $($('.app-content')[0]),
+            footer      : $($('.footer')[0]),
         },
         theme           : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light',
         destroy         : ()=>{},
@@ -530,8 +840,13 @@
                         $(`[data-lang-id="${l.id}"]`).text(l.value);
                     });
                     res.page[activeContent].forEach(l=>{
-                        $(`[data-lang-id="${l.id}"]`).text(l.value);
+                        if (l.attr)
+                            $(`[data-lang-id="${l.id}"]`).attr(l.attr, l.value);
+                        else
+                            $(`[data-lang-id="${l.id}"]`).text(l.value);
                     });
+
+                    window.dispatchEvent(new Event('resize'));
                 });
             },
         };
@@ -605,6 +920,7 @@
             })();
             const mobNav        = (()=>{
                 const root              = app.elements.root;
+                const navHeader         = $($(`.navigator-mob`)[0]);
                 const navigator         = $($(`.navigator-mob-menu`)[0]);
                 const menuBlocks        = {};
                 const fun               = {
@@ -617,6 +933,16 @@
                             activeMenu.blur();
                         root.removeClass('block');
                         (gsap.timeline()).to(navigator[0], {duration:0.3, left:'-100vw', oncomplete:()=>{}});
+                    },
+                    hide                : ()=>{
+                        navHeader.addClass('d-none');
+                        app.elements.footer[0].style.maxHeight  = '0px';
+                        app.elements.footer[0].style.overflow   = 'hidden';
+                    },
+                    show                : ()=>{
+                        navHeader.removeClass('d-none');
+                        app.elements.footer[0].style.maxHeight  = '';
+                        app.elements.footer[0].style.overflow   = '';
                     },
                 };
                 let activeMenu          = undefined;
@@ -678,6 +1004,8 @@
             app.navigator       = {
                 ready           : ()=>{},
                 blur            : mobNav.blur,
+                hide            : mobNav.hide,
+                show            : mobNav.show,
             };
         }
 
