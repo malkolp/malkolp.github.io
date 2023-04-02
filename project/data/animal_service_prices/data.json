@@ -1,0 +1,3633 @@
+[
+    {
+        "id"            : 1,
+        "name"          : "mamalia besar",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 75000,
+            "export"    : 75000,
+            "domestic"  : 75000
+        },
+        "class"         : [
+            "hewan liar",
+            "wild animal",
+            "zoo animal"
+        ]
+    },
+    {
+        "id"            : 2,
+        "name"          : "mamalia kecil",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 5000,
+            "export"    : 5000,
+            "domestic"  : 5000
+        },
+        "class"         : [
+            "hewan liar",
+            "wild animal",
+            "zoo animal"
+        ]
+    },
+    {
+        "id"            : 3,
+        "name"          : "unggas besar",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 2500,
+            "export"    : 2500,
+            "domestic"  : 2500
+        },
+        "class"         : [
+            "hewan liar",
+            "wild animal",
+            "zoo animal"
+        ]
+    },
+    {
+        "id"            : 4,
+        "name"          : "unggas kecil",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 1000,
+            "export"    : 1000,
+            "domestic"  : 1000
+        },
+        "class"         : [
+            "hewan liar",
+            "wild animal",
+            "zoo animal"
+        ]
+    },
+    {
+        "id"            : 5,
+        "name"          : "reptil besar",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 20000,
+            "export"    : 20000,
+            "domestic"  : 20000
+        },
+        "class"         : [
+            "hewan liar",
+            "wild animal",
+            "zoo animal"
+        ]
+    },
+    {
+        "id"            : 6,
+        "name"          : "reptil kecil",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 500,
+            "export"    : 500,
+            "domestic"  : 500
+        },
+        "class"         : [
+            "hewan liar",
+            "wild animal",
+            "zoo animal"
+        ]
+    },
+    {
+        "id"            : 7,
+        "name"          : "mamalia air dari aspek hama penyakit karantina hewan",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 50000,
+            "export"    : 50000,
+            "domestic"  : 50000
+        },
+        "class"         : [
+            "hewan liar",
+            "wild animal",
+            "zoo animal"
+        ]
+    },
+    {
+        "id"            : 8,
+        "name"          : "hewan besar",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 500,
+            "export"    : 500,
+            "domestic"  : 500
+        },
+        "class"         : [
+            "pengobatan",
+            "promotif",
+            "hewan ternak"
+        ]
+    },
+    {
+        "id"            : 9,
+        "name"          : "hewan kecil",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 200,
+            "export"    : 200,
+            "domestic"  : 200
+        },
+        "class"         : [
+            "pengobatan",
+            "promotif",
+            "hewan ternak"
+        ]
+    },
+    {
+        "id"            : 10,
+        "name"          : "unggas besar",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 100,
+            "export"    : 100,
+            "domestic"  : 100
+        },
+        "class"         : [
+            "pengobatan",
+            "promotif",
+            "hewan ternak"
+        ]
+    },
+    {
+        "id"            : 11,
+        "name"          : "unggas kecil",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 25,
+            "export"    : 25,
+            "domestic"  : 25
+        },
+        "class"         : [
+            "pengobatan",
+            "promotif",
+            "hewan ternak"
+        ]
+    },
+    {
+        "id"            : 12,
+        "name"          : "unggas umur sehari",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 100,
+            "export"    : 100,
+            "domestic"  : 100
+        },
+        "class"         : [
+            "pengobatan",
+            "promotif",
+            "hewan ternak"
+        ]
+    },
+    {
+        "id"            : 13,
+        "name"          : "kuda",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 25000,
+            "export"    : 25000,
+            "domestic"  : 25000
+        },
+        "class"         : [
+            "pengobatan",
+            "promotif",
+            "hewan kesayangan",
+            "pet animal"
+        ]
+    },
+    {
+        "id"            : 14,
+        "name"          : "anjing",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 20000,
+            "export"    : 20000,
+            "domestic"  : 20000
+        },
+        "class"         : [
+            "pengobatan",
+            "promotif",
+            "hewan kesayangan",
+            "pet animal"
+        ]
+    },
+    {
+        "id"            : 15,
+        "name"          : "kucing",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 20000,
+            "export"    : 20000,
+            "domestic"  : 20000
+        },
+        "class"         : [
+            "pengobatan",
+            "promotif",
+            "hewan kesayangan",
+            "pet animal"
+        ]
+    },
+    {
+        "id"            : 16,
+        "name"          : "primata",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 20000,
+            "export"    : 20000,
+            "domestic"  : 20000
+        },
+        "class"         : [
+            "pengobatan",
+            "promotif",
+            "hewan kesayangan",
+            "pet animal"
+        ]
+    },
+    {
+        "id"            : 17,
+        "name"          : "unggas besar",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 5000,
+            "export"    : 5000,
+            "domestic"  : 5000
+        },
+        "class"         : [
+            "pengobatan",
+            "promotif",
+            "hewan kesayangan",
+            "pet animal"
+        ]
+    },
+    {
+        "id"            : 18,
+        "name"          : "unggas kecil",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 10000,
+            "export"    : 10000,
+            "domestic"  : 10000
+        },
+        "class"         : [
+            "pengobatan",
+            "promotif",
+            "hewan kesayangan",
+            "pet animal"
+        ]
+    },
+    {
+        "id"            : 19,
+        "name"          : "mamlia besar",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 75000,
+            "export"    : 75000,
+            "domestic"  : 75000
+        },
+        "class"         : [
+            "pengobatan",
+            "promotif",
+            "hewan liar",
+            "wild animal",
+            "zoo animal"
+        ]
+    },
+    {
+        "id"            : 20,
+        "name"          : "mamalia kecil",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 10000,
+            "export"    : 10000,
+            "domestic"  : 10000
+        },
+        "class"         : [
+            "pengobatan",
+            "promotif",
+            "hewan kesayangan",
+            "pet animal"
+        ]
+    },
+    {
+        "id"            : 21,
+        "name"          : "unggas besar",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 5000,
+            "export"    : 5000,
+            "domestic"  : 5000
+        },
+        "class"         : [
+            "pengobatan",
+            "promotif",
+            "hewan kesayangan",
+            "pet animal"
+        ]
+    },
+    {
+        "id"            : 22,
+        "name"          : "unggas kecil",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 2500,
+            "export"    : 2500,
+            "domestic"  : 2500
+        },
+        "class"         : [
+            "pengobatan",
+            "promotif",
+            "hewan kesayangan",
+            "pet animal"
+        ]
+    },
+    {
+        "id"            : 23,
+        "name"          : "reptil besar",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 20000,
+            "export"    : 20000,
+            "domestic"  : 20000
+        },
+        "class"         : [
+            "pengobatan",
+            "promotif",
+            "hewan kesayangan",
+            "pet animal"
+        ]
+    },
+    {
+        "id"            : 24,
+        "name"          : "reptil kecil",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 10000,
+            "export"    : 10000,
+            "domestic"  : 10000
+        },
+        "class"         : [
+            "pengobatan",
+            "promotif",
+            "hewan kesayangan",
+            "pet animal"
+        ]
+    },
+    {
+        "id"            : 25,
+        "name"          : "mamalia air",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 2500,
+            "export"    : 2500,
+            "domestic"  : 2500
+        },
+        "class"         : [
+            "aquatic mamal",
+            "hama penyakit karantina hewan"
+        ]
+    },
+    {
+        "id"            : 26,
+        "name"          : "hewan besar",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 5000,
+            "export"    : 5000,
+            "domestic"  : 5000
+        },
+        "class"         : [
+            "uji diagnostik",
+            "laboratorium",
+            "pengambilan spesimen",
+            "penyiapan spesimen",
+            "pengiriman spesimen"
+        ]
+    },
+    {
+        "id"            : 27,
+        "name"          : "hewan kesayangan",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 5000,
+            "export"    : 5000,
+            "domestic"  : 5000
+        },
+        "class"         : [
+            "uji diagnostik",
+            "laboratorium",
+            "pengambilan spesimen",
+            "penyiapan spesimen",
+            "pengiriman spesimen"
+        ]
+    },
+    {
+        "id"            : 28,
+        "name"          : "mamalia air",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 5000,
+            "export"    : 5000,
+            "domestic"  : 5000
+        },
+        "class"         : [
+            "uji diagnostik",
+            "laboratorium",
+            "pengambilan spesimen",
+            "penyiapan spesimen",
+            "pengiriman spesimen"
+        ]
+    },
+    {
+        "id"            : 29,
+        "name"          : "reptil",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 5000,
+            "export"    : 5000,
+            "domestic"  : 5000
+        },
+        "class"         : [
+            "uji diagnostik",
+            "laboratorium",
+            "pengambilan spesimen",
+            "penyiapan spesimen",
+            "pengiriman spesimen"
+        ]
+    },
+    {
+        "id"            : 30,
+        "name"          : "hewan kecil",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 1000,
+            "export"    : 1000,
+            "domestic"  : 1000
+        },
+        "class"         : [
+            "uji diagnostik",
+            "laboratorium",
+            "pengambilan spesimen",
+            "penyiapan spesimen",
+            "pengiriman spesimen"
+        ]
+    },
+    {
+        "id"            : 31,
+        "name"          : "hewan percobaan",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 1000,
+            "export"    : 1000,
+            "domestic"  : 1000
+        },
+        "class"         : [
+            "uji diagnostik",
+            "laboratorium",
+            "pengambilan spesimen",
+            "penyiapan spesimen",
+            "pengiriman spesimen"
+        ]
+    },
+    {
+        "id"            : 32,
+        "name"          : "hewan laboratorium",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 1000,
+            "export"    : 1000,
+            "domestic"  : 1000
+        },
+        "class"         : [
+            "uji diagnostik",
+            "laboratorium",
+            "pengambilan spesimen",
+            "penyiapan spesimen",
+            "pengiriman spesimen"
+        ]
+    },
+    {
+        "id"            : 33,
+        "name"          : "unggas",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 1000,
+            "export"    : 1000,
+            "domestic"  : 1000
+        },
+        "class"         : [
+            "uji diagnostik",
+            "laboratorium",
+            "pengambilan spesimen",
+            "penyiapan spesimen",
+            "pengiriman spesimen"
+        ]
+    },
+    {
+        "id"            : 34,
+        "name"          : "unggas umur sehari",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 1000,
+            "export"    : 1000,
+            "domestic"  : 1000
+        },
+        "class"         : [
+            "uji diagnostik",
+            "laboratorium",
+            "pengambilan spesimen",
+            "penyiapan spesimen",
+            "pengiriman spesimen"
+        ]
+    },
+    {
+        "id"            : 35,
+        "name"          : "lebah dan serangga",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 1000,
+            "export"    : 1000,
+            "domestic"  : 1000
+        },
+        "class"         : [
+            "uji diagnostik",
+            "laboratorium",
+            "pengambilan spesimen",
+            "penyiapan spesimen",
+            "pengiriman spesimen"
+        ]
+    },
+    {
+        "id"            : 36,
+        "name"          : "tuberculinasi",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 50000,
+            "export"    : 50000,
+            "domestic"  : 50000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "uji diagnostika lapangan"
+        ]
+    },
+    {
+        "id"            : 37,
+        "name"          : "mallenisasi",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 10000,
+            "export"    : 10000,
+            "domestic"  : 10000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "uji diagnostika lapangan"
+        ]
+    },
+    {
+        "id"            : 38,
+        "name"          : "uji rose bengal",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 5000,
+            "export"    : 5000,
+            "domestic"  : 5000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "uji diagnostika lapangan"
+        ]
+    },
+    {
+        "id"            : 39,
+        "name"          : "uji ascoli",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 10000,
+            "export"    : 10000,
+            "domestic"  : 10000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "uji diagnostika lapangan"
+        ]
+    },
+    {
+        "id"            : 40,
+        "name"          : "pemeriksaan feces dan ulas darah",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 2000,
+            "export"    : 2000,
+            "domestic"  : 2000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "uji diagnostika lapangan"
+        ]
+    },
+    {
+        "id"            : 41,
+        "name"          : "kultur dan identifikasi",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 125000,
+            "export"    : 125000,
+            "domestic"  : 125000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "pengujian laboratorium",
+            "bakteriologi dan mikologi"
+        ]
+    },
+    {
+        "id"            : 42,
+        "name"          : "enzyme linked immunosorbent assay",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 225000,
+            "export"    : 225000,
+            "domestic"  : 225000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "pengujian laboratorium",
+            "bakteriologi dan mikologi"
+        ]
+    },
+    {
+        "id"            : 43,
+        "name"          : "complementfixation test",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 40000,
+            "export"    : 40000,
+            "domestic"  : 40000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "pengujian laboratorium",
+            "bakteriologi dan mikologi"
+        ]
+    },
+    {
+        "id"            : 44,
+        "name"          : "pewarnaan bakteri",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 7500,
+            "export"    : 7500,
+            "domestic"  : 7500
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "pengujian laboratorium",
+            "bakteriologi dan mikologi",
+            "staining methos"
+        ]
+    },
+    {
+        "id"            : 45,
+        "name"          : "agar gel preciption test",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 50000,
+            "export"    : 50000,
+            "domestic"  : 50000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "pengujian laboratorium",
+            "bakteriologi dan mikologi"
+        ]
+    },
+    {
+        "id"            : 46,
+        "name"          : "metode lainnya",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 50000,
+            "export"    : 50000,
+            "domestic"  : 50000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "pengujian laboratorium",
+            "bakteriologi dan mikologi"
+        ]
+    },
+    {
+        "id"            : 47,
+        "name"          : "isolasi dan idedntifikasi dengan telur embrio",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 250000,
+            "export"    : 250000,
+            "domestic"  : 250000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "pengujian laboratorium",
+            "virology"
+        ]
+    },
+    {
+        "id"            : 48,
+        "name"          : "isolasi dan identifikasi dengan kultur jaringan",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 400000,
+            "export"    : 400000,
+            "domestic"  : 400000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "pengujian laboratorium",
+            "virology"
+        ]
+    },
+    {
+        "id"            : 49,
+        "name"          : "serology",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 0,
+            "export"    : 0,
+            "domestic"  : 0
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "pengujian laboratorium",
+            "virology"
+        ]
+    },
+    {
+        "id"            : 50,
+        "name"          : "enzyme linked immunosorbent",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 225000,
+            "export"    : 225000,
+            "domestic"  : 225000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "pengujian laboratorium",
+            "virology"
+        ]
+    },
+    {
+        "id"            : 51,
+        "name"          : "fluorestcent antibody technique",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 150000,
+            "export"    : 150000,
+            "domestic"  : 150000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "pengujian laboratorium",
+            "virology"
+        ]
+    },
+    {
+        "id"            : 52,
+        "name"          : "uji presipitasi gel",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 50000,
+            "export"    : 50000,
+            "domestic"  : 50000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "pengujian laboratorium",
+            "virology",
+            "agpt"
+        ]
+    },
+    {
+        "id"            : 53,
+        "name"          : "immuno histo chemistry",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 750000,
+            "export"    : 750000,
+            "domestic"  : 750000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "pengujian laboratorium",
+            "virology",
+            "ihc"
+        ]
+    },
+    {
+        "id"            : 54,
+        "name"          : "serum netralisasi test",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 50000,
+            "export"    : 50000,
+            "domestic"  : 50000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "pengujian laboratorium",
+            "virology"
+        ]
+    },
+    {
+        "id"            : 55,
+        "name"          : "pewarnaan seller",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 32000,
+            "export"    : 32000,
+            "domestic"  : 32000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "pengujian laboratorium",
+            "virology"
+        ]
+    },
+    {
+        "id"            : 56,
+        "name"          : "metode lainnya",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 50000,
+            "export"    : 50000,
+            "domestic"  : 50000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "pengujian laboratorium",
+            "virology"
+        ]
+    },
+    {
+        "id"            : 57,
+        "name"          : "enzyme linked immunosobent",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 200000,
+            "export"    : 200000,
+            "domestic"  : 200000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "pengujian laboratorium",
+            "patologi",
+            "diferensiasi protein",
+            "pemalsuan"
+        ]
+    },
+    {
+        "id"            : 58,
+        "name"          : "mikroskopis",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 50000,
+            "export"    : 50000,
+            "domestic"  : 50000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "pengujian laboratorium",
+            "patologi",
+            "diferensiasi protein",
+            "pemalsuan"
+        ]
+    },
+    {
+        "id"            : 59,
+        "name"          : "uji organolepik",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 10000,
+            "export"    : 10000,
+            "domestic"  : 10000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "pengujian laboratorium",
+            "patologi",
+            "diferensiasi protein",
+            "pemalsuan"
+        ]
+    },
+    {
+        "id"            : 60,
+        "name"          : "uji kimia pembusukan",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 20000,
+            "export"    : 20000,
+            "domestic"  : 20000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "pengujian laboratorium",
+            "patologi",
+            "diferensiasi protein",
+            "pemalsuan"
+        ]
+    },
+    {
+        "id"            : 61,
+        "name"          : "metode lainnya",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 50000,
+            "export"    : 50000,
+            "domestic"  : 50000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "pengujian laboratorium",
+            "patologi",
+            "diferensiasi protein",
+            "pemalsuan"
+        ]
+    },
+    {
+        "id"            : 62,
+        "name"          : "hematokrit",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 10000,
+            "export"    : 10000,
+            "domestic"  : 10000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "pengujian laboratorium",
+            "parasitologi"
+        ]
+    },
+    {
+        "id"            : 63,
+        "name"          : "ulas darah",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 2000,
+            "export"    : 2000,
+            "domestic"  : 2000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "pengujian laboratorium",
+            "parasitologi"
+        ]
+    },
+    {
+        "id"            : 64,
+        "name"          : "identifikasi cacing",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 2000,
+            "export"    : 2000,
+            "domestic"  : 2000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "pengujian laboratorium",
+            "parasitologi"
+        ]
+    },
+    {
+        "id"            : 65,
+        "name"          : "identifikasi ektoparasit",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 2000,
+            "export"    : 2000,
+            "domestic"  : 2000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "pengujian laboratorium",
+            "parasitologi"
+        ]
+    },
+    {
+        "id"            : 66,
+        "name"          : "enzyme linked immunosorbent",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 100000,
+            "export"    : 100000,
+            "domestic"  : 100000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "pengujian laboratorium",
+            "parasitologi"
+        ]
+    },
+    {
+        "id"            : 67,
+        "name"          : "ai",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 75000,
+            "export"    : 75000,
+            "domestic"  : 75000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "pengujian laboratorium",
+            "rapid test"
+        ]
+    },
+    {
+        "id"            : 68,
+        "name"          : "cemaran mikroba",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 30000,
+            "export"    : 30000,
+            "domestic"  : 30000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "pengujian laboratorium",
+            "rapid test"
+        ]
+    },
+    {
+        "id"            : 69,
+        "name"          : "brucella",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 10000,
+            "export"    : 10000,
+            "domestic"  : 10000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "pengujian laboratorium",
+            "rapid test"
+        ]
+    },
+    {
+        "id"            : 70,
+        "name"          : "rapid test target lainnya",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 50000,
+            "export"    : 50000,
+            "domestic"  : 50000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "pengujian laboratorium",
+            "rapid test"
+        ]
+    },
+    {
+        "id"            : 71,
+        "name"          : "transkripsi terbaik dengan pcr",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 400000,
+            "export"    : 400000,
+            "domestic"  : 400000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "pengujian laboratorium",
+            "biomolekuler",
+            "reverse transcription polymerase chain reaction",
+            "rt-pcr"
+        ]
+    },
+    {
+        "id"            : 72,
+        "name"          : "pcr dengan kuantifikasi",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 425000,
+            "export"    : 425000,
+            "domestic"  : 425000
+        },
+        "class"         : [
+            "bahan asal hewan",
+            "hasil bahan asal hewan",
+            "benda lain",
+            "pengujian laboratorium",
+            "realtime polymerase chain reaction",
+            "rt-pcr",
+            "biomolekuler"
+        ]
+    },
+    {
+        "id"            : 73,
+        "name"          : "hewan besar",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 10000,
+            "export"    : 5000,
+            "domestic"  : 5000
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "hewan hidup",
+            "hewan ternak"
+        ]
+    },
+    {
+        "id"            : 74,
+        "name"          : "hewan kecil",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 5000,
+            "export"    : 2500,
+            "domestic"  : 2500
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "hewan hidup",
+            "hewan ternak"
+        ]
+    },
+    {
+        "id"            : 75,
+        "name"          : "uanggas besar",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 500,
+            "export"    : 500,
+            "domestic"  : 500
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "hewan hidup",
+            "hewan ternak"
+        ]
+    },
+    {
+        "id"            : 76,
+        "name"          : "unggas kecil",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 100,
+            "export"    : 50,
+            "domestic"  : 50
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "hewan hidup",
+            "hewan ternak"
+        ]
+    },
+    {
+        "id"            : 77,
+        "name"          : "unggas kecil umur sehari",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 10,
+            "export"    : 5,
+            "domestic"  : 5
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "hewan hidup",
+            "hewan ternak"
+        ]
+    },
+    {
+        "id"            : 78,
+        "name"          : "kuda",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 100000,
+            "export"    : 50000,
+            "domestic"  : 50000
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "hewan hidup",
+            "hewan kesayangan",
+            "pet animal"
+        ]
+    },
+    {
+        "id"            : 79,
+        "name"          : "anjing",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 20000,
+            "export"    : 10000,
+            "domestic"  : 10000
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "hewan hidup",
+            "hewan kesayangan",
+            "pet animal"
+        ]
+    },
+    {
+        "id"            : 80,
+        "name"          : "kucing",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 15000,
+            "export"    : 10000,
+            "domestic"  : 10000
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "hewan hidup",
+            "hewan kesayangan",
+            "pet animal"
+        ]
+    },
+    {
+        "id"            : 81,
+        "name"          : "unggas besar",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 25000,
+            "export"    : 20000,
+            "domestic"  : 20000
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "hewan hidup",
+            "hewan kesayangan",
+            "pet animal"
+        ]
+    },
+    {
+        "id"            : 82,
+        "name"          : "unggas kecil",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 5000,
+            "export"    : 3000,
+            "domestic"  : 3000
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "hewan hidup",
+            "hewan kesayangan",
+            "pet animal"
+        ]
+    },
+    {
+        "id"            : 83,
+        "name"          : "primata",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 20000,
+            "export"    : 10000,
+            "domestic"  : 10000
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "hewan hidup",
+            "hewan percobaan"
+        ]
+    },
+    {
+        "id"            : 84,
+        "name"          : "selain primata",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 10000,
+            "export"    : 5000,
+            "domestic"  : 5000
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "hewan hidup",
+            "hewan percobaan"
+        ]
+    },
+    {
+        "id"            : 85,
+        "name"          : "mamalia besar",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 150000,
+            "export"    : 100000,
+            "domestic"  : 100000
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "hewan hidup",
+            "hewan liar",
+            "wild animal",
+            "zoo animal"
+        ]
+    },
+    {
+        "id"            : 86,
+        "name"          : "mamalia kecil",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 20000,
+            "export"    : 10000,
+            "domestic"  : 10000
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "hewan hidup",
+            "hewan liar",
+            "wild animal",
+            "zoo animal"
+        ]
+    },
+    {
+        "id"            : 87,
+        "name"          : "unggas besar",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 25000,
+            "export"    : 10000,
+            "domestic"  : 10000
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "hewan hidup",
+            "hewan liar",
+            "wild animal",
+            "zoo animal"
+        ]
+    },
+    {
+        "id"            : 88,
+        "name"          : "unggas kecil",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 5000,
+            "export"    : 3000,
+            "domestic"  : 3000
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "hewan hidup",
+            "hewan liar",
+            "wild animal",
+            "zoo animal"
+        ]
+    },
+    {
+        "id"            : 89,
+        "name"          : "reptil besar",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 20000,
+            "export"    : 10000,
+            "domestic"  : 10000
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "hewan hidup",
+            "hewan liar",
+            "wild animal",
+            "zoo animal"
+        ]
+    },
+    {
+        "id"            : 90,
+        "name"          : "reptil kecil",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 1000,
+            "export"    : 500,
+            "domestic"  : 500
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "hewan hidup",
+            "hewan liar",
+            "wild animal",
+            "zoo animal"
+        ]
+    },
+    {
+        "id"            : 91,
+        "name"          : "invertebrata",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 100,
+            "export"    : 100,
+            "domestic"  : 50
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "hewan hidup",
+            "hewan liar",
+            "wild animal",
+            "zoo animal"
+        ]
+    },
+    {
+        "id"            : 92,
+        "name"          : "amphibia",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 1000,
+            "export"    : 1000,
+            "domestic"  : 1000
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "hewan hidup",
+            "hewan liar",
+            "wild animal",
+            "zoo animal"
+        ]
+    },
+    {
+        "id"            : 93,
+        "name"          : "lebah dan serangga lainnya",
+        "unit"          : "per koloni",
+        "prices"        : {
+            "import"    : 5000,
+            "export"    : 2000,
+            "domestic"  : 2000
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "hewan hidup",
+            "hewan liar",
+            "wild animal",
+            "zoo animal"
+        ]
+    },
+    {
+        "id"            : 94,
+        "name"          : "mamalia air",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 150000,
+            "export"    : 150000,
+            "domestic"  : 150000
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "hewan hidup",
+            "hewan liar",
+            "wild animal",
+            "zoo animal",
+            "aspek hama penyakit hewan karantina"
+        ]
+    },
+    {
+        "id"            : 95,
+        "name"          : "daging hewan",
+        "unit"          : "per kilogram",
+        "prices"        : {
+            "import"    : 125,
+            "export"    : 75,
+            "domestic"  : 75
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "bahan asal hewan",
+            "bah",
+            "bah pangan"
+        ]
+    },
+    {
+        "id"            : 96,
+        "name"          : "daging unggas",
+        "unit"          : "per kilogram",
+        "prices"        : {
+            "import"    : 125,
+            "export"    : 75,
+            "domestic"  : 75
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "bahan asal hewan",
+            "bah",
+            "bah pangan"
+        ]
+    },
+    {
+        "id"            : 96,
+        "name"          : "susu",
+        "unit"          : "per kilogram",
+        "prices"        : {
+            "import"    : 50,
+            "export"    : 25,
+            "domestic"  : 25
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "bahan asal hewan",
+            "bah",
+            "bah pangan"
+        ]
+    },
+    {
+        "id"            : 97,
+        "name"          : "telur konsumsi",
+        "unit"          : "per kilogram",
+        "prices"        : {
+            "import"    : 25,
+            "export"    : 15,
+            "domestic"  : 15
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "bahan asal hewan",
+            "bah",
+            "bah pangan"
+        ]
+    },
+    {
+        "id"            : 98,
+        "name"          : "madu",
+        "unit"          : "per kilogram",
+        "prices"        : {
+            "import"    : 50,
+            "export"    : 25,
+            "domestic"  : 25
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "bahan asal hewan",
+            "bah",
+            "bah pangan"
+        ]
+    },
+    {
+        "id"            : 99,
+        "name"          : "sarang burung",
+        "unit"          : "per kilogram",
+        "prices"        : {
+            "import"    : 10000,
+            "export"    : 5000,
+            "domestic"  : 5000
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "bahan asal hewan",
+            "bah",
+            "bah pangan"
+        ]
+    },
+    {
+        "id"            : 100,
+        "name"          : "jeroan untuk konsumsi",
+        "unit"          : "per kilogram",
+        "prices"        : {
+            "import"    : 50,
+            "export"    : 25,
+            "domestic"  : 25
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "bahan asal hewan",
+            "bah",
+            "bah pangan"
+        ]
+    },
+    {
+        "id"            : 101,
+        "name"          : "kulit hewan besar",
+        "unit"          : "per kilogram",
+        "prices"        : {
+            "import"    : 50,
+            "export"    : 25,
+            "domestic"  : 25
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "bahan asal hewan",
+            "bah",
+            "bah non pangan"
+        ]
+    },
+    {
+        "id"            : 102,
+        "name"          : "kulit hewan kecil",
+        "unit"          : "per kilogram",
+        "prices"        : {
+            "import"    : 50,
+            "export"    : 25,
+            "domestic"  : 25
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "bahan asal hewan",
+            "bah",
+            "bah non pangan"
+        ]
+    },
+    {
+        "id"            : 103,
+        "name"          : "kulit satwa reptil besar",
+        "unit"          : "per lembar",
+        "prices"        : {
+            "import"    : 20000,
+            "export"    : 10000,
+            "domestic"  : 10000
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "bahan asal hewan",
+            "bah",
+            "bah non pangan"
+        ]
+    },
+    {
+        "id"            : 104,
+        "name"          : "kulit satwa reptil kecil",
+        "unit"          : "per lembar",
+        "prices"        : {
+            "import"    : 1000,
+            "export"    : 500,
+            "domestic"  : 500
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "bahan asal hewan",
+            "bah",
+            "bah non pangan"
+        ]
+    },
+    {
+        "id"            : 105,
+        "name"          : "telur bibit",
+        "unit"          : "per butir",
+        "prices"        : {
+            "import"    : 25,
+            "export"    : 15,
+            "domestic"  : 15
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "bahan asal hewan",
+            "bah",
+            "bah non pangan",
+            "tunas",
+            "spf"
+        ]
+    },
+    {
+        "id"            : 106,
+        "name"          : "bahan reproduksi",
+        "unit"          : "per kemasan",
+        "prices"        : {
+            "import"    : 100000,
+            "export"    : 50000,
+            "domestic"  : 50000
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "bahan asal hewan",
+            "bah",
+            "bah non pangan"
+        ]
+    },
+    {
+        "id"            : 107,
+        "name"          : "bah berupa tulang dan ikutannya",
+        "unit"          : "per kilogram",
+        "prices"        : {
+            "import"    : 100,
+            "export"    : 50,
+            "domestic"  : 50
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "bahan asal hewan",
+            "bah",
+            "bah non pangan"
+        ]
+    },
+    {
+        "id"            : 108,
+        "name"          : "bah berupa kuku dan ikutannya",
+        "unit"          : "per kilogram",
+        "prices"        : {
+            "import"    : 100,
+            "export"    : 50,
+            "domestic"  : 50
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "bahan asal hewan",
+            "bah",
+            "bah non pangan"
+        ]
+    },
+    {
+        "id"            : 109,
+        "name"          : "bah berupa tanduk dan ikutannya",
+        "unit"          : "per kilogram",
+        "prices"        : {
+            "import"    : 100,
+            "export"    : 50,
+            "domestic"  : 50
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "bahan asal hewan",
+            "bah",
+            "bah non pangan"
+        ]
+    },
+    {
+        "id"            : 110,
+        "name"          : "bah berupa bulu dan ikutannya",
+        "unit"          : "per kilogram",
+        "prices"        : {
+            "import"    : 100,
+            "export"    : 50,
+            "domestic"  : 50
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "bahan asal hewan",
+            "bah",
+            "bah non pangan"
+        ]
+    },
+    {
+        "id"            : 111,
+        "name"          : "bah lainnya berupa pakan",
+        "unit"          : "per kilogram",
+        "prices"        : {
+            "import"    : 10,
+            "export"    : 5,
+            "domestic"  : 5
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "bahan asal hewan",
+            "bah",
+            "bah non pangan"
+        ]
+    },
+    {
+        "id"            : 112,
+        "name"          : "hasil bahan asal daging hewan",
+        "unit"          : "per kilogram",
+        "prices"        : {
+            "import"    : 100,
+            "export"    : 50,
+            "domestic"  : 50
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "hasil bahan asal hewan",
+            "hbah",
+            "hbah pangan"
+        ]
+    },
+    {
+        "id"            : 113,
+        "name"          : "hasil bahan asal daging unggas",
+        "unit"          : "per kilogram",
+        "prices"        : {
+            "import"    : 100,
+            "export"    : 50,
+            "domestic"  : 50
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "hasil bahan asal hewan",
+            "hbah",
+            "hbah pangan"
+        ]
+    },
+    {
+        "id"            : 114,
+        "name"          : "hasil bajan asal susu",
+        "unit"          : "per kilogram",
+        "prices"        : {
+            "import"    : 25,
+            "export"    : 15,
+            "domestic"  : 15
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "hasil bahan asal hewan",
+            "hbah",
+            "hbah pangan"
+        ]
+    },
+    {
+        "id"            : 115,
+        "name"          : "hasil bahan asal telur",
+        "unit"          : "per kilogram",
+        "prices"        : {
+            "import"    : 25,
+            "export"    : 15,
+            "domestic"  : 15
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "hasil bahan asal hewan",
+            "hbah",
+            "hbah pangan"
+        ]
+    },
+    {
+        "id"            : 116,
+        "name"          : "hbah lainnya",
+        "unit"          : "per kilogram",
+        "prices"        : {
+            "import"    : 25,
+            "export"    : 15,
+            "domestic"  : 15
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "hasil bahan asal hewan",
+            "hbah",
+            "hbah pangan"
+        ]
+    },
+    {
+        "id"            : 117,
+        "name"          : "hbah ikutan",
+        "unit"          : "per kilogram",
+        "prices"        : {
+            "import"    : 100,
+            "export"    : 50,
+            "domestic"  : 50
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "hasil bahan asal hewan",
+            "hbah",
+            "hbah pangan"
+        ]
+    },
+    {
+        "id"            : 118,
+        "name"          : "hbah untuk industri",
+        "unit"          : "per kilogram",
+        "prices"        : {
+            "import"    : 100,
+            "export"    : 50,
+            "domestic"  : 50
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "hasil bahan asal hewan",
+            "hbah",
+            "hbah non pangan"
+        ]
+    },
+    {
+        "id"            : 119,
+        "name"          : "hbah untuk industri",
+        "unit"          : "per kilogram",
+        "prices"        : {
+            "import"    : 100,
+            "export"    : 50,
+            "domestic"  : 50
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "hasil bahan asal hewan",
+            "hbah",
+            "hbah non pangan"
+        ]
+    },
+    {
+        "id"            : 120,
+        "name"          : "hbah untuk pakan",
+        "unit"          : "per kilogram",
+        "prices"        : {
+            "import"    : 50,
+            "export"    : 25,
+            "domestic"  : 25
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "hasil bahan asal hewan",
+            "hbah",
+            "hbah non pangan"
+        ]
+    },
+    {
+        "id"            : 121,
+        "name"          : "pakan hewan ternak",
+        "unit"          : "per kilogram",
+        "prices"        : {
+            "import"    : 10,
+            "export"    : 5,
+            "domestic"  : 5
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "benda lain"
+        ]
+    },
+    {
+        "id"            : 122,
+        "name"          : "pakan hewan kesayangan",
+        "unit"          : "per kilogram",
+        "prices"        : {
+            "import"    : 200,
+            "export"    : 100,
+            "domestic"  : 100
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "benda lain"
+        ]
+    },
+    {
+        "id"            : 123,
+        "name"          : "bahan biologik",
+        "unit"          : "per kilogram",
+        "prices"        : {
+            "import"    : 10000,
+            "export"    : 5000,
+            "domestic"  : 5000
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "benda lain"
+        ]
+    },
+    {
+        "id"            : 124,
+        "name"          : "bahan diagnostika",
+        "unit"          : "per koli",
+        "prices"        : {
+            "import"    : 10000,
+            "export"    : 5000,
+            "domestic"  : 5000
+        },
+        "class"         : [
+            "pemeriksaan fisik",
+            "pemeriksaan klinis",
+            "pemeriksaan organoleptik",
+            "benda lain"
+        ]
+    },
+    {
+        "id"            : 125,
+        "name"          : "hewan",
+        "unit"          : "per hari per ekor",
+        "prices"        : {
+            "import"    : 100,
+            "export"    : 100,
+            "domestic"  : 100
+        },
+        "class"         : [
+            "pengasingan",
+            "pengamatan"
+        ]
+    },
+    {
+        "id"            : 126,
+        "name"          : "unggas umur sehari",
+        "unit"          : "per hari per ekor",
+        "prices"        : {
+           "import"     : 1,
+            "export"    : 1,
+            "domestic"  : 1
+        },
+        "class"         : [
+            "pengasingan",
+            "pengamatan"
+        ]
+    },
+    {
+        "id"            : 127,
+        "name"          : "lebah dan serangga lainnya",
+        "unit"          : "per koloni per hari",
+        "prices"        : {
+            "import"    : 5000,
+            "export"    : 5000,
+            "domestic"  : 5000
+        },
+        "class"         : [
+            "pengasingan",
+            "pengamatan"
+        ]
+    },
+    {
+        "id"            : 128,
+        "name"          : "hewan besar",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 500,
+            "export"    : 500,
+            "domestic"  : 500
+        },
+        "class"         : [
+            "perlakuan",
+            "desinfeksi",
+            "desinfektasi",
+            "fumigasi",
+            "hewan hidup"
+        ]
+    },
+    {
+        "id"            : 129,
+        "name"          : "hewan kecil",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 200,
+            "export"    : 200,
+            "domestic"  : 200
+        },
+        "class"         : [
+            "perlakuan",
+            "desinfeksi",
+            "desinfektasi",
+            "fumigasi",
+            "hewan hidup"
+        ]
+    },
+    {
+        "id"            : 130,
+        "name"          : "hewan kesayangan",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 10000,
+            "export"    : 10000,
+            "domestic"  : 10000
+        },
+        "class"         : [
+            "perlakuan",
+            "desinfeksi",
+            "desinfektasi",
+            "fumigasi",
+            "hewan hidup",
+            "pet animal"
+        ]
+    },
+    {
+        "id"            : 131,
+        "name"          : "hewan percobaan",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 200,
+            "export"    : 200,
+            "domestic"  : 200
+        },
+        "class"         : [
+            "perlakuan",
+            "desinfeksi",
+            "desinfektasi",
+            "fumigasi",
+            "hewan hidup",
+            "laboratory animal"
+        ]
+    },
+    {
+        "id"            : 132,
+        "name"          : "unggas besar",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 200,
+            "export"    : 200,
+            "domestic"  : 200
+        },
+        "class"         : [
+            "perlakuan",
+            "desinfeksi",
+            "desinfektasi",
+            "fumigasi",
+            "hewan hidup"
+        ]
+    },
+    {
+        "id"            : 133,
+        "name"          : "unggas kecil",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 200,
+            "export"    : 200,
+            "domestic"  : 200
+        },
+        "class"         : [
+            "perlakuan",
+            "desinfeksi",
+            "desinfektasi",
+            "fumigasi",
+            "hewan hidup"
+        ]
+    },
+    {
+        "id"            : 134,
+        "name"          : "unggas umur sehari",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 50,
+            "export"    : 50,
+            "domestic"  : 50
+        },
+        "class"         : [
+            "perlakuan",
+            "desinfeksi",
+            "desinfektasi",
+            "fumigasi",
+            "hewan hidup"
+        ]
+    },
+    {
+        "id"            : 135,
+        "name"          : "lebah dan serangga lainnya",
+        "unit"          : "per koloni",
+        "prices"        : {
+            "import"    : 5000,
+            "export"    : 5000,
+            "domestic"  : 5000
+        },
+        "class"         : [
+            "perlakuan",
+            "desinfeksi",
+            "desinfektasi",
+            "fumigasi",
+            "hewan hidup"
+        ]
+    },
+    {
+        "id"            : 136,
+        "name"          : "mamalia air dari aspek hama penyakit hewan karantina",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 1000,
+            "export"    : 1000,
+            "domestic"  : 1000
+        },
+        "class"         : [
+            "perlakuan",
+            "desinfeksi",
+            "desinfektasi",
+            "fumigasi",
+            "hewan hidup",
+            "aquatic mamalia"
+        ]
+    },
+    {
+        "id"            : 137,
+        "name"          : "bahan asal hewan",
+        "unit"          : "per m3",
+        "prices"        : {
+            "import"    : 1000,
+            "export"    : 1000,
+            "domestic"  : 1000
+        },
+        "class"         : [
+            "perlakuan",
+            "desinfeksi",
+            "desinfektasi",
+            "fumigasi"
+        ]
+    },
+    {
+        "id"            : 138,
+        "name"          : "hasil bahan asal hewan",
+        "unit"          : "per m3",
+        "prices"        : {
+            "import"    : 1000,
+            "export"    : 1000,
+            "domestic"  : 1000
+        },
+        "class"         : [
+            "perlakuan",
+            "desinfeksi",
+            "desinfektasi",
+            "fumigasi"
+        ]
+    },
+    {
+        "id"            : 139,
+        "name"          : "pakan hewan ternak",
+        "unit"          : "per m3",
+        "prices"        : {
+            "import"    : 100,
+            "export"    : 100,
+            "domestic"  : 100
+        },
+        "class"         : [
+            "perlakuan",
+            "desinfeksi",
+            "desinfektasi",
+            "fumigasi",
+            "benda lain"
+        ]
+    },
+    {
+        "id"            : 140,
+        "name"          : "pakan hewan kesayangan",
+        "unit"          : "per m3",
+        "prices"        : {
+            "import"    : 500,
+            "export"    : 500,
+            "domestic"  : 500
+        },
+        "class"         : [
+            "perlakuan",
+            "desinfeksi",
+            "desinfektasi",
+            "fumigasi",
+            "benda lain"
+        ]
+    },
+    {
+        "id"            : 141,
+        "name"          : "alat angkutan",
+        "unit"          : "per m3",
+        "prices"        : {
+            "import"    : 1000,
+            "export"    : 1000,
+            "domestic"  : 1000
+        },
+        "class"         : [
+            "perlakuan",
+            "desinfeksi",
+            "desinfektasi",
+            "fumigasi"
+        ]
+    },
+    {
+        "id"            : 142,
+        "name"          : "kemasan",
+        "unit"          : "per m3",
+        "prices"        : {
+            "import"    : 1000,
+            "export"    : 1000,
+            "domestic"  : 1000
+        },
+        "class"         : [
+            "perlakuan",
+            "desinfeksi",
+            "desinfektasi",
+            "fumigasi"
+        ]
+    },
+    {
+        "id"            : 143,
+        "name"          : "kandang",
+        "unit"          : "per m3",
+        "prices"        : {
+            "import"    : 1000,
+            "export"    : 1000,
+            "domestic"  : 1000
+        },
+        "class"         : [
+            "perlakuan",
+            "desinfeksi",
+            "desinfektasi",
+            "fumigasi"
+        ]
+    },
+    {
+        "id"            : 144,
+        "name"          : "hewan besar",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 500,
+            "export"    : 500,
+            "domestic"  : 500
+        },
+        "class"         : [
+            "perlakuan",
+            "vaksinasi",
+            "imunisasi",
+            "hewan ternak"
+        ]
+    },
+    {
+        "id"            : 145,
+        "name"          : "hewan kecil",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 200,
+            "export"    : 200,
+            "domestic"  : 200
+        },
+        "class"         : [
+            "perlakuan",
+            "vaksinasi",
+            "imunisasi",
+            "hewan ternak"
+        ]
+    },
+    {
+        "id"            : 146,
+        "name"          : "unggas besar",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 100,
+            "export"    : 100,
+            "domestic"  : 100
+        },
+        "class"         : [
+            "perlakuan",
+            "vaksinasi",
+            "imunisasi",
+            "hewan ternak"
+        ]
+    },
+    {
+        "id"            : 147,
+        "name"          : "unggas kecil",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 25,
+            "export"    : 25,
+            "domestic"  : 25
+        },
+        "class"         : [
+            "perlakuan",
+            "vaksinasi",
+            "imunisasi",
+            "hewan ternak"
+        ]
+    },
+    {
+        "id"            : 148,
+        "name"          : "unggas umur sehari",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 10,
+            "export"    : 10,
+            "domestic"  : 10
+        },
+        "class"         : [
+            "perlakuan",
+            "vaksinasi",
+            "imunisasi",
+            "hewan ternak"
+        ]
+    },
+    {
+        "id"            : 149,
+        "name"          : "kuda",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 25000,
+            "export"    : 25000,
+            "domestic"  : 25000
+        },
+        "class"         : [
+            "perlakuan",
+            "vaksinasi",
+            "imunisasi",
+            "hewan kesayangan",
+            "pet animal"
+        ]
+    },
+    {
+        "id"            : 150,
+        "name"          : "anjing",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 20000,
+            "export"    : 20000,
+            "domestic"  : 20000
+        },
+        "class"         : [
+            "perlakuan",
+            "vaksinasi",
+            "imunisasi",
+            "hewan kesayangan",
+            "pet animal"
+        ]
+    },
+    {
+        "id"            : 151,
+        "name"          : "kucing",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 20000,
+            "export"    : 20000,
+            "domestic"  : 20000
+        },
+        "class"         : [
+            "perlakuan",
+            "vaksinasi",
+            "imunisasi",
+            "hewan kesayangan",
+            "pet animal"
+        ]
+    },
+    {
+        "id"            : 152,
+        "name"          : "primata",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 20000,
+            "export"    : 20000,
+            "domestic"  : 20000
+        },
+        "class"         : [
+            "perlakuan",
+            "vaksinasi",
+            "imunisasi",
+            "hewan kesayangan",
+            "pet animal"
+        ]
+    },
+    {
+        "id"            : 153,
+        "name"          : "unggas besar",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 2500,
+            "export"    : 2500,
+            "domestic"  : 2500
+        },
+        "class"         : [
+            "perlakuan",
+            "vaksinasi",
+            "imunisasi",
+            "hewan kesayangan",
+            "pet animal"
+        ]
+    },
+    {
+        "id"            : 154,
+        "name"          : "unggas kecil",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 1000,
+            "export"    : 1000,
+            "domestic"  : 1000
+        },
+        "class"         : [
+            "perlakuan",
+            "vaksinasi",
+            "imunisasi",
+            "hewan kesayangan",
+            "pet animal"
+        ]
+    },
+    {
+        "id"            : 155,
+        "name"          : "pengurutan analisis genetik",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 500000,
+            "export"    : 500000,
+            "domestic"  : 500000
+        },
+        "class"         : [
+            "perlakuan"
+        ]
+    },
+    {
+        "id"            : 156,
+        "name"          : "teknik lainnya",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 450000,
+            "export"    : 450000,
+            "domestic"  : 450000
+        },
+        "class"         : [
+            "perlakuan"
+        ]
+    },
+    {
+        "id"            : 157,
+        "name"          : "total mikroba dengan total plate count",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 125000,
+            "export"    : 125000,
+            "domestic"  : 125000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "cemaran mikroba",
+            "rpc"
+        ]
+    },
+    {
+        "id"            : 158,
+        "name"          : "escheichia coli",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 125000,
+            "export"    : 125000,
+            "domestic"  : 125000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "cemaran mikroba",
+            "e coli"
+        ]
+    },
+    {
+        "id"            : 160,
+        "name"          : "colifurm",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 75000,
+            "export"    : 75000,
+            "domestic"  : 75000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "cemaran mikroba"
+        ]
+    },
+    {
+        "id"            : 161,
+        "name"          : "staphglococcus aereus",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 125000,
+            "export"    : 125000,
+            "domestic"  : 125000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "cemaran mikroba"
+        ]
+    },
+    {
+        "id"            : 162,
+        "name"          : "salmonella sp",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 125000,
+            "export"    : 125000,
+            "domestic"  : 125000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "cemaran mikroba"
+        ]
+    },
+    {
+        "id"            : 163,
+        "name"          : "total cemaran kapang khamir",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 75000,
+            "export"    : 75000,
+            "domestic"  : 75000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "cemaran mikroba"
+        ]
+    },
+    {
+        "id"            : 164,
+        "name"          : "cemaran mikroba listeia sp",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 75000,
+            "export"    : 75000,
+            "domestic"  : 75000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "cemaran mikroba"
+        ]
+    },
+    {
+        "id"            : 165,
+        "name"          : "campylobacter sp",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 90000,
+            "export"    : 90000,
+            "domestic"  : 90000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "cemaran mikroba"
+        ]
+    },
+    {
+        "id"            : 166,
+        "name"          : "bakteri lainnya",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 100000,
+            "export"    : 100000,
+            "domestic"  : 100000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "cemaran mikroba"
+        ]
+    },
+    {
+        "id"            : 167,
+        "name"          : "screening test",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 150000,
+            "export"    : 150000,
+            "domestic"  : 150000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "deteksi residu",
+            "antibiotik"
+        ]
+    },
+    {
+        "id"            : 168,
+        "name"          : "high performance liquid chromatography",
+        "unit"          : "per sampel per target",
+        "prices"        : {
+            "import"    : 375000,
+            "export"    : 375000,
+            "domestic"  : 375000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "deteksi residu",
+            "antibiotik",
+            "hplc"
+        ]
+    },
+    {
+        "id"            : 169,
+        "name"          : "imunoassag",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 225000,
+            "export"    : 225000,
+            "domestic"  : 225000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "deteksi residu",
+            "antibiotik"
+        ]
+    },
+    {
+        "id"            : 170,
+        "name"          : "multi analit imunoassag",
+        "unit"          : "per sampel per golongan",
+        "prices"        : {
+            "import"    : 400000,
+            "export"    : 400000,
+            "domestic"  : 400000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "deteksi residu",
+            "antibiotik"
+        ]
+    },
+    {
+        "id"            : 171,
+        "name"          : "gas chromatography",
+        "unit"          : "per sampel per golongan",
+        "prices"        : {
+            "import"    : 500000,
+            "export"    : 500000,
+            "domestic"  : 500000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "deteksi residu",
+            "pestisida",
+            "cc"
+        ]
+    },
+    {
+        "id"            : 172,
+        "name"          : "hplc",
+        "unit"          : "per sampel per golongan",
+        "prices"        : {
+            "import"    : 375000,
+            "export"    : 375000,
+            "domestic"  : 375000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "deteksi residu",
+            "pestisida"
+        ]
+    },
+    {
+        "id"            : 173,
+        "name"          : "timbal",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 75000,
+            "export"    : 75000,
+            "domestic"  : 75000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "deteksi residu",
+            "logam berat"
+        ]
+    },
+    {
+        "id"            : 174,
+        "name"          : "kadmium",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 75000,
+            "export"    : 75000,
+            "domestic"  : 75000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "deteksi residu",
+            "logam berat"
+        ]
+    },
+    {
+        "id"            : 175,
+        "name"          : "raksa",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 100000,
+            "export"    : 100000,
+            "domestic"  : 100000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "deteksi residu",
+            "logam berat"
+        ]
+    },
+    {
+        "id"            : 176,
+        "name"          : "arsen",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 125000,
+            "export"    : 125000,
+            "domestic"  : 125000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "deteksi residu",
+            "logam berat"
+        ]
+    },
+    {
+        "id"            : 177,
+        "name"          : "residu logam berat lainnya",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 100000,
+            "export"    : 100000,
+            "domestic"  : 100000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "deteksi residu",
+            "logam berat"
+        ]
+    },
+    {
+        "id"            : 178,
+        "name"          : "rapid test",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 75000,
+            "export"    : 75000,
+            "domestic"  : 75000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "deteksi residu",
+            "deteksi nitrit"
+        ]
+    },
+    {
+        "id"            : 179,
+        "name"          : "spektrofotometer",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 150000,
+            "export"    : 150000,
+            "domestic"  : 150000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "deteksi residu",
+            "deteksi nitrit"
+        ]
+    },
+    {
+        "id"            : 180,
+        "name"          : "high performance liquid chromatograph",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 375000,
+            "export"    : 375000,
+            "domestic"  : 375000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "deteksi residu",
+            "deteksi nitrit",
+            "hplc"
+        ]
+    },
+    {
+        "id"            : 181,
+        "name"          : "enzym linked immunosorben assay",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 225000,
+            "export"    : 225000,
+            "domestic"  : 225000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "deteksi residu",
+            "aflatoksin",
+            "mikotoksin",
+            "elisa"
+        ]
+    },
+    {
+        "id"            : 182,
+        "name"          : "mikotoksin high performance liquid chromatograph",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 600000,
+            "export"    : 600000,
+            "domestic"  : 600000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "deteksi residu",
+            "aflatoksin",
+            "mikotoksin",
+            "mikotoksin hplc"
+        ]
+    },
+    {
+        "id"            : 183,
+        "name"          : "fluorometer",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 700000,
+            "export"    : 700000,
+            "domestic"  : 700000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "deteksi residu",
+            "aflatoksin",
+            "mikotoksin"
+        ]
+    },
+    {
+        "id"            : 184,
+        "name"          : "enzyme linked immunosorben",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 225000,
+            "export"    : 225000,
+            "domestic"  : 225000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "deteksi residu",
+            "hormon"
+        ]
+    },
+    {
+        "id"            : 185,
+        "name"          : "high performance liquid chromotography",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 375000,
+            "export"    : 375000,
+            "domestic"  : 375000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "deteksi residu",
+            "hormon",
+            "hplc"
+        ]
+    },
+    {
+        "id"            : 186,
+        "name"          : "multi analit immunoassay",
+        "unit"          : "per sampel per golongan",
+        "prices"        : {
+            "import"    : 400000,
+            "export"    : 400000,
+            "domestic"  : 400000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "deteksi residu",
+            "hormon"
+        ]
+    },
+    {
+        "id"            : 187,
+        "name"          : "pvc",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 5000,
+            "export"    : 5000,
+            "domestic"  : 5000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "deteksi residu",
+            "heamatologi"
+        ]
+    },
+    {
+        "id"            : 188,
+        "name"          : "hb",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 5000,
+            "export"    : 5000,
+            "domestic"  : 5000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "deteksi residu",
+            "heamatologi"
+        ]
+    },
+    {
+        "id"            : 189,
+        "name"          : "wbc",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 10000,
+            "export"    : 10000,
+            "domestic"  : 10000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "deteksi residu",
+            "heamatologi"
+        ]
+    },
+    {
+        "id"            : 190,
+        "name"          : "rbc",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 10000,
+            "export"    : 10000,
+            "domestic"  : 10000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "deteksi residu",
+            "heamatologi"
+        ]
+    },
+    {
+        "id"            : 191,
+        "name"          : "diferensiasi wbc",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 10000,
+            "export"    : 10000,
+            "domestic"  : 10000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "deteksi residu",
+            "heamatologi"
+        ]
+    },
+    {
+        "id"            : 192,
+        "name"          : "heamatologi lengkap",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 30000,
+            "export"    : 30000,
+            "domestic"  : 30000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "deteksi residu",
+            "heamatologi"
+        ]
+    },
+    {
+        "id"            : 193,
+        "name"          : "rapid test",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 75000,
+            "export"    : 75000,
+            "domestic"  : 75000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "deteksi residu",
+            "deteksi bahan kimia yang dilarang lainnya",
+            "chlorin",
+            "sulfit",
+            "peroksida"
+        ]
+    },
+    {
+        "id"            : 194,
+        "name"          : "iodometrik",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 25000,
+            "export"    : 25000,
+            "domestic"  : 25000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "deteksi residu",
+            "deteksi bahan kimia yang dilarang lainnya",
+            "chlorin",
+            "sulfit",
+            "peroksida"
+        ]
+    },
+    {
+        "id"            : 195,
+        "name"          : "dpd",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 195000,
+            "export"    : 195000,
+            "domestic"  : 195000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "deteksi residu",
+            "deteksi bahan kimia yang dilarang lainnya",
+            "chlorin",
+            "sulfit",
+            "peroksida"
+        ]
+    },
+    {
+        "id"            : 196,
+        "name"          : "spektrofotometer",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 150000,
+            "export"    : 150000,
+            "domestic"  : 150000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "deteksi residu",
+            "deteksi bahan kimia yang dilarang lainnya",
+            "chlorin",
+            "sulfit",
+            "peroksida"
+        ]
+    },
+    {
+        "id"            : 197,
+        "name"          : "high performance liquid chromatography",
+        "unit"          : "per sampel",
+        "prices"        : {
+            "import"    : 375000,
+            "export"    : 375000,
+            "domestic"  : 375000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "deteksi residu",
+            "deteksi bahan kimia yang dilarang lainnya",
+            "chlorin",
+            "sulfit",
+            "peroksida",
+            "hplc"
+        ]
+    },
+    {
+        "id"            : 198,
+        "name"          : "hewan besar",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 100000,
+            "export"    : 100000,
+            "domestic"  : 100000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "bedah bangkai"
+        ]
+    },
+    {
+        "id"            : 199,
+        "name"          : "hewan kecil",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 50000,
+            "export"    : 50000,
+            "domestic"  : 50000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "bedah bangkai"
+        ]
+    },
+    {
+        "id"            : 200,
+        "name"          : "unggas",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 25000,
+            "export"    : 25000,
+            "domestic"  : 25000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "bedah bangkai"
+        ]
+    },
+    {
+        "id"            : 201,
+        "name"          : "reptil",
+        "unit"          : "per ekor",
+        "prices"        : {
+            "import"    : 75000,
+            "export"    : 75000,
+            "domestic"  : 75000
+        },
+        "class"         : [
+            "cemaran",
+            "residu",
+            "bedah bangkai"
+        ]
+    },
+    {
+        "id"            : 202,
+        "name"          : "hewan besar",
+        "unit"          : "per ekor per hari",
+        "prices"        : {
+            "import"    : 1000,
+            "export"    : 1000,
+            "domestic"  : 500
+        },
+        "class"         : [
+            "jasa sarana dalam rangka tindakan karantina",
+            "kandang"
+        ]
+    },
+    {
+        "id"            : 203,
+        "name"          : "hewan kecil",
+        "unit"          : "per ekor per hari",
+        "prices"        : {
+            "import"    : 500,
+            "export"    : 500,
+            "domestic"  : 250
+        },
+        "class"         : [
+            "jasa sarana dalam rangka tindakan karantina",
+            "kandang"
+        ]
+    },
+    {
+        "id"            : 204,
+        "name"          : "hewan kesayangan",
+        "unit"          : "per kandang per hari",
+        "prices"        : {
+            "import"    : 10000,
+            "export"    : 7500,
+            "domestic"  : 2000
+        },
+        "class"         : [
+            "jasa sarana dalam rangka tindakan karantina",
+            "kandang"
+        ]
+    },
+    {
+        "id"            : 205,
+        "name"          : "hewan percobaan",
+        "unit"          : "per kandang per hari",
+        "prices"        : {
+            "import"    : 1000,
+            "export"    : 1000,
+            "domestic"  : 500
+        },
+        "class"         : [
+            "jasa sarana dalam rangka tindakan karantina",
+            "kandang"
+        ]
+    },
+    {
+        "id"            : 206,
+        "name"          : "unggas besar",
+        "unit"          : "per kandang per hari",
+        "prices"        : {
+            "import"    : 500,
+            "export"    : 200,
+            "domestic"  : 100
+        },
+        "class"         : [
+            "jasa sarana dalam rangka tindakan karantina",
+            "kandang"
+        ]
+    },
+    {
+        "id"            : 207,
+        "name"          : "unggas kecil",
+        "unit"          : "per kandang per hari",
+        "prices"        : {
+            "import"    : 200,
+            "export"    : 100,
+            "domestic"  : 50
+        },
+        "class"         : [
+            "jasa sarana dalam rangka tindakan karantina",
+            "kandang"
+        ]
+    },
+    {
+        "id"            : 208,
+        "name"          : "unggas kesayangan",
+        "unit"          : "per kandang per hari",
+        "prices"        : {
+            "import"    : 1000,
+            "export"    : 1000,
+            "domestic"  : 500
+        },
+        "class"         : [
+            "jasa sarana dalam rangka tindakan karantina",
+            "kandang"
+        ]
+    },
+    {
+        "id"            : 209,
+        "name"          : "reptil besar",
+        "unit"          : "per kandang per hari",
+        "prices"        : {
+            "import"    : 5000,
+            "export"    : 5000,
+            "domestic"  : 5000
+        },
+        "class"         : [
+            "jasa sarana dalam rangka tindakan karantina",
+            "kandang"
+        ]
+    },
+    {
+        "id"            : 210,
+        "name"          : "reptil kecil",
+        "unit"          : "per kandang per hari",
+        "prices"        : {
+            "import"    : 1000,
+            "export"    : 1000,
+            "domestic"  : 1000
+        },
+        "class"         : [
+            "jasa sarana dalam rangka tindakan karantina",
+            "kandang"
+        ]
+    },
+    {
+        "id"            : 211,
+        "name"          : "gudang penyimpanan media pembawa",
+        "unit"          : "per m3 per hari",
+        "prices"        : {
+            "import"    : 500,
+            "export"    : 500,
+            "domestic"  : 500
+        },
+        "class"         : [
+            "jasa sarana dalam rangka tindakan karantina"
+        ]
+    },
+    {
+        "id"            : 212,
+        "name"          : "ruang pendingin",
+        "unit"          : "per m3 per hari",
+        "prices"        : {
+            "import"    : 2000,
+            "export"    : 2000,
+            "domestic"  : 2000
+        },
+        "class"         : [
+            "jasa sarana dalam rangka tindakan karantina"
+        ]
+    },
+    {
+        "id"            : 213,
+        "name"          : "incenerator",
+        "unit"          : "per m3 per hari",
+        "prices"        : {
+            "import"    : 25000,
+            "export"    : 25000,
+            "domestic"  : 25000
+        },
+        "class"         : [
+            "jasa sarana dalam rangka tindakan karantina"
+        ]
+    },
+    {
+        "id"            : 214,
+        "name"          : "timbang hewan ternak",
+        "unit"          : "persatu kali timbang",
+        "prices"        : {
+            "import"    : 500,
+            "export"    : 500,
+            "domestic"  : 500
+        },
+        "class"         : [
+            "jasa sarana dalam rangka tindakan karantina"
+        ]
+    },
+    {
+        "id"            : 215,
+        "name"          : "sertifikat kesehatan hewan",
+        "unit"          : "per sertifikat",
+        "prices"        : {
+            "import"    : 5000,
+            "export"    : 5000,
+            "domestic"  : 5000
+        },
+        "class"         : [
+            "sertifikat"
+        ]
+    },
+    {
+        "id"            : 216,
+        "name"          : "sertifikat sanitas",
+        "unit"          : "per sertifikat",
+        "prices"        : {
+            "import"    : 5000,
+            "export"    : 5000,
+            "domestic"  : 5000
+        },
+        "class"         : [
+            "sertifikat"
+        ]
+    },
+    {
+        "id"            : 217,
+        "name"          : "surat keterangan untuk benda lain",
+        "unit"          : "per sertifikat",
+        "prices"        : {
+            "import"    : 5000,
+            "export"    : 5000,
+            "domestic"  : 5000
+        },
+        "class"         : [
+            "sertifikat"
+        ]
+    },
+    {
+        "id"            : 218,
+        "name"          : "surat pelepasan karantina hewani",
+        "unit"          : "per sertifikat",
+        "prices"        : {
+            "import"    : 5000,
+            "export"    : 5000,
+            "domestic"  : 5000
+        },
+        "class"         : [
+            "sertifikat"
+        ]
+    },
+    {
+        "id"            : 219,
+        "name"          : "penyelenggara uji profesiensi",
+        "unit"          : "per laboratorium",
+        "prices"        : {
+            "import"    : 1500000,
+            "export"    : 1500000,
+            "domestic"  : 1500000
+        },
+        "class"         : [
+            "uji profesiensi"
+        ]
+    }
+]
