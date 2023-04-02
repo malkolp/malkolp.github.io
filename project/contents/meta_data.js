@@ -20,9 +20,9 @@
             title           : `Sejarah | ${app_name}`,
             path            : `sejarah${file_ext}`,
         },
-        struktur_organisasi : {
-            title           : `Struktur Organisasi | ${app_name}`,
-            path            : `struktur_organisasi${file_ext}`,
+        pegawai             : {
+            title           : `Pegawai | ${app_name}`,
+            path            : `pegawai${file_ext}`,
         },
         sertifikat          : {
             title           : `Sertifikat | ${app_name}`,
@@ -40,25 +40,17 @@
             title           : `Layanan Publik | ${app_name}`,
             path            : `layanan_publik${file_ext}`,
         },
-        layanan_ppid        : {
-            title           : `Layanan PPID | ${app_name}`,
-            path            : `layanan_ppid${file_ext}`,
-        },
         status_dan_kontak   : {
             title           : `Status dan Kontak | ${app_name}`,
-            path            : `status_dam_kontak${file_ext}`,
+            path            : `status_dan_kontak${file_ext}`,
         },
         kerjasama           : {
             title           : `Kerjasama | ${app_name}`,
             path            : `kerjasama${file_ext}`,
         },
-        foto                : {
-            title           : `Foto | ${app_name}`,
-            path            : `foto${file_ext}`,
-        },
-        video               : {
-            title           : `Video | ${app_name}`,
-            path            : `video${file_ext}`,
+        album_galeri        : {
+            title           : `Album galeri | ${app_name}`,
+            path            : `album_galeri${file_ext}`,
         },
         berita              : {
             title           : `Berita | ${app_name}`,
